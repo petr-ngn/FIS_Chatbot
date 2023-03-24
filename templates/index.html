@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+  <title>FIS Chatbot - ngup07</title>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+      body {
+        font-family: Candara;
+      }
+      h1 {
+        background-color: #076d52;
+        color: white;
+        display: inline-block;
+        font-size: 2em;
+        margin: 0;
+        padding: 10px;
+      }
+      #chatbox {
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        margin-top: 60px;
+      }
+      #userInput {
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        margin-top: 60px;
+      }
+      #textInput {
+        width: 90%;
+        border: none;
+        border-bottom: 3px solid black;
+        font-family: Candara;
+        font-size: 17px;
+      }
+      .userText {
+        color: rgb(0, 0, 0);
+        font-family: Candara;
+        font-size: 17px;
+        text-align: right;
+        line-height: 30px;
+      }
+      .userText span {
+        background-color: #c9c9c9;
+        padding: 10px;
+        border-radius: 2px;
+      }
+      .botText {
+        color:rgb(255, 255, 255);
+        font-family: Candara;
+        font-size: 17px;
+        text-align: left;
+        line-height: 30px;
+      }
+      .botText span {
+        background-color: #076d52;
+        padding: 10px;
+        border-radius: 2px;
+      }
+      #tidbit {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+      }
+      .boxed {
+        margin-left: auto;
+        margin-right: auto;
+        width: 78%;
+        margin-top: 60px;
+        border: 1px solid green;
+      }
+      .box {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>
+        PN ChatBot
+      </h1>
+    </center>
+    <div class="box"></div>
+    <div class="boxed">
+      <div>
+        <div id="chatbox">
+          <p class="botText">
+            <span>Ahoj! Já jsem Petrův chatbot, co pro tebe můžu udělat?</span>
+          </p>
+        </div>
+        <div id="userInput">
+          <input id="textInput" type="text" name="msg" placeholder="Enter message here..." />
+        </div>
+      </div>
+      <script>
+        function getBotResponse() {
+          var rawText = $("#textInput").val();
+          var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
+          $("#textInput").val("");
+          $("#chatbox").append(userHtml);
+          document
+            .getElementById("userInput")
+            .scrollIntoView({ block: "start", behavior: "smooth" });
+          $.get("/get", { msg: rawText }).done(function(data) {
+            var botHtml = '<p class="botText"><span>' + data + "</span></p>";
+            $("#chatbox").append(botHtml);
+            document
+              .getElementById("userInput")
+              .scrollIntoView({ block: "start", behavior: "smooth" });
+          });
+        }
+        $("#textInput").keypress(function(e) {
+          if (e.which == 13) {
+            getBotResponse();
+          }
+        });
+      </script>
+    </div>
+  </body>
+</html>
