@@ -1,12 +1,16 @@
-
 <!DOCTYPE html>
 <html>
-  <title>FIS Chatbot - ngup07</title>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>FIS Chatbot - Petr Nguyen</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
       body {
-        font-family: Candara;
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f9fa;
       }
       h1 {
         background-color: #076d52;
@@ -15,109 +19,104 @@
         font-size: 2em;
         margin: 0;
         padding: 10px;
+        border-radius: 5px;
       }
       #chatbox {
         margin-left: auto;
         margin-right: auto;
-        width: 40%;
+        width: 70%;
         margin-top: 60px;
       }
       #userInput {
         margin-left: auto;
         margin-right: auto;
-        width: 40%;
+        width: 70%;
         margin-top: 60px;
       }
       #textInput {
         width: 90%;
+        padding: 5px 10px;
         border: none;
-        border-bottom: 3px solid black;
-        font-family: Candara;
+        border-bottom: 3px solid #076d52;
+        font-family: 'Roboto', sans-serif;
         font-size: 17px;
       }
-      .userText {
-        color: rgb(0, 0, 0);
-        font-family: Candara;
+      .userText, .botText {
         font-size: 17px;
-        text-align: right;
         line-height: 30px;
+        margin-bottom: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      .userText span, .botText span {
+        padding: 10px;
+        border-radius: 5px;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+      }
+      .userText {
+        color: #000;
+        text-align: right;
       }
       .userText span {
         background-color: #c9c9c9;
-        padding: 10px;
-        border-radius: 2px;
       }
       .botText {
-        color:rgb(255, 255, 255);
-        font-family: Candara;
-        font-size: 17px;
+        color: #fff;
         text-align: left;
-        line-height: 30px;
       }
       .botText span {
         background-color: #076d52;
-        padding: 10px;
-        border-radius: 2px;
-      }
-      #tidbit {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 300px;
-      }
-      .boxed {
-        margin-left: auto;
-        margin-right: auto;
-        width: 78%;
-        margin-top: 60px;
-        border: 1px solid green;
-      }
-      .box {
-        border: 2px solid black;
       }
     </style>
   </head>
   <body>
-    <center>
-      <h1>
-        PN ChatBot
-      </h1>
-    </center>
-    <div class="box"></div>
-    <div class="boxed">
-      <div>
-        <div id="chatbox">
-          <p class="botText">
-            <span>Ahoj! Já jsem Petrův chatbot, co pro tebe můžu udělat?</span>
-          </p>
-        </div>
-        <div id="userInput">
-          <input id="textInput" type="text" name="msg" placeholder="Enter message here..." />
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h1>
+            FIS Chatbot - Petr Nguyen
+          </h1>
         </div>
       </div>
-      <script>
-        function getBotResponse() {
-          var rawText = $("#textInput").val();
-          var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
-          $("#textInput").val("");
-          $("#chatbox").append(userHtml);
-          document
-            .getElementById("userInput")
-            .scrollIntoView({ block: "start", behavior: "smooth" });
-          $.get("/get", { msg: rawText }).done(function(data) {
-            var botHtml = '<p class="botText"><span>' + data + "</span></p>";
-            $("#chatbox").append(botHtml);
-            document
-              .getElementById("userInput")
-              .scrollIntoView({ block: "start", behavior: "smooth" });
-          });
+      <div class="row">
+        <div class="col">
+          <div id="chatbox">
+            <p class="botText">
+              <span>Ahoj! Já jsem Petrův chatbot, co pro tebe můžu udělat?</span>
+            </p>
+          </div>
+          <div id="userInput">
+            <input id="textInput" type="text" name="msg" placeholder="Napiš svou otázku...">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+    function getBotResponse() {
+      var rawText = $("#textInput").val();
+      var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
+      $("#textInput").val("");
+      $("#chatbox").append(userHtml);
+      document
+        .getElementById("userInput")
+        .scrollIntoView({ block: "start", behavior: "smooth" });
+      $.get("/get", { msg: rawText }).done(function(data) {
+                          var botHtml = '<p class="botText"><span>' + data + "</span></p>";
+                          $("#chatbox").append(botHtml);
+                          document
+                            .getElementById("userInput")
+                            .scrollIntoView({ block: "start", behavior: "smooth" });
+                          });
         }
+
         $("#textInput").keypress(function(e) {
           if (e.which == 13) {
             getBotResponse();
           }
         });
-      </script>
-    </div>
+    </script>
   </body>
 </html>
+          
