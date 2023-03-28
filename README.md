@@ -1,4 +1,4 @@
-# FIS Chatbot
+# NLP Chatbot for FIS VŠE
 currently in development
 
 **TEAM**:
