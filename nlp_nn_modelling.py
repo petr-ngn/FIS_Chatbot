@@ -22,4 +22,3 @@ export_files(intents = intents, words = words, classes = classes)
 nn_model = nn_tuning(X_train, y_train, seed)
 
 nn_model.save('NN_PN.h5')
-nn_model.save('NN_PN')
