@@ -128,12 +128,23 @@ def text_prep_modelling(data):
         training_data.append([bag_of_words, output_row])
 
     random.shuffle(training_data)
-    training_data = num.array(training_data, dtype=object)# coverting our data into an array afterv shuffling
+    training_data = np.array(training_data, dtype=object)# coverting our data into an array afterv shuffling
 
-    x = num.array(list(training_data[:, 0]))# first trainig phase
-    y = num.array(list(training_data[:, 1]))# second training phase
+    x = np.array(list(training_data[:, 0]))# first trainig phase
+    y = np.array(list(training_data[:, 1]))# second training phase
 
     return (x, y, words, classes)
+
+def export_files(**kwargs):
+    files_path = './files'
+    for file_name, file in kwargs.items():
+        format_type = 'json' if file_name == 'intents' else 'pkl'
+        if format_type == 'json':
+            with open(f'{files_path}/{file_name}.{format_type}', 'w', encoding = "utf-8") as f:
+                json.dump(file, f, ensure_ascii = False)
+        else:
+            with open(f'{files_path}/{file_name}.{format_type}', 'wb') as f:
+                pickle.dump(file, f)
 
 def nn_tuning(X_train, y_train, seed: int):
         
@@ -209,37 +220,26 @@ def nn_tuning(X_train, y_train, seed: int):
     return final_nn
 
 def pred_class(text, vocab, labels, intents, model, threshold = 0.2):
+    words_token_lemma = [majka_lemma(word.lower()) for word in nltk.word_tokenize(text)]
+    bag_of_words = [0] * len(vocab)
+    for w in words_token_lemma:
+        for i, word in enumerate(vocab):
+            if word == w:
+                bag_of_words[i] = 1
 
-  #tokenizing and lemmatizing words
-  words_token_lemma = [majka_lemma(word.lower()) for word in nltk.word_tokenize(text)]
-
-  #bag of words
-  bag_of_words = [0] * len(vocab)
-
-  for w in words_token_lemma:
-    for i, word in enumerate(vocab):
-      if word == w:
-        bag_of_words[i] = 1
-
-
-  #predicting probabilities for each class.
-  y_probs = model.predict(num.array([bag_of_words]), verbose = 0)[0]
-
-  #storing the probabilities and the indices if the probability exceeds given threshold.
-  y_preds = [[idx, result] for idx, result in enumerate(y_probs) if result > threshold]
-  y_preds.sort(key = lambda x: x[1], reverse = True)
-
-  #storing the classes names which have the probabilities higher than the threshold.
-  pred_classes = []
-  for y_pred in y_preds:
-    pred_classes.append(labels[y_pred[0]])
-  try:
-    pred_class = pred_classes[0]
-    intents_list = intents['intents']
-  
-    for intent in intents_list:
-        if intent['tag'] == pred_class:
-            result = intent['responses'][0]
-  except:
+    y_probs = model.predict(np.array([bag_of_words]), verbose = 0)[0]
+    y_preds = [[idx, result] for idx, result in enumerate(y_probs) if result > threshold]
+    y_preds.sort(key = lambda x: x[1], reverse = True)
+    pred_classes = []
+    for y_pred in y_preds:
+        pred_classes.append(labels[y_pred[0]])
+    try:
+        pred_class = pred_classes[0]
+        intents_list = intents['intents']
+        for intent in intents_list:
+            if intent['tag'] == pred_class:
+                result = intent['responses'][0]
+    except:
         result = "Na tuto otázku nemám odpověď. Zkuste jinou otázku."
-  return result  
+    
+    return result  
