@@ -8,8 +8,8 @@ from flask import Flask, render_template, request
 
 from src_PN.PN_functions import update_responses, pred_class
 
-with open('./files/intents.json') as json_data:
-    intents = json.load(json_data)
+with open('./files/intents.json', 'r',encoding = "utf-8") as f:
+    intents = json.load(f)
 
 with open('./files/words.pkl', 'rb') as f:
     words = pickle.load(f)
@@ -21,12 +21,9 @@ nn_model = tf.keras.models.load_model('NN_PN.h5')
 
 update_responses(intents)
 
-
 seed = 1998
 np.random.seed(seed)
 tf.random.set_seed(seed)
-
-
 
 app = Flask(__name__)
 
