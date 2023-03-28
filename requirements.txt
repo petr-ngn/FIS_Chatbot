@@ -30,7 +30,6 @@ google-auth-oauthlib==0.4.6
 google-pasta==0.2.0
 grpcio==1.42.0
 h5py==3.7.0
-icc_rt==2022.1.0
 icu==58.2
 idna==3.4
 importlib-metadata==6.1.0
