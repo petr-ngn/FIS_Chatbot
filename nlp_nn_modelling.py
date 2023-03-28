@@ -3,6 +3,9 @@ import tensorflow as tf
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '10'
 import json
+import nltk
+nltk.download('punkt')
+
 
 from src_PN.PN_functions import update_responses, text_prep_modelling, export_files, nn_tuning
 

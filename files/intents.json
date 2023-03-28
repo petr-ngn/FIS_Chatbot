@@ -385,6 +385,18 @@
                ]
           },
           {
+               "tag": "Doprava",
+               "patterns": [
+                    "Kdy jede MHD",
+                    "Autobus",
+                    "Tramvaj",
+                    "Spoje MHD"
+               ],
+               "responses": [
+                    "Ano, je stále tady."
+               ]
+          },
+          {
                "tag": "menza",
                "patterns": [
                     "Co mají dneska v menze k jídlu?",
