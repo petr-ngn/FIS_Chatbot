@@ -1,4 +1,3 @@
-_tflow_select==2.3.0
 absl-py==1.4.0
 aiohttp==3.8.1
 aiosignal==1.3.1
