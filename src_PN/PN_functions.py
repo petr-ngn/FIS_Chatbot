@@ -196,7 +196,7 @@ def nn_tuning(X_train, y_train, seed: int):
     
     #Bayesian optimization of NN while maximizing Accuracy score with 100 iterations.
     bayes_opt = BayesianOptimization(model_building,
-                                          objective = 'accuracy', overwrite = False,
+                                          objective = 'accuracy', overwrite = True,
                                            max_trials = 100, project_name = 'Bayes_NN',
                                            seed = seed)
     
