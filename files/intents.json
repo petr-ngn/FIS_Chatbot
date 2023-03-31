@@ -1,6 +1,121 @@
 {
      "intents": [
           {
+               "tag": "Pozdrav",
+               "patterns": [
+                    "Ahoj",
+                    "Zdar",
+                    "Dobrý den",
+                    "Zdravím"
+               ],
+               "responses": [
+                    "Zdravím, jak vám mohu pomoci?"
+               ]
+          },
+          {
+               "tag": "Vedení fakulty",
+               "patterns": [
+                    "Kdo vede fis",
+                    "vedení fakulty",
+                    "kdo řídí fakultu",
+                    "Děkan",
+                    "Kdo je děkanem fisu",
+                    "Kdo je děkanem fakulty informatiky a statistiky",
+                    "Proděkan",
+                    "Proděkanka",
+                    "Vedení fis"
+               ],
+               "responses": [
+                    "Fakultu Informatiky a Statistiky vede děkan prof. Ing. Jakub Fischer, Ph.D. Proděkankou pro studijní a pedagogickou činnost je Ing. Kristýna Vltavská, Ph.D. Proděkanem pro tvůrčí činnost a zahraniční vztahy a zároveň statutárním zástupcem děkana je prof. Ing. Petr Doucek, CSc. Ing. Dušan Chlapek, Ph.D. zastává pozici proděkana pro rozvoj, transfer znalostí a spolupráci s praxí. Akademickým ředitelem cizojazyčných studijních programů je doc. Ing. Mgr. Petr Mazouch, Ph.D. Manažerem komunikace a marketingu je Ing. Zdeněk Vondra, Ph.D. Tajemnicí fakulty je Ing. Marie Gvoždiaková."
+               ]
+          },
+          {
+               "tag": "Jak se máš",
+               "patterns": [
+                    "Jak se máš",
+                    "Jak je",
+                    "Jak se cítíš",
+                    "Jakou máš náladu",
+                    "Jak se máte",
+                    "jaký máš den"
+               ],
+               "responses": [
+                    "Pocity ani nálady nemám, ale zato ti můžu odpovědět na nějakou otázku ohledně studia na VŠE"
+               ]
+          },
+          {
+               "tag": "film",
+               "patterns": [
+                    "Film",
+                    "O číslech a lidech",
+                    "Film FIS VŠE",
+                    "více informací o fakultě",
+                    "širší informace",
+                    "chci se dozvědět více o FISu",
+                    "Více informací",
+                    "širší info o fakultě",
+                    "dokumentární film FIS",
+                    "úspěchy fakulty"
+               ],
+               "responses": [
+                    "Další informace o fakultě se můžete dozvědět v krátkém dokumentárním filmu O číslech a lidech: https://www.youtube.com/watch?v=X-ao_V4fGpE"
+               ]
+          },
+          {
+               "tag": "Studijní oddělení",
+               "patterns": [
+                    "Studijní oddělení",
+                    "Konzultační hodiny studijní oddělení",
+                    "Konzultační hodiny studijního oddělení",
+                    "Úřední hodiny studijní oddělení",
+                    "Úřední hodiny studijního oddělení",
+                    "Studijní fis"
+                   
+               ],
+               "responses": [
+                    "Studijní oddělení má úřední hodiny v pondělí od 8:30 do 11:30 a od 13:00 do 15:00 a ve středu od 8:30 do 11:30 a od 13:00 do 15:00. Ing. Jana Sedláčková je zodpovědná za bakalářské studium a kontaktní centrum InSIS. Jana Hudčeková je příslušná pro bakalářské studium a má svou kancelář v místnosti 410 NB. Její telefonní číslo je 224 095 440 a e-mailová adresa jana.hudcekova@vse.cz. Iva Hudcová se stará o magisterské studium a její místnost je 409 NB. Pro kontakt s ní lze použít telefonní číslo 224 095 487 nebo e-mailovou adresu hudcovai@vse.cz. Ing. Tereza Krajíčková, DiS. je zodpovědná za doktorské studium a její kancelář se nachází v místnosti 412 NB. Lze ji kontaktovat prostřednictvím telefonního čísla 224 095 464 nebo e-mailové adresy tereza.krajickova@vse.cz."
+               ]
+          },
+          {
+               "tag": "Přijímací řízení",
+               "patterns": [
+                    "Přijímací řízení",
+                    "Přijímačky",
+                    "Přihláška ke studiu",
+                    "Termíny přijímacího řízení",
+                    "Do kdy si musím podat přihlášku ke studiu",
+                    "Přihlášení ke studiu",
+                    "Podání přihlášky",
+                    "Důležité termíny",
+                    "Přihlášení ke studiu",
+                    "Deadline na podání přihlášky",
+                    "Přihlášky na akademický rok 2023/2024",
+                    "Termín podání přihlášky"
+               ],
+               "responses": [
+                    "Podání přihlášky na akademický rok 2023/2024 včetně připsání platby na účet musí proběhnout nejpozději 30. 4. 2023"
+               ]
+          },
+          {
+               "tag": "Cena přihlášky",
+               "patterns": [
+                    "Cena přihlášky",
+                    "Kolik stojí podání přihlášky ke studiu",
+                    "Cena přihlášky ke studiu",
+                    "Cena přihlášky",
+                    "Kolik stojí přihláška",
+                    "Cena přijímacího přízení",
+                    "Poplatek za podání přihlášky",
+                    "Poplatek za přijímačky",
+                    "Cena",
+                    "Platba",
+                    "Poplatek"
+               ],
+               "responses": [
+                    "Poplatek za úkony spojené s přijímacím řízením činí 880 Kč a lze ho uhradit buď okamžitě při zadávání přihlášky platební kartou, nebo převodem na účet (číslo účtu a variabilní symbol obdrží uchazeč na e-mailovou adresu uvedenou v přihlášce). Platba musí být připsána na účet VŠE nejpozději do 30. dubna 2023."
+               ]
+          },
+          {
                "tag": "bakalářský program",
                "patterns": [
                     "Jaké tu jsou bakalářské programy?",
@@ -393,7 +508,7 @@
                     "Spoje MHD"
                ],
                "responses": [
-                    "Ano, je stále tady."
+                    "Neptej se a utíkej na zastávku!"
                ]
           },
           {
