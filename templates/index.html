@@ -1,122 +1,127 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>FIS Chatbot - Petr Nguyen</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://drive.google.com/uc?export=view&id=1p9XTEirGfPFD5coffCQDrYCxboMI6Q2Y">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>FIS VŠE ChatBot - Petr Nguyen</title>
     <style>
-      body {
-        font-family: 'Roboto', sans-serif;
-        background-color: #f8f9fa;
-      }
-      h1 {
-        background-color: #076d52;
-        color: white;
-        display: inline-block;
-        font-size: 2em;
-        margin: 0;
-        padding: 10px;
-        border-radius: 5px;
-      }
-      #chatbox {
-        margin-left: auto;
-        margin-right: auto;
-        width: 70%;
-        margin-top: 60px;
-      }
-      #userInput {
-        margin-left: auto;
-        margin-right: auto;
-        width: 70%;
-        margin-top: 60px;
-      }
-      #textInput {
-        width: 90%;
-        padding: 5px 10px;
-        border: none;
-        border-bottom: 3px solid #076d52;
-        font-family: 'Roboto', sans-serif;
-        font-size: 17px;
-      }
-      .userText, .botText {
-        font-size: 17px;
-        line-height: 30px;
-        margin-bottom: 10px;
-        justify-content: center;
-        align-items: center;
-      }
-      .userText span, .botText span {
-        padding: 10px;
-        border-radius: 5px;
-        display: inline-block;
-        justify-content: center;
-        align-items: center;
-      }
-      .userText {
-        color: #000;
-        text-align: right;
-      }
-      .userText span {
-        background-color: #c9c9c9;
-      }
-      .botText {
-        color: #fff;
-        text-align: left;
-      }
-      .botText span {
-        background-color: #076d52;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col text-center">
-          <h1>
-            FIS Chatbot - Petr Nguyen
-          </h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div id="chatbox">
-            <p class="botText">
-              <span>Ahoj! Já jsem Petrův chatbot, co pro tebe můžu udělat?</span>
-            </p>
-          </div>
-          <div id="userInput">
-            <input id="textInput" type="text" name="msg" placeholder="Napiš svou otázku...">
-          </div>
-        </div>
-      </div>
-    </div>
-    <script>
-    function getBotResponse() {
-      var rawText = $("#textInput").val();
-      var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
-      $("#textInput").val("");
-      $("#chatbox").append(userHtml);
-      document
-        .getElementById("userInput")
-        .scrollIntoView({ block: "start", behavior: "smooth" });
-      $.get("/get", { msg: rawText }).done(function(data) {
-                          var botHtml = '<p class="botText"><span>' + data + "</span></p>";
-                          $("#chatbox").append(botHtml);
-                          document
-                            .getElementById("userInput")
-                            .scrollIntoView({ block: "start", behavior: "smooth" });
-                          });
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
         }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 200vh;
+            white-space: nowrap;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 1.5em;
+            line-height: 1;
+            text-align: center;
+            font-weight: bold;
+        }
+        .logo {
+            margin-bottom: 3em;
+            width: 100%;
+            max-width: 500px;
+        }
+        .language-option {
+            background-color: #009A82;
+            color: #fff;
+            border: none;
+            font-size: 1.2em;
+            padding: 0.8em 1.5em;
+            margin-top: 1.5em;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .language-option:hover {
+            background-color: #064c3f;
+        }
+        .language-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #009A82;
+            color: #fff;
+            border: none;
+            font-size: 1.1em;
+            padding: 1em;
+            margin-top: 3em;
+            text-align: center;
+            cursor: pointer;
+            width: 150px;
+            border-radius: 5px;
+        }
+        .language-box:hover {
+            background-color: #009A82;
+        }
+        .flag {
+            width: 50px;
+            height: 30px;
+            margin-bottom: 0.5em;
+            align-items: center;
+        }
+        .row {
+          margin-bottom: 2em;
+          display: flex;
+        }
+        .language-text {
+          font-size: 1.1em;
+          text-align: center;
+          flex-grow: 1;
+        }
+    </style>
+    <script>
+        function selectLanguage(language) {
+            let form = document.createElement('form');
+            form.method = 'post';
+            form.action = "{{ url_for('select_language') }}";
 
-        $("#textInput").keypress(function(e) {
-          if (e.which == 13) {
-            getBotResponse();
-          }
-        });
+            let languageInput = document.createElement('input');
+            languageInput.type = 'hidden';
+            languageInput.name = 'language';
+            languageInput.value = language;
+            form.appendChild(languageInput);
+
+            document.body.appendChild(form);
+            form.submit();
+        }
     </script>
-  </body>
-</html>
-          
+</head>
+<body>
+    <div class="container">
+        <h1>FIS VŠE ChatBot - Petr Nguyen</h1>
+        <img src="https://drive.google.com/uc?export=view&id=18Genepl3IaqUF0YRCbxylWwOK-r01YJ3" alt="Logo" class="logo">
+        <h2>Select Language</h2>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="language-box" onclick="selectLanguage('czech')">
+                    <img src="https://www.worldometers.info/img/flags/small/tn_ez-flag.gif" alt="Czech Flag" class="flag">
+                    <span class="language-text">Czech</span>
+                </div>
+            </div>
+                <div class="col-sm-6">
+                    <div class="language-box" onclick="selectLanguage('english')">
+                        <img src="https://www.worldometers.info/img/flags/small/tn_uk-flag.gif" alt="UK Flag" class="flag">
+                        <span class="language-text">English</span>
+                    </div>
+                </div>
+        </div>
+                <p style="text-align: center;">© 2023 - Petr Nguyen | Faculty of Informatics and Statistics, Prague University of Economics and Business</p>
+    </div>
+                
+</body>
+ </html>
