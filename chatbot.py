@@ -1,42 +1,76 @@
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '10'
+
+import logging
+logging.getLogger('tensorflow').setLevel(logging.ERROR)
+
 import numpy as np
 import tensorflow as tf
-import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '10'
-import json
-import pickle
-from flask import Flask, render_template, request
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 
-from src_PN.PN_functions import update_responses, pred_class
+import nltk
+nltk.download('punkt', quiet = True)
+nltk.download("wordnet", quiet = True)
+nltk.download('stopwords', quiet = True)
 
-with open('./files/intents.json', 'r',encoding = "utf-8") as f:
-    intents = json.load(f)
+import logging
+logging.getLogger('tensorflow').setLevel(logging.ERROR)
 
-with open('./files/words.pkl', 'rb') as f:
-    words = pickle.load(f)
-
-with open('./files/classes.pkl', 'rb') as f:
-    classes = pickle.load(f)
-
-nn_model = tf.keras.models.load_model('NN_PN.h5')
-
-update_responses(intents)
+from src_PN.PN_functions import pred_class
+from flask import Flask, render_template, request, redirect, url_for
 
 seed = 1998
 np.random.seed(seed)
 tf.random.set_seed(seed)
 
+
+
 app = Flask(__name__)
 
-@app.route("/")
-def home():
-    return render_template("index.html")
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 
-@app.route("/get")
-def chatbot_response():
-    the_question = request.args.get('msg')
-    response = pred_class(the_question, words, classes, intents, nn_model, threshold = 0.2)
+@app.route('/select_language', methods = ['POST'])
+def select_language():
+
+    language = request.form.get('language')
+
+    if language == 'czech':
+        return redirect(url_for('czech_chatbot'))
+    elif language == 'english':
+        return redirect(url_for('english_chatbot'))
+    else:
+        return redirect(url_for('index'))
+
+
+@app.route('/czech_chatbot')
+def czech_chatbot():
+    return render_template('czech_chatbot.html', language = 'czech')
+
+
+@app.route('/english_chatbot')
+def english_chatbot():
+    return render_template('english_chatbot.html', language = 'english')
+
+
+@app.route('/get_response', methods = ['GET'])
+def get_response():
+    
+    language = request.args.get('lang')
+    
+    if language == 'czech':
+        the_question = request.args.get('msg')
+        response = pred_class(the_question, 'cs_NN')
+
+    elif language == 'english':
+        the_question = request.args.get('msg')
+        response = pred_class(the_question, 'en_NN')
+
     return str(response)
 
+
 if __name__ == '__main__':
-    app.run(host = 'localhost', debug = True) 
+    app.run(port = 5050, debug = True)
