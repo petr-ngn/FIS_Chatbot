@@ -1,7 +1,7 @@
 name: fis_chatbot
 channels:
-  - anaconda
   - conda-forge
+  - anaconda
   - defaults
 dependencies:
   - _tflow_select=2.3.0=mkl
@@ -147,6 +147,7 @@ dependencies:
   - zlib=1.2.13=h8cc25b3_0
   - pip:
     - cryptography==40.0.1
+    - deep-translator==1.10.1
     - dill==0.3.6
     - lxml==4.9.2
     - majka==0.9
@@ -155,6 +156,7 @@ dependencies:
     - pox==0.3.2
     - ppft==1.7.6.6
     - pyexecjs==1.5.1
+    - stop-words==2018.7.23
     - tqdm==4.65.0
     - translators==5.6.3
 prefix: C:\Users\ngnpe\anaconda3\envs\fis_chatbot
