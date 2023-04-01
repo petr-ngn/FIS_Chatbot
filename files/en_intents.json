@@ -1,0 +1,487 @@
+{
+     "intents": [
+          {
+               "tag": "bachelor program",
+               "patterns": [
+                    "What are the bachelor's programs here?",
+                    "bachelor's program",
+                    "bachelor's programs",
+                    "bachelor study program",
+                    "bachelor degree programs",
+                    "bachelor",
+                    "Bc. What are the bachelor study programs here?",
+                    "What bachelor programs can I study here?"
+               ],
+               "responses": [
+                    "The following bachelor's programs are taught at FIS VŠE: Applied Informatics; Data Analytics; Information Media and Services; Mathematical Methods in Economics; Multimedia in Economic Practice"
+               ]
+          },
+          {
+               "tag": "master's program",
+               "patterns": [
+                    "What are the master's programs here?",
+                    "master's program",
+                    "master's programs",
+                    "master's study program",
+                    "master's degree programs",
+                    "master",
+                    "Ing.",
+                    "What follow-up master's programs are there?",
+                    "subsequent master's program",
+                    "subsequent master's programs",
+                    "follow-up master's study program",
+                    "subsequent master's study programs",
+                    "subsequent master"
+               ],
+               "responses": [
+                    "The following master's programs are taught at FIS VŠE: Information Management; Business Intelligence (IST); Data and Analytics for Business; Econometrics and Operational Research; Economic Demography; Statistics; Business Analysis (IST); Cognitive Informatics; Business Informatics Management (IST) ; UX Research and Design (IST); Information Systems Development (IST); Knowledge and Web Technologies,; Information Systems Management; Economic Data Analysis"
+               ]
+          },
+          {
+               "tag": "minor specialization",
+               "patterns": [
+                    "What are the minors?",
+                    "side specializition",
+                    "what are the minors",
+                    "sideline",
+                    "sides"
+               ],
+               "responses": [
+                    "The following minor specializations are taught at FIS VŠE: Analyzes of socio-economic data; Data engineering; Demography and social analysis; Econometrics; Informatics in business; Intelligent systems; Communication, interpretation, multimedia; Quantitative analysis; Quantitative methods for informatics; Quantitative methods in management ; Multimedia Communication; Insurance Engineering; Information Presentation and Communication; Business Performance Management; Security Management"
+               ]
+          },
+          {
+               "tag": "doctoral program",
+               "patterns": [
+                    "What are the PhD programs here?",
+                    "doctoral program",
+                    "doctoral programs",
+                    "doctoral study program",
+                    "doctoral study programs",
+                    "doctor",
+                    "doctoral student",
+                    "doctoral",
+                    "PhD",
+                    "Ph.D.",
+                    "What are the PhD programs here?",
+                    "doctoral program",
+                    "doctoral programs",
+                    "doctoral study program",
+                    "doctoral study programs"
+               ],
+               "responses": [
+                    "The following doctoral programs are taught at FIS VŠE: Applied Informatics; Econometrics and Operational Research; Statistics"
+               ]
+          },
+          {
+               "tag": "bachelor course Multimedia in economic practice",
+               "patterns": [
+                    "bachelor course Multimedia in economic practice",
+                    "bachelor courses Multimedia in economic practice",
+                    "bachelor's course Multimedia in economic practice",
+                    "bachelor's courses Multimedia in economic practice",
+                    "Multimedia in economic practice",
+                    "What are the compulsory subjects on the Bachelor's program Multimedia in Economic Practice?"
+               ],
+               "responses": [
+                    "On the bachelor's program Multimedia in economic practice, the following compulsory subjects are taught: 3D graphics; Communication design; Digital photography; Graphics and animation; Multimedia project seminar; Multimedia technology; Computer graphics; Practice in multimedia; Presentation skills; Profession in audiovisual production; Project audiovisual communication; Advertising agency; Multimedia project management (creativity and communication); Semiotics of multimedia; Creative processing of language and text; Introduction to multimedia; Web design and user interfaces; Basics of audiovisual communication; Basics of digital photography; Basics of computer graphics; Sound and multimedia"
+               ]
+          },
+          {
+               "tag": "undergraduate course Data Analytics",
+               "patterns": [
+                    "undergraduate course Data Analytics",
+                    "undergraduate courses in Data Analytics",
+                    "undergraduate course in Data Analytics",
+                    "undergraduate Data Analytics courses",
+                    "Data Analytics",
+                    "What are the required subjects in the Bachelor of Data Analytics program?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught in the Data Analytics bachelor's program: Data mining in the cloud; Database; Data quality; Data minimum; External data and information sources; Data analytics tools; Neural networks and deep learning; Principles of digital communication; Data project management; Machine Learning 1; Machine Learning 2; Text Analytics 1; Text Analytics 2; Introduction to Python Programming; Introduction to R Programming; Basics of Business Intelligence; Big Data Processing; Description, Visualization and Comparison of Economic Data; Econometric Models; Exploratory Analysis data; Mathematical informatics; Mathematical statistics; Mathematics for informatics; Optimization models; Probability and random processes; Surveys and questionnaire surveys; Regression models; Banking and financial institutions; Economics 1; Critical and analytical thinking; Presentation and storytelling; Accounting I.; Basics information ethics and law; Basics of marketing for informatics and statistics; Basics of professional work"
+               ]
+          },
+          {
+               "tag": "bachelor course Applied Informatics",
+               "patterns": [
+                    "bachelor's course Applied Informatics",
+                    "bachelor courses Multimedia in economic practice",
+                    "bachelor's course Applied Informatics",
+                    "bachelor's courses Applied Informatics",
+                    "Applied Informatics",
+                    "What are the compulsory subjects on the Bachelor's program in Applied Informatics?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught in the Applied Informatics bachelor's program: Analysis and design of information systems; Bachelor's seminar; Security of information systems; Database; Data minimum; Information and communication technologies; IT Governance; Quantitative management; Business information systems; Programming in Java; Simulation models for informatics; Software engineering; UX design; Basics of professional work; Information and knowledge processing; Economics 1; Corporate finance; Financial theory, policy and institutions; Management for informatics and statistics; Mathematics for informatics; Law; Statistics for informatics; Strategic analysis for informatics and statistics; Accounting I.; Basics of marketing for informatics and statistics"
+               ]
+          },
+          {
+               "tag": "bachelor course Information Media and Services",
+               "patterns": [
+                    "Bachelor subject Information Media and Services",
+                    "bachelor's courses Information media and services",
+                    "Bachelor's course Information Media and Services",
+                    "bachelor's courses Information media and services",
+                    "Information media and services",
+                    "What are the compulsory subjects on the Information Media and Services bachelor's program?"
+               ],
+               "responses": [
+                    "On the Information Media and Services bachelor's program, the following compulsory subjects are taught: Bachelor's seminar; Security of information systems; Database; Data minimum; Digital libraries and archives; Information and society; Information architecture; Information and communication technologies; Integration of information resources; Mathematical foundations of informatics ; Business and corporate information; Knowledge organization; Java programming; Psychology of creativity; Research strategies and systems; Multimedia semiotics; Theory and practice of teamwork; Basics of professional work; Information and knowledge processing; Economics 1; Business finance; Mathematics for computer science; Law ; Statistics for informatics; Strategic analysis for informatics and statistics; Accounting I.; Basics of marketing for informatics and statistics"
+               ]
+          },
+          {
+               "tag": "Bachelor subject Mathematical Methods in Economics",
+               "patterns": [
+                    "Bachelor subject Mathematical Methods in Economics",
+                    "bachelor's subjects Mathematical methods in economics",
+                    "Bachelor's course Mathematical Methods in Economics",
+                    "bachelor's courses Mathematical methods in economics",
+                    "Mathematical Methods in Economics",
+                    "What are the compulsory subjects on the Bachelor's program Mathematical Methods in Economics?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught on the Bachelor's program Mathematical Methods in Economics: Demographic Projections; Mathematics 2; Methods of Statistical Comparison; Operational Research Models; Statistical Methods 1; Stochastic Models; Introduction to Programming in R; Introduction to Probability Theory and Mathematical Statistics; Basics of data analysis; Fundamentals of demography; Economics 1; Financial theory, politics and institutions; Informatics for statistics; Management for informatics and statistics; Mathematics for economists; Law; Accounting I.; Fundamentals of marketing for informatics and statistics ... Other compulsory subjects then varies according to the chosen specialization"
+               ]
+          },
+          {
+               "tag": "Bachelor subject Economic Demography",
+               "patterns": [
+                    "Bachelor subject Economic Demography",
+                    "bachelor's subjects Economic Demography",
+                    "Bachelor's course Economic Demography",
+                    "Bachelor's courses Economic Demography",
+                    "Economic Demography",
+                    "Mathematical methods in economics, specialization Economic demography (Mathematical methods in economics)",
+                    "What are the compulsory subjects for the specialization Economic Demography (Mathematical Methods in Economics)?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught in the specialization Economic Demography (part of the Bachelor's program Mathematical Methods in Economics): Bachelor's Seminar; Demographic Practice for Statistics; Economic Demography I; Economic and Social Statistics; Economic Policy for Statistics; Regional Demography; Statistical Methods 2; Social politics; Introduction to socio-economic demography; Sources and databases of demographic data"
+               ]
+          },
+          {
+               "tag": "Bachelor course Data analysis and modeling",
+               "patterns": [
+                    "bachelor's course Data analysis and modeling",
+                    "Bachelor subjects Data analysis and modeling",
+                    "Bachelor's course Data analysis and modeling",
+                    "Bachelor's courses Data analysis and modeling",
+                    "Data analysis and modeling",
+                    "Mathematical methods in economics, specialization Data analysis and modeling (Mathematical methods in economics)",
+                    "What are the compulsory subjects for the specialization Data analysis and modeling (Mathematical methods in economics)?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught for the specialization Data analysis and modeling (part of the Bachelor's program Mathematical Methods in Economics): Econometrics 1; Economic and social statistics; Economic policy for statistics; Linear models; Statistical methods 2; Statistical computing environment; Probability theory and mathematical statistics 1; Introduction to statistics - Bayesian approach; Calculations in the insurance industry; Basics of the insurance industry"
+               ]
+          },
+          {
+               "tag": "bachelor's course Econometrics and Operational Research",
+               "patterns": [
+                    "bachelor's course Econometrics and operational research",
+                    "bachelor's courses Econometrics and operational research",
+                    "Bachelor's course Econometrics and Operational Research",
+                    "Bachelor courses in Econometrics and Operational Research",
+                    "Econometrics and Operations Research",
+                    "Mathematical methods in economics, specialization Econometrics and operational research (Mathematical methods in economics)",
+                    "What are the compulsory subjects for the specialization Econometrics and Operations Research (Mathematical Methods in Economics)?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught for the specialization Econometrics and operational research (part of the Bachelor's program Mathematical Methods in Economics): Bachelor's professional seminar; Econometrics 1; Econometrics 2; Linear models; Programming for mathematical modeling; Project management; Simulation models of economic processes; Game theory and economic decision-making"
+               ]
+          },
+          {
+               "tag": "Master's course Statistics",
+               "patterns": [
+                    "Master's course Statistics",
+                    "Master's courses Statistics",
+                    "Master's course Statistics",
+                    "Master's courses in Statistics",
+                    "Statistics",
+                    "What are the compulsory subjects in the Master's program in Statistics?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught in the Statistics master's program: Time series; Multivariate statistics; System of national accounts; Statistical judgments; Bayesian statistics; Economics II.; Regression; Non-parametric methods and survival analyses; Theory of sample surveys"
+               ]
+          },
+          {
+               "tag": "Master's course Information Management",
+               "patterns": [
+                    "Master's course Information Management",
+                    "Master's courses Information Management",
+                    "Master's course Information Management",
+                    "Master's courses Information Management",
+                    "Information management",
+                    "What are the compulsory subjects in the master's program Information Management?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught in the Information Management master's program: Information Management Audit; Digital Forensic Analysis; Project Governance; Systems Theory and Information Ethics; Information Systems Security Management; Organization and Information; Information Management; Diploma Seminar; Social Informatics"
+               ]
+          },
+          {
+               "tag": "Master's course DAB",
+               "patterns": [
+                    "Master's subject DAB",
+                    "DAB master's courses",
+                    "DAB master's course",
+                    "DAB Master's Courses",
+                    "DAB",
+                    "Data and Analytics for Business Master's Course Data and Analytics for Business",
+                    "Master's courses Data and analytics for business",
+                    "Master's course Data and analytics for business",
+                    "Master's courses Data and analytics for business",
+                    "What are the compulsory subjects on the master's program Data and analytics for business?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught in the DAB master's program: Business analytics architectures; Business and business transformation; Data project; Information ethics, regulation and law; Advanced business analytics; Data and analytics management for business; Statistical methods for business; Trends and news in business analytics I; Trends and news in business analytics II; Basic analytics and reporting"
+               ]
+          },
+          {
+               "tag": "Master's course Business Intelligence (IST)",
+               "patterns": [
+                    "Master's course Business Intelligence (IST)",
+                    "Master's courses in Business Intelligence (IST)",
+                    "Master's course Business Intelligence (IST)",
+                    "Master's courses in Business Intelligence (IST)",
+                    "Business Intelligence (IST)",
+                    "What are the required subjects in the Business Intelligence (IST) master's program?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught in the Business Intelligence (IST) master's program: Architectures of business analytics; Competitive Intelligence; IT and the anatomy of the firm; Information modeling of organizations; Thesis project for the Business Intelligence specialization; Management of enterprise informatics; Management of IS/CT projects; Self-Service Business Intelligence; Management of data and analytics for business; Research in the field of applied informatics and its presentation; Fundamentals of analytics and reporting"
+               ]
+          },
+          {
+               "tag": "master's course Economic Demography",
+               "patterns": [
+                    "Master's course Economic Demography",
+                    "Master's courses Economic Demography",
+                    "Master's course Economic Demography",
+                    "Master's courses in Economic Demography",
+                    "Economic Demography",
+                    "What are the compulsory subjects on the Master's program in Economic Demography?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught in the master's program Economic Demography: Actuarial Demography; Applied Demography; Economic Demography II; Time Series; Regression; Multivariate Statistics; Social Statistics; Diploma Seminar; Economics II; General Demography"
+               ]
+          },
+          {
+               "tag": "master's course Econometrics and operational research",
+               "patterns": [
+                    "master's course Econometrics and operational research",
+                    "master's courses Econometrics and operational research",
+                    "master's course Econometrics and operational research",
+                    "master's courses Econometrics and operational research",
+                    "Econometrics and Operations Research",
+                    "What are the compulsory subjects on the master's program Econometrics and Operations Research?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught in the master's program Econometrics and Operational Research: Advanced Econometrics 1; Practicum in Econometrics; Quantitative Economics; Discrete Models; Advanced Econometrics 2; Group Decision Making; Economics II.; Multicriteria Decision Making; Practicum in Operational Research; Nonlinear Models; State and diploma seminar"
+               ]
+          },
+          {
+               "tag": "Master's course Business Analysis (IST)",
+               "patterns": [
+                    "Master's course Business Analysis (IST)",
+                    "Master's courses in Business Analysis (IST)",
+                    "Master's course Business Analysis (IST)",
+                    "Master's courses in Business Analysis (IST)",
+                    "Business Analysis (IST)",
+                    "What are the compulsory subjects in the Master's program in Business Analysis (IST)?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught on the Master's program in Business Analysis (IST): Business Process Engineering; Information Modeling of Organizations; IT and the Anatomy of a Firm; Diploma Thesis Project for the specialization Business Analysis; Business Informatics Management; IS/ICT Project Management; Systems Simulation; Systems for supporting business processes; Research in the field of applied informatics and its presentation"
+               ]
+          },
+          {
+               "tag": "master's course Economic Demography",
+               "patterns": [
+                    "Master's course Economic Demography",
+                    "Master's courses Economic Demography",
+                    "Master's course Economic Demography",
+                    "Master's courses in Economic Demography",
+                    "Economic Demography",
+                    "What are the compulsory subjects on the Master's program in Economic Demography?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught in the master's program Economic Demography: Actuarial Demography; Applied Demography; Economic Demography II; Time Series; Regression; Multivariate Statistics; Social Statistics; Diploma Seminar; Economics II; General Demography"
+               ]
+          },
+          {
+               "tag": "master's course Econometrics and operational research",
+               "patterns": [
+                    "master's course Econometrics and operational research",
+                    "master's courses Econometrics and operational research",
+                    "master's course Econometrics and operational research",
+                    "master's courses Econometrics and operational research",
+                    "Econometrics and Operations Research",
+                    "What are the compulsory subjects on the master's program Econometrics and Operations Research?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught in the master's program Econometrics and Operational Research: Advanced Econometrics 1; Practicum in Econometrics; Quantitative Economics; Discrete Models; Advanced Econometrics 2; Group Decision Making; Economics II.; Multicriteria Decision Making; Practicum in Operational Research; Nonlinear Models; State and diploma seminar"
+               ]
+          },
+          {
+               "tag": "Master's course Business Analysis (IST)",
+               "patterns": [
+                    "Master's course Business Analysis (IST)",
+                    "Master's courses in Business Analysis (IST)",
+                    "Master's course Business Analysis (IST)",
+                    "Master's courses in Business Analysis (IST)",
+                    "Business Analysis (IST)",
+                    "What are the compulsory subjects in the Master's program in Business Analysis (IST)?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught on the Master's program in Business Analysis (IST): Business Process Engineering; Information Modeling of Organizations; IT and the Anatomy of a Firm; Diploma Thesis Project for the specialization Business Analysis; Business Informatics Management; IS/ICT Project Management; Systems Simulation; Systems for supporting business processes; Research in the field of applied informatics and its presentation"
+               ]
+          },
+          {
+               "tag": "Master's course Cognitive Informatics",
+               "patterns": [
+                    "Master's course Cognitive Informatics",
+                    "Master's courses Cognitive Informatics",
+                    "Master's course Cognitive Informatics",
+                    "Master's courses in Cognitive Informatics",
+                    "Cognitive Informatics",
+                    "What are the compulsory subjects in the Master's program in Cognitive Informatics?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught in the Cognitive Informatics master's program: Theory of spontaneous order and self-organization; Knowledge and ontological engineering; Systems simulation; KI Diploma's 7 seminar; Research in the field of applied informatics and its presentation; Information modeling of organizations; Cognitive science; Basics of neuroscience"
+               ]
+          },
+          {
+               "tag": "Master's course Business Informatics",
+               "patterns": [
+                    "Master's course Business Informatics",
+                    "Master's courses Business Informatics",
+                    "Master's course Business Informatics",
+                    "Master's courses Business Informatics",
+                    "Business informatics",
+                    "What are the compulsory subjects on the Master's program in Business Informatics?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught in the master's program Business Informatics: IS/ICT project management; Business informatics management; Improving IS building processes; Gaining knowledge from databases; Diploma seminar for distance learning; Text information processing methods and tools; Information management; Optimization business processes; Audit of information systems"
+               ]
+          },
+          {
+               "tag": "Master's course Business Informatics Management (IST)",
+               "patterns": [
+                    "Master's course Business Informatics Management (IST)",
+                    "Master's courses Business Informatics Management (IST)",
+                    "Master's course Business Informatics Management (IST)",
+                    "Master's courses Business Informatics Management (IST)",
+                    "Enterprise Informatics Management (IST)",
+                    "What are the compulsory subjects in the Master's program in Business Informatics Management (IST)?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught in the master's program Business Informatics Management (IST): Financial Management of Business Informatics; Information Modeling of Organizations; Innovation of Information Systems; Integration in Business Information Systems; IT and the Anatomy of a Firm; Enterprise Architecture as a Transformation Management Method; Diploma Project for the specialization Business Informatics Management; IT Management in Practice; Business Informatics Management; IS/ICT Project Management; Research in Applied Informatics and its Presentation"
+               ]
+          },
+          {
+               "tag": "master course UX research and design (IST)",
+               "patterns": [
+                    "master course UX research and design (IST)",
+                    "master's courses UX research and design (IST)",
+                    "master's course UX research and design (IST)",
+                    "master's courses UX research and design (IST)",
+                    "UX Research and Design (IST)",
+                    "What are the compulsory subjects in the Master's program UX Research and Design (IST)?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught on the master's program UX research and design (IST): Service design; Design sprint; Design of user interfaces; Human-centered design; Information modeling of organizations; IT and anatomy of the company; Diploma project for the specialization UX research and design ; Business informatics management; IS/ICT project management; User research; Research in the field of applied informatics and its presentation; Basics of UX"
+               ]
+          },
+          {
+               "tag": "Master's course Information Systems Development (IST)",
+               "patterns": [
+                    "Master's course Information Systems Development (IST)",
+                    "Master's courses Development of information systems (IST)",
+                    "Master's course Information Systems Development (IST)",
+                    "Master's courses Information Systems Development (IST)",
+                    "Information Systems Development (IST)",
+                    "What are the compulsory subjects in the Master's program Information Systems Development (IST)?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught on the master's program Information Systems Development (IST): Agile Web Application Development Project; Design of User Interfaces; Information Modeling of Organizations; IT and the Anatomy of a Firm; Methods and Practices of Software Development and Testing; Diploma Thesis Project for the Specialization Development of Information Systems systems; Management of enterprise informatics; Management of IS/ICT projects; Software architectures; Software project; Research in the field of applied informatics and its presentation"
+               ]
+          },
+          {
+               "tag": "Master's course Knowledge and Web Technologies",
+               "patterns": [
+                    "master's course Knowledge and web technologies",
+                    "master's courses Knowledge and web technologies",
+                    "master's course Knowledge and web technologies",
+                    "Master's courses Knowledge and web technologies",
+                    "Knowledge and Web Technologies",
+                    "What are the compulsory subjects in the Master's program in Knowledge and Web Technologies?"
+               ],
+               "responses": [
+                    "On the master's program Knowledge and Web Technologies, the following compulsory subjects are taught: Artificial Intelligence 1; Artificial Intelligence 2; Advanced approaches to extracting knowledge from databases; Text processing automation; Mining knowledge from the web; Linked data on the web; Extracting knowledge from databases; Diploma seminar"
+               ]
+          },
+          {
+               "tag": "Ševčík",
+               "patterns": [
+                    "is Ševčík still dean?",
+                    "Is Ševčík still at VŠE?"
+               ],
+               "responses": [
+                    "Yes, he's still here."
+               ]
+          },
+          {
+               "tag": "Bus",
+               "patterns": [
+                    "Public transport",
+                    "Bus transport",
+                    "Autobus transport",
+                    "Bus departure",
+                    "Autobus departure",
+                    "bus",
+                    "autobus",
+                    "When do the buses leave?",
+                    "When are the bus transport times?",
+                    "What are the autobus transport times?",
+                    "What time do the buses leave?",
+                    "Náměstí Winstona Churchilla",
+                    "Winston Churchill Square"
+               ],
+               
+               "responses": [
+                    ""
+               ]
+          },
+
+          {
+               "tag": "Tram",
+
+               "patterns": [
+                    "Public transport",
+                    "Tram transport",
+                    "Tram departure",
+                    "Tram",
+                    "When do the trams leave?",
+                    "What are the tram transport times?",
+                    "What time do the trams leave?",
+                    "Viktioria Žižkov",
+                    "Husinecká"
+               ],
+
+               "responses": [
+                    ""
+               ]
+          },
+          {
+               "tag": "Canteen",
+               "patterns": [
+                    "What do they have to eat in the canteen today?",
+                    "What do they have for lunch?",
+                    "canteen",
+                    "canteen",
+                    "lunch",
+                    "eating",
+                    "eating in the canteen"
+               ],
+               "responses": [
+                    "Today's menu includes: Chicken cream with vegetables and rice; Pork cutlet sprinkled with Balkan cheese, potato chips, salad; Baked chicken leg on garlic with vegetables, potato dumplings; Al Fredo pasta with cream and chicken, sprinkled with cheese; According to the daily menu (pasta / risotto / mixture), Peking soy meat with vegetables and leeks, steamed rice; Turkey steak Saltimbocca in English bacon, steak fries, mayonnaise dip, mixed salads; Filled wrap with chicken meat and fresh vegetables, curry dip, fries; Hot buffet - according to your choice; Fried cauliflower, boiled potatoes, tartar sauce; Packaged food/Also away+ tin 0.33l; Fresh baguette, Gyros, Tortilla"
+               ]
+          }
+     ]
+}
