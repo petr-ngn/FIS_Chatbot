@@ -1,0 +1,441 @@
+{
+     "intents": [
+          {
+               "tag": "bakalářský program",
+               "patterns": [
+                    "Jaké tu jsou bakalářské programy?",
+                    "bakalářský program",
+                    "bakalářské programy",
+                    "bakalářský studijní program",
+                    "bakalářské studijní programy",
+                    "bakalář",
+                    "Bc.Jaké tu jsou bakalářské studijní programy?",
+                    "Jaké bakalářské programy tu mohu studovat?"
+               ],
+               "responses": [
+                    "Na FIS VŠE jsou vyučovány tyto bakalářské programy: Aplikovaná informatika; Data Analytics; Informační média a služby; Matematické metody v ekonomii; Multimédia v ekonomické praxi"
+               ]
+          },
+          {
+               "tag": "magisterský program",
+               "patterns": [
+                    "Jaké tu jsou magisterské programy?",
+                    "magisterský program",
+                    "magisterské programy",
+                    "magisterský studijní program",
+                    "magisterské studijní programy",
+                    "magistr",
+                    "Ing.",
+                    "Jaké tu jsou navazující magisterské programy?",
+                    "navazující magisterský program",
+                    "navazující magisterské programy",
+                    "navazující magisterský studijní program",
+                    "navazující magisterské studijní programy",
+                    "navazující magistr"
+               ],
+               "responses": [
+                    "Na FIS VŠE jsou vyučovány tyto magisterské programy: Informační management; Business Intelligence (IST); Data a analytika pro business; Ekonometrie a operační výzkum; Ekonomická demografie; Statistika; Business analýza (IST); Kognitivní informatika; Řízení podnikové informatiky (IST); UX výzkum a design (IST); Vývoj informačních systémů (IST); Znalostní a webové technologie,; Information Systems Management; Economic Data Analysis"
+               ]
+          },
+          {
+               "tag": "vedlejší specializace",
+               "patterns": [
+                    "Jaké tu jsou vedlejší specializace?",
+                    "vedlejší specializace",
+                    "jaké jsou vedlejší specializace",
+                    "vedlejška",
+                    "vedlejšky"
+               ],
+               "responses": [
+                    "Na FIS VŠE jsou vyučovány tyto vedlejší specializace: Analýzy sociálně ekonomických dat; Datové inženýrství; Demografie a sociální analýza; Ekonometrie; Informatika v podnikání; Inteligentní systémy; Komunikace, intepretace, multimédia; Kvantitativní analýza; Kvantitativní metody pro informatiky; Kvantitativní metody v managementu; Multimediální komunikace; Pojistné inženýrství; Prezentace a komunikace informací; Řízení podnikové výkonnosti; Security Management"
+               ]
+          },
+          {
+               "tag": "doktorský program",
+               "patterns": [
+                    "Jaké tu jsou doktorské programy?",
+                    "doktorský program",
+                    "doktorské programy",
+                    "doktorský studijní program",
+                    "doktorské studijní programy",
+                    "doktor",
+                    "doktorand",
+                    "doktorandský",
+                    "PhD",
+                    "Ph.D.",
+                    "Jaké tu jsou doktorandské programy?",
+                    "doktorandský program",
+                    "doktorandské programy",
+                    "doktorandský studijní program",
+                    "doktorandské studijní programy"
+               ],
+               "responses": [
+                    "Na FIS VŠE jsou vyučovány tyto doktorské programy: Aplikovaná informatika; Ekonometrie a operační výzkum; Statistika"
+               ]
+          },
+          {
+               "tag": "bakalářský předmět Multimédia v ekonomické praxi",
+               "patterns": [
+                    "bakalářský předmět Multimédia v ekonomické praxi",
+                    "bakalářské předměty Multimédia v ekonomické praxi",
+                    "bakalářský kurz Multimédia v ekonomické praxi",
+                    "bakalářské kurzy Multimédia v ekonomické praxi",
+                    "Multimédia v ekonomické praxi",
+                    "Jaké jsou povinné předměty na bakalářském programu Multimédia v ekonomické praxi?"
+               ],
+               "responses": [
+                    "Na bakalářském programu Multimédia v ekonomické praxi jsou vyučovány tyto povinné předměty: 3D grafika; Design komunikací; Digitální fotografie; Grafika a animace; Multimediální projektový seminář; Multimediální technologie; Počítačová grafika; Praxe v multimédiích; Prezentační dovednosti; Profese v audiovizuální výrobě; Projekt audiovizuální komunikace; Reklamní agentura; Řízení multimediálních projektů (kreativita a komunikace); Sémiotika multimédií; Tvůrčí zpracování jazyka a textu; Úvod do multimédií; Web design a uživatelská rozhraní; Základy audiovizuální komunikace; Základy digitální fotografie; Základy počítačové grafiky; Zvuk a multimédia"
+               ]
+          },
+          {
+               "tag": "bakalářský předmět Data Analytics",
+               "patterns": [
+                    "bakalářský předmět Data Analytics",
+                    "bakalářské předměty Data Analytics",
+                    "bakalářský kurz Data Analytics",
+                    "bakalářské kurzy Data Analytics",
+                    "Data Analytics",
+                    "Jaké jsou povinné předměty na bakalářském programu Data Analytics?"
+               ],
+               "responses": [
+                    "Na bakalářském programu Data Analytics jsou vyučovány tyto povinné předměty: Data mining v cloudu; Databáze; Datová kvalita; Datové minimum; Externí data a informační zdroje; Nástroje pro datovou analytiku; Neuronové sítě a deep learning; Principy digitální komunikace; Řízení datového projektu; Strojové učení 1; Strojové učení 2; Textová analytika 1; Textová analytika 2; Úvod do programování v jazyce Python; Úvod do programování v R; Základy Business Intelligence; Zpracování Big Data; Deskripce, vizualizace a komparace ekonomických dat; Ekonometrické modely; Exploratorní analýza dat; Matematická informatika; Matematická statistika; Matematika pro informatiky; Optimalizační modely; Pravděpodobnost a náhodné procesy; Průzkumy a dotazníková šetření; Regresní modely; Bankovnictví a finanční instituce; Ekonomie 1; Kritické a analytické myšlení; Prezentace a storytelling; Účetnictví I.; Základy informační etiky a práve; Základy marketingu pro informatiky a statistiky; Základy odborné práce"
+               ]
+          },
+          {
+               "tag": "bakalářský předmět Aplikovaná informatika",
+               "patterns": [
+                    "bakalářský předmět Aplikovaná informatika",
+                    "bakalářské předměty Multimédia v ekonomické praxi",
+                    "bakalářský kurz Aplikovaná informatika",
+                    "bakalářské kurzy Aplikovaná informatika",
+                    "Aplikovaná informatika",
+                    "Jaké jsou povinné předměty na bakalářském programu Aplikovaná informatika?"
+               ],
+               "responses": [
+                    "Na bakalářském programu Aplikovaná informatika jsou vyučovány tyto povinné předměty: Analýza a návrh informačních systémů; Bakalářský seminář; Bezpečnost informačních systémů; Databáze; Datové minimum; Informační a komunikační technologie; IT Governance; Kvantitativní management; Podnikové informační systémy; Programování v Javě; Simulační modely pro informatiky; Softwarové inženýrství; UX design; Základy odborné práce; Zpracování informací a znalostí; Ekomomie 1; Finance podniku; Finanční teorie, politika a instituce; Management pro informatiky a statistiky; Matematika pro informatiky; Právo; Statistika pro informatiky; Strategická analýza pro informatiky a statistiky; Účetnictví I.; Základy marketingu pro informatiky a statistiky"
+               ]
+          },
+          {
+               "tag": "bakalářský předmět Informační média a služby",
+               "patterns": [
+                    "bakalářský předmět Informační média a služby",
+                    "bakalářské předměty Informační média a služby",
+                    "bakalářský kurz Informační média a služby",
+                    "bakalářské kurzy Informační média a služby",
+                    "Informační média a služby",
+                    "Jaké jsou povinné předměty na bakalářském programu Informační média a služby?"
+               ],
+               "responses": [
+                    "Na bakalářském programu Informační média a služby jsou vyučovány tyto povinné předměty: Bakalářský seminář; Bezpečnost informačních systémů; Databáze; Datové minimum; Digitální knihovny a archivy; Informace a společnost; Informační architektura; Informační a komunikační technologie; Integrace informačních zdrojů; Matematické základy informatiky; Obchodní a firemní informace; Organizace znalostí; Programování v Javě; Psychologie kreativity; Rešeršní strategie a systémy; Sémiotika multimédií; Teorie a praxe týmové práce; Základy odborné práce; Zpracování informací a znalostí; Ekonomie 1; Finance podniku; Matematika pro informatiky; Právo; Statistika pro informatiky; Strategická analýza pro informatiky a statistiky; Účetnictví I.; Základy marketingu pro informatiky a statistiky"
+               ]
+          },
+          {
+               "tag": "bakalářský předmět Matematické metody v ekonomii",
+               "patterns": [
+                    "bakalářský předmět Matematické metody v ekonomii",
+                    "bakalářské předměty Matematické metody v ekonomii",
+                    "bakalářský kurz Matematické metody v ekonomii",
+                    "bakalářské kurzy Matematické metody v ekonomii",
+                    "Matematické metody v ekonomii",
+                    "Jaké jsou povinné předměty na bakalářském programu Matematické metody v ekonomii?"
+               ],
+               "responses": [
+                    "Na bakalářském programu Matematické metody v ekonomii jsou vyučovány tyto povinné předměty: Demografické projekce; Matematika 2; Metody statistického srovnávání; Modely operačního výzkumu; Statistické metody 1; Stochastické modely; Úvod do programování v R; Úvod do teorie pravděpodobnosti a matematické statistiky; Základy datových analýz; Základy demografie; Ekonomie 1; Finanční teorie, politika a instituce; Informatika pro statistiky; Management pro informatiky a statistiky; Matematika pro ekonomy; Právo; Účetnictví I.; Základy marketingu pro informatiky a statistiky ... Další povinné předměty se pak liší dle vybrané specializace"
+               ]
+          },
+          {
+               "tag": "bakalářský předmět Ekonomická demografie",
+               "patterns": [
+                    "bakalářský předmět Ekonomická demografie",
+                    "bakalářské předměty Ekonomická demografie",
+                    "bakalářský kurz Ekonomická demografie",
+                    "bakalářské kurzy Ekonomická demografie",
+                    "Ekonomická demografie",
+                    "Matematické metody v ekonomiispecializace Ekonomická demografie (Matematické metody v ekonomii)",
+                    "Jaké jsou povinné předměty na specializaci Ekonomická demografie (Matematické metody v ekonomii)?"
+               ],
+               "responses": [
+                    "Na specializaci Ekonomická demografie (součást bakalářského programu Matematické metody v ekonomii) jsou vyučovány tyto povinné předměty: Bakalářský seminář; Demografická praktika pro statistiky; Ekonomická demografie I; Hospodářská a sociální statistika; Hospodářská politika pro statistiky; Regionální demografie; Statistické metody 2; Sociální politika; Úvod do sociálně ekonomické demografie; Zdroje a databáze demografických dat"
+               ]
+          },
+          {
+               "tag": "bakalářský předmět Datové analýzy a modelování",
+               "patterns": [
+                    "bakalářský předmět Datové analýzy a modelování",
+                    "bakalářské předměty Datové analýzy a modelování",
+                    "bakalářský kurz Datové analýzy a modelování",
+                    "bakalářské kurzy Datové analýzy a modelování",
+                    "Datové analýzy a modelování",
+                    "Matematické metody v ekonomiispecializace Datové analýzy a modelování (Matematické metody v ekonomii)",
+                    "Jaké jsou povinné předměty na specializaci Datové analýzy a modelování (Matematické metody v ekonomii)?"
+               ],
+               "responses": [
+                    "Na specializaci Datové analýzy a modelování (součást bakalářského programu Matematické metody v ekonomii) jsou vyučovány tyto povinné předměty: Ekonometrie 1; Hospodářská a sociální statistika; Hospodářská politika pro statistiky; Lineární modely; Statistické metody 2; Statistické výpočetní prostředí; Teorie pravděpodobnosti a matematická statistika 1; Úvod do statistiky - bayesovský přístup; Výpočty v pojišťovnictví; Základy pojišťovnictví"
+               ]
+          },
+          {
+               "tag": "bakalářský předmět Ekonometrie a operační výzkum",
+               "patterns": [
+                    "bakalářský předmět Ekonometrie a operační výzkum",
+                    "bakalářské předměty Ekonometrie a operační výzkum",
+                    "bakalářský kurz Ekonometrie a operační výzkum",
+                    "bakalářské kurzy Ekonometrie a operační výzkum",
+                    "Ekonometrie a operační výzkum",
+                    "Matematické metody v ekonomiispecializace Ekonometrie a operační výzkume (Matematické metody v ekonomii)",
+                    "Jaké jsou povinné předměty na specializaci Ekonometrie a operační výzkum (Matematické metody v ekonomii)?"
+               ],
+               "responses": [
+                    "Na specializaci Ekonometrie a operační výzkum (součást bakalářského programu Matematické metody v ekonomii) jsou vyučovány tyto povinné předměty: Bakalářský odborný seminář; Ekonometrie 1; Ekonometrie 2; Lineární modely; Programování pro matematické modelování; Řízení projektů; Simulační modely ekonomických procesů; Teorie her a ekonomické rozhodování"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Statistika",
+               "patterns": [
+                    "magisterský předmět Statistika",
+                    "magisterské předměty Statistika",
+                    "magisterský kurz Statistika",
+                    "magisterské kurzy Statistika",
+                    "Statistika",
+                    "Jaké jsou povinné předměty na magisterském programu Statistika?"
+               ],
+               "responses": [
+                    "Na magisterském programu Statistika jsou vyučovány tyto povinné předměty: Časové řady; Vícerozměrná statistika; Systém národního účetnictví; Statistické úsudky; Bayesovská statistika; Ekonomie II.; Regrese; Neparametrické metody a analýzy přežívání; Teorie výběrových šetření"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Informační management",
+               "patterns": [
+                    "magisterský předmět Informační management",
+                    "magisterské předměty Informační management",
+                    "magisterský kurz Informační management",
+                    "magisterské kurzy Informační management",
+                    "Informační management",
+                    "Jaké jsou povinné předměty na magisterském programu Informační management?"
+               ],
+               "responses": [
+                    "Na magisterském programu Informační management jsou vyučovány tyto povinné předměty: Audit informačního managementu; Digitální forenzní analýza; Project Governance; Teorie systémů a informační etika; Řízení bezpečnosti informačních systémů; Organizace a informace; Informační management; Diplomový seminář; Sociální informatika"
+               ]
+          },
+          {
+               "tag": "magisterský předmět DAB",
+               "patterns": [
+                    "magisterský předmět DAB",
+                    "magisterské předměty DAB",
+                    "magisterský kurz DAB",
+                    "magisterské kurzy DAB",
+                    "DAB",
+                    "Data a Analytika pro businessmagisterský předmět Data a analytika pro business",
+                    "magisterské předměty Data a analytika pro business",
+                    "magisterský kurz Data a analytika pro business",
+                    "magisterské kurzy Data a analytika pro business",
+                    "Jaké jsou povinné předměty na magisterském programu Data a analytika pro business?"
+               ],
+               "responses": [
+                    "Na magisterském programu DAB jsou vyučovány tyto povinné předměty: Architektury business analytiky; Business a transformace businessu; Datový projekt; Informační etika, regulace a právo; Pokročilá business analytika; Řízení dat a analytiky pro business; Statistické metody pro business; Trendy a novinky v business analytice I; Trendy a novinky v business analytice II; Základní analytika a reporting"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Business Intelligence (IST)",
+               "patterns": [
+                    "magisterský předmět Business Intelligence (IST)",
+                    "magisterské předměty Business Intelligence (IST)",
+                    "magisterský kurz Business Intelligence (IST)",
+                    "magisterské kurzy Business Intelligence (IST)",
+                    "Business Intelligence (IST)",
+                    "Jaké jsou povinné předměty na magisterském programu Business Intelligence (IST)?"
+               ],
+               "responses": [
+                    "Na magisterském programu Business Intelligence (IST) jsou vyučovány tyto povinné předměty: Architektury business analytiky; Competitive Intelligence; IT a anatomie firmy; Informační modelování organizací; Projekt diplomové práce pro specializaci Business Intelligence; Řízení podnikové informatiky; Řízení projektů IS\\ICT; Self-Service Business Intelligence; Řízení dat a analytiky pro business; Výzkum v oblastni aplikované informatiky a jeho prezentace; Základy analytika a reporting"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Ekonomická demografie",
+               "patterns": [
+                    "magisterský předmět Ekonomická demografie",
+                    "magisterské předměty Ekonomická demografie",
+                    "magisterský kurz Ekonomická demografie",
+                    "magisterské kurzy Ekonomická demografie",
+                    "Ekonomická demografie",
+                    "Jaké jsou povinné předměty na magisterském programu Ekonomická demografie?"
+               ],
+               "responses": [
+                    "Na magisterském programu Ekonomická demografie jsou vyučovány tyto povinné předměty: Aktuárská demografie; Aplikovaná demografie; Ekonomická demografie II; Časové řady; Regrese; Vícerozměrná statistika; Sociální statistika; Diplomový seminář; Ekonomie II; Obecná demografie"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Ekonometrie a operační výzkum",
+               "patterns": [
+                    "magisterský předmět Ekonometrie a operační výzkum",
+                    "magisterské předměty Ekonometrie a operační výzkum",
+                    "magisterský kurz Ekonometrie a operační výzkum",
+                    "magisterské kurzy Ekonometrie a operační výzkum",
+                    "Ekonometrie a operační výzkum",
+                    "Jaké jsou povinné předměty na magisterském programu Ekonometrie a operační výzkum?"
+               ],
+               "responses": [
+                    "Na magisterském programu Ekonometrie a operační výzkum jsou vyučovány tyto povinné předměty: Pokročilá ekonometrie 1; Praktikum z ekonometrie; Kvantitativní ekonomie; Diskrétní modely; Pokročilá ekonometrie 2; Skupinové rozhodování; Ekonomie II.; Vícekriteriální rozhodování; Praktikum z operačního výzkumu; Nelineární modely; Státnicový a diplomový seminář"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Business analýza (IST)",
+               "patterns": [
+                    "magisterský předmět Business analýza (IST)",
+                    "magisterské předměty Business analýza (IST)",
+                    "magisterský kurz Business analýza (IST)",
+                    "magisterské kurzy Business analýza (IST)",
+                    "Business analýza (IST)",
+                    "Jaké jsou povinné předměty na magisterském programu Business analýza (IST)?"
+               ],
+               "responses": [
+                    "Na magisterském programu Business analýza (IST) jsou vyučovány tyto povinné předměty: Business Process Engineering; Informační modelování organizací; IT a anatomie firmy; Projekt diplomové práce pro specializaci Business Analýza; Řízení podnikové informatiky; Řízení projektů IS\\ICT; Simulace systémů; Systémy pro podporu business procesů; Výzkum v oblasti aplikované informatiky a jeho prezentace"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Kognitivní informatika",
+               "patterns": [
+                    "magisterský předmět Kognitivní informatika",
+                    "magisterské předměty Kognitivní informatika",
+                    "magisterský kurz Kognitivní informatika",
+                    "magisterské kurzy Kognitivní informatika",
+                    "Kognitivní informatika",
+                    "Jaké jsou povinné předměty na magisterském programu Kognitivní informatika?"
+               ],
+               "responses": [
+                    "Na magisterském programu Kognitivní informatika jsou vyučovány tyto povinné předměty: Teorie spontánního řádu a samoorganizace; Znalosti a ontologické inženýrství; Simulace systémů; Diplomov7 seminář KI; Výzkum v oblasti aplikované informatiky a jeho prezentace; Informační modelování organizací; Kognitivní věda; Základy neurověd"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Podniková informatika",
+               "patterns": [
+                    "magisterský předmět Podniková informatika",
+                    "magisterské předměty Podniková informatika",
+                    "magisterský kurz Podniková informatika",
+                    "magisterské kurzy Podniková informatika",
+                    "Podniková informatika",
+                    "Jaké jsou povinné předměty na magisterském programu Podniková informatika?"
+               ],
+               "responses": [
+                    "Na magisterském programu Podniková informatika jsou vyučovány tyto povinné předměty: Řízení projektů IS\\ICT; Řízení podnikové informatiky; Zlepšování procesů budování IS; Dobývání znalostí z databází; Diplomový seminář pro distanční studium; Metody a nástroje zpracování textových informací; Informační management; Optimalizace podnikových procesů; Audit informačních systémů"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Řízení podnikové informatiky (IST)",
+               "patterns": [
+                    "magisterský předmět Řízení podnikové informatiky (IST)",
+                    "magisterské předměty Řízení podnikové informatiky (IST)",
+                    "magisterský kurz Řízení podnikové informatiky (IST)",
+                    "magisterské kurzy Řízení podnikové informatiky (IST)",
+                    "Řízení podnikové informatiky (IST)",
+                    "Jaké jsou povinné předměty na magisterském programu Řízení podnikové informatiky (IST)?"
+               ],
+               "responses": [
+                    "Na magisterském programu Řízení podnikové informatiky (IST) jsou vyučovány tyto povinné předměty: Finační řízení podnikové informatiky; Informační modelování organizací; Inovace informačních systémů; Integrace v podnikových informačních systémech; IT a anatomie firmy; Podniková architektura jako metoda řízení transformace; Projekt diplomové práce pro specializaci Řízení podnikové informatiky; Řízení IT v praxi; Řízení podnikové informatiky; Řízení projektů IS\\ICT; Výzkum v oblasti aplikovaní informatiky a jeho prezentace"
+               ]
+          },
+          {
+               "tag": "magisterský předmět UX výzkum a design (IST)",
+               "patterns": [
+                    "magisterský předmět UX výzkum a design (IST)",
+                    "magisterské předměty UX výzkum a design (IST)",
+                    "magisterský kurz UX výzkum a design (IST)",
+                    "magisterské kurzy UX výzkum a design (IST)",
+                    "UX výzkum a design (IST)",
+                    "Jaké jsou povinné předměty na magisterském programu UX výzkum a design (IST)?"
+               ],
+               "responses": [
+                    "Na magisterském programu UX výzkum a design (IST) jsou vyučovány tyto povinné předměty: Design služeb; Design sprint; Design uživatelských rozhraní; Design zaměřený na člověka; Informační modelování organizací; IT a anatomie firmy; Projekt diplomové práce pro specializaci UX výzkum a design; Řízení podnikové informatiky; Řízení projektů IS\\ICT; Uživatelský výzkum; Výzkum v oblasti aplikované informatiky a jeho prezentace; Základy UX"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Vývoj informačních systémů (IST)",
+               "patterns": [
+                    "magisterský předmět Vývoj informačních systémů (IST)",
+                    "magisterské předměty Vývoj informačních systémů (IST)",
+                    "magisterský kurz Vývoj informačních systémů (IST)",
+                    "magisterské kurzy Vývoj informačních systémů (IST)",
+                    "Vývoj informačních systémů (IST)",
+                    "Jaké jsou povinné předměty na magisterském programu Vývoj informačních systémů (IST)?"
+               ],
+               "responses": [
+                    "Na magisterském programu Vývoj informačních systémů (IST) jsou vyučovány tyto povinné předměty: Agilní projekt vývoje webové aplikace; Design uživatelských rozhraní; Informační modelování organizací; IT a anatomie firmy; Metody a praktiky vývoje a testování softwaru; Projekt diplomové práce pro specializaci Vývoj informačních systémů; Řízení podnikové informatiky; Řízení projektů IS\\ICT; Softwarové architektury; Softwarový projekt; Výzkum v oblasti aplikované informatiky a jeho prezentace"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Znalostní a webové technologie",
+               "patterns": [
+                    "magisterský předmět Znalostní a webové technologie",
+                    "magisterské předměty Znalostní a webové technologie",
+                    "magisterský kurz Znalostní a webové technologie",
+                    "magisterské kurzy Znalostní a webové technologie",
+                    "Znalostní a webové technologie",
+                    "Jaké jsou povinné předměty na magisterském programu Znalostní a webové technologie?"
+               ],
+               "responses": [
+                    "Na magisterském programu Znalostní a webové technologie jsou vyučovány tyto povinné předměty: Umělá inteligence 1; Umělá inteligence 2; Pokročilé přístupy k dobývání znalostí z databází; Automatizace zpracování textů; Dolování znalostí z webu; Propojená data na webu; Dobývání znalostí z databází; Diplomový seminář"
+               ]
+          },
+          {
+               "tag": "Ševčík",
+               "patterns": [
+                    "je stále Ševčík děkanem?",
+                    "Je Ševčík stále na VŠE?"
+               ],
+               "responses": [
+                    "Ano, je stále tady."
+               ]
+          },
+          {
+               "tag": "Autobus",
+               "patterns": [
+                    "MHD",
+                    "autobusové spoje",
+                    "busové spoje",
+                    "bus",
+                    "autobus",
+                    "Kdy jedou autobusy?",
+                    "Kdy jsou autobusové spoje?",
+                    "V kolik jedou atuobusy?",
+                    "Náměstí Winstona Churchilla"
+               ],
+
+               "responses": [
+                    ""
+               ]
+          },
+
+          {
+               "tag": "Tramvaj",
+
+               "patterns": [
+                    "MHD",
+                    "tramvajové spoje",
+                    "tramvaj",
+                    "Kdy jedou tramvaje?",
+                    "Kdy jsou tramvajové spoje?",
+                    "V kolik jedou tramvaje?",
+                    "Viktorie Žižkov",
+                    "Husinecká"
+               ],
+
+               "responses": [
+                    ""
+               ]
+          },
+
+          {
+               "tag": "Menza",
+               "patterns": [
+                    "Co mají dneska v menze k jídlu?",
+                    "Co mají v menze na oběd?",
+                    "menza",
+                    "menze",
+                    "oběd",
+                    "stravování",
+                    "stravování v menze"
+               ],
+               "responses": [
+                    "Dneska v menze je: Polský boršč; Smažená vepřová kotleta, šťouchané brambory s cibulkou, salátek; Pečená krůtí roláda na kmíně, houskové knedlíky, kysané zelí; Kuřecí chilli con carné, dušená rýže1, Dle denní nabídky (pasta / rizoto / směs), Gratinovaná brokolice se sýrem a vejci, vařené brambory maštěné máslem3,; Teplý bufet-dle vlastního výběru; Balené jídlo/Také away+ plech 0,33l; Fresh bageta, Gyros, Tortila"
+               ]
+          }
+     ]
+}
