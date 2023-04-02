@@ -1,159 +1,257 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <title>FIS ChatBot (EN) - Petr Nguyen</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://drive.google.com/uc?export=view&id=1p9XTEirGfPFD5coffCQDrYCxboMI6Q2Y">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <style>
-      body {
-        font-family: 'Roboto', sans-serif;
-        background-color: #f8f9fa;
-      }
-      h1 {
-        background-color: #009A82;
-        color: white;
-        display: inline-block;
-        font-size: 2em;
-        margin: 20px 0 0 0; /* Add 20px margin to the top */
-        padding: 10px;
-        border-radius: 5px;
-      }
 
-      img {
-        width: 180px;
-        height: 180px;
-      }     
+   <head>
 
-      #chatbox {
-        margin-left: auto;
-        margin-right: auto;
-        width: 70%;
-        margin-top: 30px;
-      }
+      <title>FIS ChatBot (EN) - Petr Nguyen</title>
 
-      #userInput {
-        margin-left: auto;
-        margin-right: auto;
-        width: 70%;
-        margin-top: 60px;
-        justify-content: center;
-        text-align: center;
-        display: flex;
-      }
+      <link rel="icon" href="https://drive.google.com/uc?export=view&id=1p9XTEirGfPFD5coffCQDrYCxboMI6Q2Y">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-      #textInput {
-        width: 90%;
-        padding: 5px 10px;
-        border: none;
-        border-bottom: 3px solid #009A82;
-        font-family: 'Roboto', sans-serif;
-        font-size: 17px;
-      }
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-      .userText, .botText {
-        font-size: 17px;
-        line-height: 30px;
-        margin-bottom: 10px;
-        justify-content: center;
-        align-items: center;
-      }
+      <style>
 
-      .userText span, .botText span {
-        padding: 10px;
-        border-radius: 5px;
-        display: inline-block;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .userText {
-        color: #000;
-        text-align: right;
-        position: relative;
-        margin-right: 10px;
-      }
-
-      .userText span {
-        background-color: #c9c9c9;
-        border-radius: 20px 0 20px 20px;
-        padding: 10px 15px;
-        display: inline-block;
-        max-width: 70%;
-      }
-
-      .botText {
-        color: #fff;
-        text-align: left;
-        position: relative;
-        margin-left: 10px;
-      }
-
-      .botText span {
-       
-
-  background-color: #009A82;
-  border-radius: 0 20px 20px 20px;
-  padding: 10px 15px;
-  display: inline-block;
-  max-width: 70%;
-}
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col text-center">
-          <h1>
-            <b>FIS ChatBot (EN) - Petr Nguyen</b>
-          </h1>
-          <div>
-            <img src="https://drive.google.com/uc?export=view&id=15qVgQ8kmbhtsfPS93JXTkc9dwgtptFAH" alt="logo">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div id="chatbox">
-            <p class="botText">
-              <span>Hi! I am Petr's chatbot, what I can do for you?</span>
-            </p>
-          </div>
-          <div id="userInput">
-            <input id="textInput" type="text" name="msg" placeholder="Enter your question here...">
-            <button id="sendButton" onclick="getBotResponse()">
-              <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#009A82" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h9.793L8.146 4.354a.5.5 0 0 1 .707-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.707-.708L11.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-              </svg>
-            </button>
-          </div>
-      </div>
-    </div>
-    <script>
-    function getBotResponse() {
-  var rawText = $("#textInput").val();
-  var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
-  $("#textInput").val("");
-  $("#chatbox").append(userHtml);
-  document.getElementById("userInput").scrollIntoView({ block: "start", behavior: "smooth" });
-
-  // Add the following code
-  $.get("/get_response", { msg: rawText, lang: "{{ language }}" }).done(function(data) {
-    var botHtml = '<p class="botText"><span>' + data + "</span></p>";
-    $("#chatbox").append(botHtml);
-    document.getElementById("userInput").scrollIntoView({ block: "start", behavior: "smooth" });
-  });
-}
-
-        $("#textInput").keypress(function(e) {
-          if (e.which == 13) {
-            getBotResponse();
+         body {
+                font-family: 'Roboto', sans-serif;
+                background-color: #f8f9fa;
           }
-        });
-    </script>
-  </body>
+
+         h1 {
+              background-color: #009A82;
+              color: white;
+              display: inline-block;
+              font-size: 2em;
+              margin: 20px 0 0 0;
+              padding: 10px;
+              border-radius: 5px;
+          }
+
+         img {
+              width: 180px;
+              height: 180px;
+          }
+
+         #chatbox {
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 70%;
+                    margin-top: 30px;
+          }
+
+         #userInput {
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 70%;
+                      margin-top: 60px;
+                      justify-content: center;
+                      text-align: center;
+                      display: flex;
+                      margin-bottom: 40px;
+          }
+
+         #textInput {
+                      width: 90%;
+                      padding: 5px 10px;
+                      border: none;
+                      border-bottom: 3px solid #009A82;
+                      font-family: 'Roboto', sans-serif;
+                      font-size: 17px;
+          }
+
+         .userText, .botText {
+                              font-size: 17px;
+                              line-height: 30px;
+                              margin-bottom: 10px;
+                              justify-content: center;
+                              align-items: center;
+          }
+
+         .userText span, .botText span {
+                                        padding: 10px;
+                                        border-radius: 5px;
+                                        display: inline-block;
+                                        justify-content: center;
+                                        align-items: center;
+
+          }
+         .userText {
+                    color: #000;
+                    text-align: right;
+                    position: relative;
+                    margin-right: 10px;
+          }
+
+         .userText span {
+                          background-color: #c9c9c9;
+                          border-radius: 20px 0 20px 20px;
+                          padding: 10px 15px;
+                          display: inline-block;
+                          max-width: 70%;
+                          word-wrap: break-word;
+          }
+
+         .botText {
+                    color: #fff;
+                    text-align: left;
+                    position: relative;
+                    margin-left: 10px;
+          }
+
+         .botText span {
+                        background-color: #009A82;
+                        border-radius: 0 20px 20px 20px;
+                        padding: 10px 15px;
+                        display: inline-block;
+                        max-width: 70%;
+                        word-wrap: break-word;
+         }
+
+         .botTyping {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+          }
+
+         .botTyping span {
+                          width: 8px;
+                          height: 8px;
+                          border-radius: 50%;
+                          background-color: #009A82;
+                          margin-right: 5px;
+                          animation: botTypingAnimation 1s infinite;
+         }
+
+         .botText a {
+                      color: #70dafd;
+          }
+
+         @keyframes botTypingAnimation {
+          0% {
+              opacity: 0.3;
+              transform: translateX(0);
+          }
+         
+          33% {
+              opacity: 0.8;
+              transform: translateX(10px);
+          }
+
+         66% {
+              opacity: 0.3;
+              transform: translateX(-10px);
+          }
+          100% {
+                opacity: 0.3;
+                transform: translateX(0);
+          }
+
+         }
+
+      </style>
+
+   </head>
+
+   <body>
+
+      <div class="container">
+
+         <div class="row">
+
+            <div class="col text-center">
+
+               <h1>
+                  <b>FIS ChatBot (EN) - Petr Nguyen</b>
+               </h1>
+
+               <div>
+                  <img src="https://drive.google.com/uc?export=view&id=15qVgQ8kmbhtsfPS93JXTkc9dwgtptFAH" alt="logo">
+               </div>
+
+            </div>
+
+         </div>
+
+         <div class="row">
+
+            <div class="col">
+
+               <div id="chatbox">
+
+                  <p class="botText">
+                     <span>Hi! I am Petr's chatbot, what can I do for you?</span>
+                  </p>
+
+               </div>
+
+               <div id="userInput">
+
+                  <input id="textInput" type="text" name="msg" placeholder="Enter your question here...">
+
+                  <button id="sendButton" onclick="getBotResponse()">
+
+                     <svg width="20px" height="20px" viewBox="0 0 16 16"
+                        class="bi bi-arrow-right-short" fill="#009A82"
+                        xmlns="http://www.w3.org/2000/svg">
+
+                        <path fill-rule="evenodd"
+                           d="M1 8a.5.5 0 0 1 .5-.5h9.793L8.146 4.354a.5.5 0 0 1 .707-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.707-.708L11.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+
+                     </svg>
+                     
+                  </button>
+
+               </div>
+
+            </div>
+
+         </div>
+
+      </div>
+
+      <script>
+
+         function getBotResponse() {
+
+           var rawText = $("#textInput").val();
+           var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
+
+           $("#textInput").val("");
+           $("#chatbox").append(userHtml);
+
+           document.getElementById("userInput").scrollIntoView({ block: "start", behavior: "smooth" });
+         
+           var botTypingHtml = '<div class="botTyping"><span></span><span></span><span></span></div>';
+
+           $("#chatbox").append(botTypingHtml);
+
+           document.getElementById("userInput").scrollIntoView({ block: "start", behavior: "smooth" });
+         
+           $.get("/get_response", { msg: rawText, lang: "{{ language }}" }).done(function (data) {
+
+             $(".botTyping").remove();
+             var botHtml = '<p class="botText"><span>' + data + "</span></p>";
+
+             $("#chatbox").append(botHtml);
+
+             document.getElementById("userInput").scrollIntoView({ block: "start", behavior: "smooth" });
+           });
+         }
+         
+         $("#textInput").keypress(function (e) {
+
+           if (e.which == 13) {
+             getBotResponse();
+
+           }
+         });
+
+      </script>
+      
+   </body>
+
 </html>
-          
