@@ -29,6 +29,7 @@ from nltk.corpus import stopwords
 from nltk import WordNetLemmatizer
 
 
+
 def get_menza(url:str = "https://www.vse.cz/menza/stravovani-zizkov/"):
     
     table = BeautifulSoup(requests.get(url).content, "html.parser").find("table", class_ = "menza-table")
@@ -119,6 +120,8 @@ def get_transport(transport:str, lang:str):
             dt = datetime.datetime.fromisoformat(arrival)
             hours = dt.hour
             minutes = dt.minute
+            if minutes < 10:
+                minutes = f'0{minutes}'
             
             #Mapping the terms to the departure information
             transport_type = transport_print[lang]['bus'] if transport == 'bus' else transport_print[lang]['tram']
@@ -153,36 +156,42 @@ def cz_en_translate(text:str):
 
 def update_responses(intents:dict, lang:str, export:bool = True):
 
+    if lang == 'cs':
+        bus_intro = 'Ze zastávky Náměstí Winstona Churchilla pojedou tyto autobusové spoje v následujících 15 minutách:'
+        tram_intro = 'Ze zastávky Viktoria Žižkov pojedou tyto tramvajové spoje v následujících 15 minutách:'
+        menza_text = [f"Dneska v menze je: {'; '.join(get_menza())}"]
+
+    elif lang == 'en':
+        bus_intro = 'These bus transports will departure from the stop Náměstí Winstona Churchilla in the folllowing 15 minutes:'
+        tram_intro = 'These tram transports will departure from the stop Viktoria Žižkov in the folllowing 15 minutes:'
+        menza_text = [cz_en_translate(f"Dneska v menze je: {'; '.join(get_menza())}")]
+
+    break_loop = 0
+    
     for intent in intents.get("intents", []):
 
         if intent.get("tag") in [ "Bus",  "Autobus"]:
-            if lang == 'cs':
-                intent["responses"] = ['Ze zastávky Náměstí Winstona Churchilla pojedou tyto autobusové spoje v následujících 15 minutách: '] + [get_transport('bus', lang)]
-            
-            elif lang == 'en':
-                intent["responses"] = ['These bus transports will departure from the stop Náměstí Winstona Churchilla in the folllowing 15 minutes: '] + [get_transport('bus', lang)]
-                
+            intent["responses"] = [f"{bus_intro} {'; '.join(get_transport('bus', lang))}"]
+            break_loop += 1
+
         elif intent.get('tag') in [ "Tram",  "Tramvaj"]:
+            intent["responses"] = [f"{tram_intro} {'; '.join(get_transport('tram', lang))}"]
 
-            if lang == 'cs':
-                intent["responses"] = ['Ze zastávky Viktoria Žižkov pojedou tyto tramvajové spoje v následujících 15 minutách: '] + [get_transport('tram', lang)]
-            elif lang == 'en':
-
-                intent["responses"] = ['These tram transports will departure from the stop Viktoria Žižkov in the folllowing 15 minutes: '] + [get_transport('tram', lang)]
+            break_loop += 1
             
         elif intent.get('tag') in ["Menza",  "Mensa", "Canteen"]:
+            intent["responses"] = menza_text
 
-            intent["responses"] = [f"Dneska v menze je: {'; '.join(get_menza())}"]
-            if lang =='en':
-                intent["responses"] = [cz_en_translate(intent["responses"][0])]
-    
+            break_loop += 1
+
+        if break_loop == 3:
+            break
  
     if export: 
         with open(os.path.join('files', f'{lang}_intents.json'),
                 'w', encoding = "utf-8") as f:
             
             json.dump(intents, f, ensure_ascii = False, indent = 5)
-
 
 
 
@@ -214,6 +223,7 @@ def lemma_function(string:str, lang:str):
     return lemmatized_text
 
 
+
 def text_cleaning_tokens(text:str, lang:str):
 
     #Reading stop words
@@ -229,7 +239,6 @@ def text_cleaning_tokens(text:str, lang:str):
     elif lang == 'en':
         stop_words = stopwords.words('english')
     
-
     #Tokenization
     tokens = nltk.word_tokenize(text)
 
@@ -246,6 +255,7 @@ def text_cleaning_tokens(text:str, lang:str):
     tokens = [word for word in tokens if word not in stop_words]
 
     return tokens #Final tokenized and cleaned text
+
 
 
 def text_prep_modelling(data:dict, lang:str, export:bool = True):
@@ -317,7 +327,6 @@ def text_prep_modelling(data:dict, lang:str, export:bool = True):
 
 
 
-
 def f1(y_true, y_pred):
 
     def recall(y_true, y_pred):
@@ -344,6 +353,7 @@ def f1(y_true, y_pred):
     f1_score = 2 * ((precision_score * recall_score) / (precision_score + recall_score + K.epsilon()))
 
     return f1_score
+
 
 
 def categorical_focal_loss_function(alpha:float, gamma:float):
@@ -531,6 +541,7 @@ def print_statement_step(text:str, indent:int = 10):
     print(f'{" "*indent}{text}')
 
 
+
 def nlp_nn_modelling(lang:str, seed:int, print:bool = False):
 
     if print:
@@ -556,7 +567,6 @@ def nlp_nn_modelling(lang:str, seed:int, print:bool = False):
     
     update_responses(intents, lang)
 
-
     if print:
         print_statement_step('3. Text preprocessing and exporting')
     
@@ -580,45 +590,29 @@ def nlp_nn_modelling(lang:str, seed:int, print:bool = False):
 
 
 
-
 def pred_class(text:str, model_name:str, threshold:float = 0.2):
 
-
     #Loading the intents, words and classes which are related to given NN model
-
-
     if 'cs' in model_name:
         lang = 'cs'
     elif 'en' in model_name:
         lang = 'en'
-        
 
-    with open(os.path.join(
-                               'files',
-                               f'{lang}_words.pkl'),
-                      'rb') as f:
-                
+    with open(os.path.join('files', f'{lang}_words.pkl'),
+                      'rb') as f:     
         words = pickle.load(f)
 
-
-    with open(os.path.join(
-                               'files',
-                               f'{lang}_classes.pkl'),
+    with open(os.path.join('files', f'{lang}_classes.pkl'),
                       'rb') as f:
-                
         classes = pickle.load(f)
 
     tokens = text_cleaning_tokens(text, lang)
 
-            
     with open(os.path.join('files', f'{lang}_intents.json'),
                     'r', encoding = "utf-8") as f:
-                
         intents = json.load(f)
 
-
-    update_responses(intents, lang, False)
-
+    update_responses(intents, lang)
 
     #Bag of words input for the NN model
     bag_of_words = [0] * len(words)
