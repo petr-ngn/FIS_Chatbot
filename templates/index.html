@@ -1,127 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="https://drive.google.com/uc?export=view&id=1p9XTEirGfPFD5coffCQDrYCxboMI6Q2Y">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>FIS VŠE ChatBot - Petr Nguyen</title>
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f8f9fa;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding-top: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            height: 200vh;
-            white-space: nowrap;
-        }
-        h1 {
+
+<html>
+
+   <head>
+
+      <meta charset="UTF-8">
+
+      <link rel="icon" href="https://drive.google.com/uc?export=view&id=1p9XTEirGfPFD5coffCQDrYCxboMI6Q2Y">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+      <title>FIS VŠE ChatBot - Petr Nguyen</title>
+
+      <style>
+
+         body {
+                font-family: 'Roboto', sans-serif;
+                background-color: #f8f9fa;
+            }
+
+         .container {
+                        max-width: 1500px;
+                        margin: 0 auto;
+                        padding-top: 50px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: center;
+                        height: 100vh;
+             }
+
+         h1 {
             font-size: 3em;
             margin-bottom: 1.5em;
             line-height: 1;
             text-align: center;
             font-weight: bold;
-        }
-        .logo {
-            margin-bottom: 3em;
-            width: 100%;
-            max-width: 500px;
-        }
-        .language-option {
-            background-color: #009A82;
-            color: #fff;
-            border: none;
-            font-size: 1.2em;
-            padding: 0.8em 1.5em;
-            margin-top: 1.5em;
-            text-align: center;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .language-option:hover {
-            background-color: #064c3f;
-        }
-        .language-box {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            background-color: #009A82;
-            color: #fff;
-            border: none;
-            font-size: 1.1em;
-            padding: 1em;
-            margin-top: 3em;
-            text-align: center;
-            cursor: pointer;
-            width: 150px;
-            border-radius: 5px;
-        }
-        .language-box:hover {
-            background-color: #009A82;
-        }
-        .flag {
-            width: 50px;
-            height: 30px;
-            margin-bottom: 0.5em;
-            align-items: center;
-        }
-        .row {
-          margin-bottom: 2em;
-          display: flex;
-        }
-        .language-text {
-          font-size: 1.1em;
-          text-align: center;
-          flex-grow: 1;
-        }
-    </style>
-    <script>
-        function selectLanguage(language) {
-            let form = document.createElement('form');
-            form.method = 'post';
-            form.action = "{{ url_for('select_language') }}";
+            flex-wrap: wrap;
+            }
 
-            let languageInput = document.createElement('input');
-            languageInput.type = 'hidden';
-            languageInput.name = 'language';
-            languageInput.value = language;
-            form.appendChild(languageInput);
+         .logo {
+                margin-bottom: 3em;
+                width: 100%;
+                max-width: 500px;
+            }
 
-            document.body.appendChild(form);
-            form.submit();
-        }
-    </script>
-</head>
-<body>
-    <div class="container">
-        <h1>FIS VŠE ChatBot - Petr Nguyen</h1>
-        <img src="https://drive.google.com/uc?export=view&id=18Genepl3IaqUF0YRCbxylWwOK-r01YJ3" alt="Logo" class="logo">
-        <h2>Select Language</h2>
-        <div class="row">
+         .language-option {
+                            background-color: #009A82;
+                            color: #fff;
+                            border: none;
+                            font-size: 1.2em;
+                            padding: 0.8em 1.5em;
+                            margin-top: 1.5em;
+                            text-align: center;
+                            cursor: pointer;
+                            border-radius: 5px;
+            }
+
+         .language-option:hover {
+                                background-color: #064c3f;
+            }
+
+         .language-box {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        background-color: #009A82;
+                        color: #fff;
+                        border: none;
+                        font-size: 1.1em;
+                        padding: 1em;
+                        margin-top: 3em;
+                        text-align: center;
+                        cursor: pointer;
+                        width: 150px;
+                        border-radius: 5px;
+                        flex-wrap: wrap;
+            }
+
+         .language-box:hover {
+                              background-color: #009A82;
+            }
+
+         .flag {
+                width: 50px;
+                height: 30px;
+                margin-bottom: 0.5em;
+                align-items: center;
+            }
+
+         .row {
+                margin-bottom: 2em;
+                display: flex;
+                justify-content: center;
+
+            }
+
+         .language-text {
+                        font-size: 1.1em;
+                        text-align: center;
+                        flex-grow: 1;
+            }
+
+         @media (max-width: 767px) {
+
+            .row {
+                flex-direction: column;
+                 align-items: center;
+                }
+
+            }
+
+      </style>
+
+      <script>
+
+         function selectLanguage(language) {
+
+             let form = document.createElement('form');
+
+             form.method = 'post';
+             form.action = "{{ url_for('select_language') }}";
+         
+             let languageInput = document.createElement('input');
+
+             languageInput.type = 'hidden';
+             languageInput.name = 'language';
+             languageInput.value = language;
+
+             form.appendChild(languageInput);
+         
+             document.body.appendChild(form);
+             form.submit();
+
+         }
+
+      </script>
+
+   </head>
+
+   <body>
+
+      <div class="container">
+
+         <h1>FIS VŠE ChatBot - Petr Nguyen</h1>
+
+         <img src="https://drive.google.com/uc?export=view&id=18Genepl3IaqUF0YRCbxylWwOK-r01YJ3" alt="Logo" class="logo">
+
+         <h2>Select Language</h2>
+
+         <div class="row justify-content-center">
+
             <div class="col-sm-6">
-                <div class="language-box" onclick="selectLanguage('czech')">
-                    <img src="https://www.worldometers.info/img/flags/small/tn_ez-flag.gif" alt="Czech Flag" class="flag">
-                    <span class="language-text">Czech</span>
-                </div>
+
+               <div class="language-box" onclick="selectLanguage('czech')">
+
+                  <img src="https://www.worldometers.info/img/flags/small/tn_ez-flag.gif" alt="Czech Flag" class="flag">
+
+                  <span class="language-text">Czech</span>
+
+               </div>
             </div>
-                <div class="col-sm-6">
-                    <div class="language-box" onclick="selectLanguage('english')">
-                        <img src="https://www.worldometers.info/img/flags/small/tn_uk-flag.gif" alt="UK Flag" class="flag">
-                        <span class="language-text">English</span>
-                    </div>
-                </div>
-        </div>
-                <p style="text-align: center;">© 2023 - Petr Nguyen | Faculty of Informatics and Statistics, Prague University of Economics and Business</p>
-    </div>
-                
-</body>
- </html>
+            <div class="col-sm-6">
+
+               <div class="language-box" onclick="selectLanguage('english')">
+
+                  <img src="https://www.worldometers.info/img/flags/small/tn_uk-flag.gif" alt="UK Flag" class="flag">
+
+                  <span class="language-text">English</span>
+                  
+               </div>
+            </div>
+         </div>
+         <p style="text-align: center;">© 2023 - Petr Nguyen | Faculty of Informatics and Statistics, Prague University of Economics and Business</p>
+      </div>
+
+   </body>
+
+</html>
