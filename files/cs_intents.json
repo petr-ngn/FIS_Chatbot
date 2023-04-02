@@ -397,15 +397,12 @@
                     "V kolik jedou atuobusy?",
                     "Náměstí Winstona Churchilla"
                ],
-
                "responses": [
-                    ""
+                    "Ze zastávky Náměstí Winstona Churchilla pojedou tyto autobusové spoje v následujících 15 minutách: Autobus č. 135 (směr: Chodov) - odjezd v 22:30 (bez zpoždění); Autobus č. 135 (směr: Florenc) - odjezd v 22:32 (bez zpoždění)"
                ]
           },
-
           {
                "tag": "Tramvaj",
-
                "patterns": [
                     "MHD",
                     "tramvajové spoje",
@@ -416,12 +413,10 @@
                     "Viktorie Žižkov",
                     "Husinecká"
                ],
-
                "responses": [
-                    ""
+                    "Ze zastávky Viktoria Žižkov pojedou tyto tramvajové spoje v následujících 15 minutách: Tramvaj č. 9 (směr: Spojovací) - odjezd v 22:19 (zpoždění: 1 min); Tramvaj č. 5 (směr: Holyně) - odjezd v 22:21 (bez zpoždění); Tramvaj č. 15 (směr: Depo Hostivař) - odjezd v 22:21 (bez zpoždění); Tramvaj č. 15 (směr: Kotlářka) - odjezd v 22:23 (bez zpoždění); Tramvaj č. 5 (směr: Vozovna Pankrác) - odjezd v 22:24 (bez zpoždění); Tramvaj č. 9 (směr: Sídliště Řepy) - odjezd v 22:24 (zpoždění: 1 min); Tramvaj č. 9 (směr: Spojovací) - odjezd v 22:29 (bez zpoždění); Tramvaj č. 26 (směr: Nádraží Hostivař) - odjezd v 22:31 (bez zpoždění); Tramvaj č. 26 (směr: Vozovna Vokovice) - odjezd v 22:32 (bez zpoždění); Tramvaj č. 8 (směr: Krematorium Strašnice) - odjezd v 22:32 (bez zpoždění); Tramvaj č. 25 (směr: Vozovna Žižkov) - odjezd v 22:33 (bez zpoždění); Tramvaj č. 9 (směr: Sídliště Řepy) - odjezd v 22:34 (bez zpoždění); Tramvaj č. 5 (směr: Vozovna Žižkov) - odjezd v 22:34 (bez zpoždění)"
                ]
           },
-
           {
                "tag": "Menza",
                "patterns": [
@@ -434,10 +429,9 @@
                     "stravování v menze"
                ],
                "responses": [
-                    "Dneska v menze je: Polský boršč; Smažená vepřová kotleta, šťouchané brambory s cibulkou, salátek; Pečená krůtí roláda na kmíně, houskové knedlíky, kysané zelí; Kuřecí chilli con carné, dušená rýže1, Dle denní nabídky (pasta / rizoto / směs), Gratinovaná brokolice se sýrem a vejci, vařené brambory maštěné máslem3,; Teplý bufet-dle vlastního výběru; Balené jídlo/Také away+ plech 0,33l; Fresh bageta, Gyros, Tortila"
+                    "Dneska v menze je: Kuřecí krém se zeleninou a rýží; Vepřový kotlet sypaný balkánským sýrem, bramborové hranolky, salátek; Pečené kuřecí stehno na česneku se zeleninou, bramborové knedlíky; Těstoviny Al Fredo se smetanou a kuřecím masem, sypané sýrem; Dle denní nabídky (pasta / rizoto / směs), Pekingské sojové maso se zeleninou a pórkem, dušená rýže; Krůtí stek Saltimbocca v anglické slanině, steakové hranolky, majonézový dip, mix salátů; Plněný wrap kuřecím masem a čerstvou zeleninou, kari dip, hranolky; Teplý bufet-dle vlastního výběru; Smažený květák, vařené brambory, tatarská omáčka; Balené jídlo/Také away+ plech 0,33l; Fresh bageta, Gyros, Tortila"
                ]
           },
-
           {
                "tag": "Pozdrav",
                "patterns": [
@@ -508,7 +502,6 @@
                     "Úřední hodiny studijní oddělení",
                     "Úřední hodiny studijního oddělení",
                     "Studijní fis"
-                   
                ],
                "responses": [
                     "Studijní oddělení má úřední hodiny v pondělí od 8:30 do 11:30 a od 13:00 do 15:00 a ve středu od 8:30 do 11:30 a od 13:00 do 15:00. Ing. Jana Sedláčková je zodpovědná za bakalářské studium a kontaktní centrum InSIS. Jana Hudčeková je příslušná pro bakalářské studium a má svou kancelář v místnosti 410 NB. Její telefonní číslo je 224 095 440 a e-mailová adresa jana.hudcekova@vse.cz. Iva Hudcová se stará o magisterské studium a její místnost je 409 NB. Pro kontakt s ní lze použít telefonní číslo 224 095 487 nebo e-mailovou adresu hudcovai@vse.cz. Ing. Tereza Krajíčková, DiS. je zodpovědná za doktorské studium a její kancelář se nachází v místnosti 412 NB. Lze ji kontaktovat prostřednictvím telefonního čísla 224 095 464 nebo e-mailové adresy tereza.krajickova@vse.cz."
@@ -564,8 +557,8 @@
                "responses": [
                     "Inovační týden probíha vždy v 7. semestru výuky."
                ]
-               },
-               {
+          },
+          {
                "tag": "Kredity",
                "patterns": [
                     "Kolik kreditů je potřeba pro ukončení",
@@ -624,7 +617,7 @@
           {
                "tag": "Koleje",
                "patterns": [
-                    "Nabízí VŠE ubytování na kolejích",            
+                    "Nabízí VŠE ubytování na kolejích",
                     "Kde jsou VŠE koleje",
                     "Koleje VŠE Praha",
                     "Koleje",
@@ -640,7 +633,7 @@
           {
                "tag": "Kariérni rozvoj",
                "patterns": [
-                    "Možnosti karierního rozvoje na VŠE",              
+                    "Možnosti karierního rozvoje na VŠE",
                     "Kariérní centrum",
                     "Eventové centrum",
                     "Absolventské centrum",
@@ -668,12 +661,12 @@
                     "Komunita DAB",
                     "Datový klub VŠE",
                     "Datový klub",
-                    "DAB",      
+                    "DAB",
                     "Data a byznys",
-                    "Klub DAB" 
+                    "Klub DAB"
                ],
                "responses": [
-                    " DAB Alumni klub je KOMUNITA PRO (BUDOUCÍ) DATOVÉ SPECIALISTY, KTEŘÍ SE SEŠLI PŘI STUDIU DATOVÉ ANALYTIKY. Klub je organizován studenty pro současné i bývalé studentské kolegy za podpory vedoucích oborů a sponzorů programu. Členové jsou studenti nebo absolventi bakalářského programu Datová analytika či magisterského programu Data a analytika pro buisiness vyučovaných na VŠE. Odkaz na facebookovou skupinu: https://www.facebook.com/groups/2367392286732156"
+                    " DAB Alumni klub je KOMUNITA PRO (BUDOUCÍ) DATOVÉ SPECIALISTY, KTEŘÍ SE SEŠLI PŘI STUDIU DATOVÉ ANALYTIKY. Klub je organizován studenty pro současné i bývalé studentské kolegy za podpory vedoucích oborů a sponzorů programu. Členové jsou studenti nebo absolventi bakalářského programu Datová analytika či magisterského programu Data a analytika pro buisiness vyučovaných na VŠE. Odkaz na facebookovou skupinu: <a href='https://www.facebook.com/groups/2367392286732156'>https://www.facebook.com/groups/2367392286732156</a>"
                ]
           }
      ]
