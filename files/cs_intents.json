@@ -436,6 +436,245 @@
                "responses": [
                     "Dneska v menze je: Polský boršč; Smažená vepřová kotleta, šťouchané brambory s cibulkou, salátek; Pečená krůtí roláda na kmíně, houskové knedlíky, kysané zelí; Kuřecí chilli con carné, dušená rýže1, Dle denní nabídky (pasta / rizoto / směs), Gratinovaná brokolice se sýrem a vejci, vařené brambory maštěné máslem3,; Teplý bufet-dle vlastního výběru; Balené jídlo/Také away+ plech 0,33l; Fresh bageta, Gyros, Tortila"
                ]
+          },
+
+          {
+               "tag": "Pozdrav",
+               "patterns": [
+                    "Ahoj",
+                    "Zdar",
+                    "Dobrý den",
+                    "Zdravím"
+               ],
+               "responses": [
+                    "Zdravím, jak vám mohu pomoci?"
+               ]
+          },
+          {
+               "tag": "Vedení fakulty",
+               "patterns": [
+                    "Kdo vede fis",
+                    "vedení fakulty",
+                    "kdo řídí fakultu",
+                    "Děkan",
+                    "Kdo je děkanem fisu",
+                    "Kdo je děkanem fakulty informatiky a statistiky",
+                    "Proděkan",
+                    "Proděkanka",
+                    "Vedení fis"
+               ],
+               "responses": [
+                    "Fakultu Informatiky a Statistiky vede děkan prof. Ing. Jakub Fischer, Ph.D. Proděkankou pro studijní a pedagogickou činnost je Ing. Kristýna Vltavská, Ph.D. Proděkanem pro tvůrčí činnost a zahraniční vztahy a zároveň statutárním zástupcem děkana je prof. Ing. Petr Doucek, CSc. Ing. Dušan Chlapek, Ph.D. zastává pozici proděkana pro rozvoj, transfer znalostí a spolupráci s praxí. Akademickým ředitelem cizojazyčných studijních programů je doc. Ing. Mgr. Petr Mazouch, Ph.D. Manažerem komunikace a marketingu je Ing. Zdeněk Vondra, Ph.D. Tajemnicí fakulty je Ing. Marie Gvoždiaková."
+               ]
+          },
+          {
+               "tag": "Jak se máš",
+               "patterns": [
+                    "Jak se máš",
+                    "Jak je",
+                    "Jak se cítíš",
+                    "Jakou máš náladu",
+                    "Jak se máte",
+                    "jaký máš den"
+               ],
+               "responses": [
+                    "Pocity ani nálady nemám, ale zato ti můžu odpovědět na nějakou otázku ohledně studia na VŠE"
+               ]
+          },
+          {
+               "tag": "film",
+               "patterns": [
+                    "Film",
+                    "O číslech a lidech",
+                    "Film FIS VŠE",
+                    "více informací o fakultě",
+                    "širší informace",
+                    "chci se dozvědět více o FISu",
+                    "Více informací",
+                    "širší info o fakultě",
+                    "dokumentární film FIS",
+                    "úspěchy fakulty"
+               ],
+               "responses": [
+                    "Další informace o fakultě se můžete dozvědět v krátkém dokumentárním filmu O číslech a lidech: https://www.youtube.com/watch?v=X-ao_V4fGpE"
+               ]
+          },
+          {
+               "tag": "Studijní oddělení",
+               "patterns": [
+                    "Studijní oddělení",
+                    "Konzultační hodiny studijní oddělení",
+                    "Konzultační hodiny studijního oddělení",
+                    "Úřední hodiny studijní oddělení",
+                    "Úřední hodiny studijního oddělení",
+                    "Studijní fis"
+                   
+               ],
+               "responses": [
+                    "Studijní oddělení má úřední hodiny v pondělí od 8:30 do 11:30 a od 13:00 do 15:00 a ve středu od 8:30 do 11:30 a od 13:00 do 15:00. Ing. Jana Sedláčková je zodpovědná za bakalářské studium a kontaktní centrum InSIS. Jana Hudčeková je příslušná pro bakalářské studium a má svou kancelář v místnosti 410 NB. Její telefonní číslo je 224 095 440 a e-mailová adresa jana.hudcekova@vse.cz. Iva Hudcová se stará o magisterské studium a její místnost je 409 NB. Pro kontakt s ní lze použít telefonní číslo 224 095 487 nebo e-mailovou adresu hudcovai@vse.cz. Ing. Tereza Krajíčková, DiS. je zodpovědná za doktorské studium a její kancelář se nachází v místnosti 412 NB. Lze ji kontaktovat prostřednictvím telefonního čísla 224 095 464 nebo e-mailové adresy tereza.krajickova@vse.cz."
+               ]
+          },
+          {
+               "tag": "Přijímací řízení",
+               "patterns": [
+                    "Přijímací řízení",
+                    "Přijímačky",
+                    "Přihláška ke studiu",
+                    "Termíny přijímacího řízení",
+                    "Do kdy si musím podat přihlášku ke studiu",
+                    "Přihlášení ke studiu",
+                    "Podání přihlášky",
+                    "Důležité termíny",
+                    "Přihlášení ke studiu",
+                    "Deadline na podání přihlášky",
+                    "Přihlášky na akademický rok 2023/2024",
+                    "Termín podání přihlášky"
+               ],
+               "responses": [
+                    "Podání přihlášky na akademický rok 2023/2024 včetně připsání platby na účet musí proběhnout nejpozději 30. 4. 2023"
+               ]
+          },
+          {
+               "tag": "Cena přihlášky",
+               "patterns": [
+                    "Cena přihlášky",
+                    "Kolik stojí podání přihlášky ke studiu",
+                    "Cena přihlášky ke studiu",
+                    "Cena přihlášky",
+                    "Kolik stojí přihláška",
+                    "Cena přijímacího přízení",
+                    "Poplatek za podání přihlášky",
+                    "Poplatek za přijímačky",
+                    "Cena",
+                    "Platba",
+                    "Poplatek"
+               ],
+               "responses": [
+                    "Poplatek za úkony spojené s přijímacím řízením činí 880 Kč a lze ho uhradit buď okamžitě při zadávání přihlášky platební kartou, nebo převodem na účet (číslo účtu a variabilní symbol obdrží uchazeč na e-mailovou adresu uvedenou v přihlášce). Platba musí být připsána na účet VŠE nejpozději do 30. dubna 2023."
+               ]
+          },
+          {
+               "tag": "Inovační týden",
+               "patterns": [
+                    "Kdy je inovační týden",
+                    "Kdy je inovacni tyden",
+                    "Inovacni tyden",
+                    "Inovace"
+               ],
+               "responses": [
+                    "Inovační týden probíha vždy v 7. semestru výuky."
+               ]
+               },
+               {
+               "tag": "Kredity",
+               "patterns": [
+                    "Kolik kreditů je potřeba pro ukončení",
+                    "Kredity na bakaláře",
+                    "Kredity na magistra",
+                    "Kreditový systém",
+                    "Počet kreditů k dokončení studia"
+               ],
+               "responses": [
+                    "Na úspěšné ukončení studia na VŠE je potřeba získat minimálne 180 kreditů pro bakalářske programy a 120 kreditů pro magisterské programy"
+               ]
+          },
+          {
+               "tag": "Rezervní kredity",
+               "patterns": [
+                    "Kolik kreditů mám rezervních",
+                    "O kolik kreditů můžu přijít",
+                    "Rezervní kredity",
+                    "Rezervní poukázky",
+                    "Kolik kreditů můžu ztratit"
+               ],
+               "responses": [
+                    "Na bakalářských oborech je počet rezervních kreditů/poukázek 36, na magisterských oborech 24"
+               ]
+          },
+          {
+               "tag": "Knihovna",
+               "patterns": [
+                    "Kdy je na VŠE otevřená knihovna",
+                    "Kde sa nachází knihovna na VŠE",
+                    "Otevírací hodiny knihovny",
+                    "VŠE knihovna",
+                    "Knihovna otevírací hodiny",
+                    "Knihovna"
+               ],
+               "responses": [
+                    "Knihovna VŠE nabízí studentům, zaměstnancům a odborné veřejnosti tištěné i elektronické zdroje, poskytuje konzultace, pořádá veřejně přístupné semináře zaměřené na práci s informacemi a podílí se na výuce některých předmětů. Knihovna se nachází v areálu VŠE na Žižkově (mezanin Staré budovy, náměstí W. Churchilla 4, Praha 3. Otvírací hodiny: Pondělí – Čtvrtek od 9:00 do 19:00 a v pátek od 8:00 do 14:00"
+               ]
+          },
+          {
+               "tag": "Stipendium",
+               "patterns": [
+                    "Stipendium na VŠE",
+                    "Jaká jsou stipendia na VŠE",
+                    "Jsou stipendia na VŠE",
+                    "Stipendium",
+                    "Stipendia",
+                    "Výše stipendia",
+                    "Podmínky pro získání stipendia",
+                    "Jak získat stipendium"
+               ],
+               "responses": [
+                    "Na VŠE je možnost získat ubytovací stipendium pro studenty, který nemají trvalý pobyt v Praze. Dále je možnost získat prospěchové stipendium. Podmínky pro jeho získání se liší od každé fakulty."
+               ]
+          },
+          {
+               "tag": "Koleje",
+               "patterns": [
+                    "Nabízí VŠE ubytování na kolejích",            
+                    "Kde jsou VŠE koleje",
+                    "Koleje VŠE Praha",
+                    "Koleje",
+                    "Ubytování",
+                    "Ubytování pro studenty",
+                    "Koleje VŠE",
+                    "Koleje pro prváky"
+               ],
+               "responses": [
+                    "VŠE nabízí ubytování na kolejích. Konkrétně koleje Palachova, University Hotel, Eislerova a Thalerova které se nachází na Praze 3. Dále Rooseveltova kolej v Holešovicích a koleje Blanice a Vltava na jižním měste, které jsou určeny hlavně pro studenty prvních ročníků bakalářského studia."
+               ]
+          },
+          {
+               "tag": "Kariérni rozvoj",
+               "patterns": [
+                    "Možnosti karierního rozvoje na VŠE",              
+                    "Kariérní centrum",
+                    "Eventové centrum",
+                    "Absolventské centrum",
+                    "Kariéra",
+                    "Absolventi",
+                    "Pro absolventy",
+                    "Absolvent",
+                    "Kariéra po studiu",
+                    "Kariérní rozvoj",
+                    "Alumni a Corporate relations",
+                    "Partnerské centrum",
+                    "Kariérní poradenství"
+               ],
+               "responses": [
+                    "Alumni a Corporate relations tvoří čtyri centra: Kariérní centrum, Eventové centrum, Absolventské centrum a Partnerské centrum. V rámci činnosti poskytuje kvalitní servis českým i zahraničním studentům, absolventům, zaměstancům i partnerům VŠE především v oblastech kariéry, poradenství, event managementu, vztahu s absolventy a partnery VŠE. Systematicky rozvíjí vztahy s praxí, podobnými pracovišti v České republice i v zahraničí. Jejich služby jsou k dispozici aktérům uvnitř školy i firemním partnerům."
+               ]
+          },
+          {
+               "tag": "DAB Alumni",
+               "patterns": [
+                    "DAB Alumni",
+                    "DAB alumni klub",
+                    "Data a business alumni klub",
+                    "VŠE alumni klub",
+                    "Komunita DAB",
+                    "Datový klub VŠE",
+                    "Datový klub",
+                    "DAB",      
+                    "Data a byznys",
+                    "Klub DAB" 
+               ],
+               "responses": [
+                    " DAB Alumni klub je KOMUNITA PRO (BUDOUCÍ) DATOVÉ SPECIALISTY, KTEŘÍ SE SEŠLI PŘI STUDIU DATOVÉ ANALYTIKY. Klub je organizován studenty pro současné i bývalé studentské kolegy za podpory vedoucích oborů a sponzorů programu. Členové jsou studenti nebo absolventi bakalářského programu Datová analytika či magisterského programu Data a analytika pro buisiness vyučovaných na VŠE. Odkaz na facebookovou skupinu: https://www.facebook.com/groups/2367392286732156"
+               ]
           }
      ]
 }
