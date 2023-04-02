@@ -1,6 +1,4 @@
 # NLP Chatbot for FIS VŠE
-currently in development
-
 **TEAM**:
    - **Lead Data Scientist & Developer**: [**Petr Nguyen**](https://www.linkedin.com/in/petr-ngn/)
    - **Data Scientist Support**: [Lukas Dolezal](https://www.linkedin.com/in/lukas-dolezal75/)
