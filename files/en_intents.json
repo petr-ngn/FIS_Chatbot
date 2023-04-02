@@ -443,15 +443,12 @@
                     "Náměstí Winstona Churchilla",
                     "Winston Churchill Square"
                ],
-               
                "responses": [
-                    ""
+                    "These bus transports will departure from the stop Náměstí Winstona Churchilla in the folllowing 15 minutes: Bus no. 135 (direction: Florenc) - departure at 22:12 (delay: 2 min)"
                ]
           },
-
           {
                "tag": "Tram",
-
                "patterns": [
                     "Public transport",
                     "Tram transport",
@@ -463,9 +460,8 @@
                     "Viktioria Žižkov",
                     "Husinecká"
                ],
-
                "responses": [
-                    ""
+                    "These tram transports will departure from the stop Viktoria Žižkov in the folllowing 15 minutes: Tram no. 9 (direction: Spojovací) - departure at 22:09 (delay: 3 min); Tram no. 26 (direction: Nádraží Hostivař) - departure at 22:12 (no delay); Tram no. 26 (direction: Vozovna Vokovice) - departure at 22:12 (delay: 1 min); Tram no. 9 (direction: Sídliště Řepy) - departure at 22:14 (no delay); Tram no. 14 (direction: Krematorium Strašnice) - departure at 22:16 (no delay); Tram no. 9 (direction: Spojovací) - departure at 22:19 (no delay); Tram no. 5 (direction: Holyně) - departure at 22:21 (no delay); Tram no. 15 (direction: Depo Hostivař) - departure at 22:21 (delay: 1 min); Tram no. 15 (direction: Kotlářka) - departure at 22:23 (no delay); Tram no. 5 (direction: Vozovna Pankrác) - departure at 22:24 (no delay); Tram no. 9 (direction: Sídliště Řepy) - departure at 22:24 (no delay)"
                ]
           },
           {
@@ -486,198 +482,198 @@
           {
                "tag": "Greeting",
                "patterns": [
-                   "Hi",
-                   "Hello",
-                   "Good day",
-                   "Greetings"
+                    "Hi",
+                    "Hello",
+                    "Good day",
+                    "Greetings"
                ],
                "responses": [
-                   "Hello, how can I help you?"
+                    "Hello, how can I help you?"
                ]
           },
           {
                "tag": "Faculty Leadership",
                "patterns": [
-                   "Who leads FIS",
-                   "Faculty leadership",
-                   "Who runs the faculty",
-                   "Dean",
-                   "Who is the dean of FIS",
-                   "Who is the dean of the Faculty of Informatics and Statistics",
-                   "Vice-Dean",
-                   "Vice-Dean",
-                   "FIS Leadership"
+                    "Who leads FIS",
+                    "Faculty leadership",
+                    "Who runs the faculty",
+                    "Dean",
+                    "Who is the dean of FIS",
+                    "Who is the dean of the Faculty of Informatics and Statistics",
+                    "Vice-Dean",
+                    "Vice-Dean",
+                    "FIS Leadership"
                ],
                "responses": [
-                   "The Dean of the Faculty of Informatics and Statistics is Prof. Ing. Jakub Fischer, Ph.D. Ing. Kristýna Vltavská, Ph.D. is the Vice-Dean for study and pedagogical activities. Prof. Ing. Petr Doucek, CSc. is the Vice-Dean for creative activities and international relations, as well as the statutory representative of the dean. Ing. Dušan Chlapek, Ph.D. holds the position of Vice-Dean for development, knowledge transfer and cooperation with practice. Doc. Ing. Mgr. Petr Mazouch, Ph.D. is the Academic Director of foreign language study programs. Ing. Zdeněk Vondra, Ph.D. is the Communication and Marketing Manager, and Ing. Marie Gvoždiaková is the Faculty Secretary."
+                    "The Dean of the Faculty of Informatics and Statistics is Prof. Ing. Jakub Fischer, Ph.D. Ing. Kristýna Vltavská, Ph.D. is the Vice-Dean for study and pedagogical activities. Prof. Ing. Petr Doucek, CSc. is the Vice-Dean for creative activities and international relations, as well as the statutory representative of the dean. Ing. Dušan Chlapek, Ph.D. holds the position of Vice-Dean for development, knowledge transfer and cooperation with practice. Doc. Ing. Mgr. Petr Mazouch, Ph.D. is the Academic Director of foreign language study programs. Ing. Zdeněk Vondra, Ph.D. is the Communication and Marketing Manager, and Ing. Marie Gvoždiaková is the Faculty Secretary."
                ]
           },
           {
                "tag": "How are you",
                "patterns": [
-                   "How are you",
-                   "How is it going",
-                   "How do you feel",
-                   "What is your mood",
-                   "How are you doing",
-                   "How is your day"
+                    "How are you",
+                    "How is it going",
+                    "How do you feel",
+                    "What is your mood",
+                    "How are you doing",
+                    "How is your day"
                ],
                "responses": [
-                   "I have no feelings or moods, but I can answer any questions you may have regarding studying at the University of Economics in Prague."
+                    "I have no feelings or moods, but I can answer any questions you may have regarding studying at the University of Economics in Prague."
                ]
           },
           {
                "tag": "Film",
                "patterns": [
-                   "Film",
-                   "About numbers and people",
-                   "FIS film",
-                   "More information about the faculty",
-                   "More information",
-                   "I want to learn more about FIS",
-                   "Wider information about the faculty",
-                   "FIS documentary",
-                   "Faculty achievements"
+                    "Film",
+                    "About numbers and people",
+                    "FIS film",
+                    "More information about the faculty",
+                    "More information",
+                    "I want to learn more about FIS",
+                    "Wider information about the faculty",
+                    "FIS documentary",
+                    "Faculty achievements"
                ],
                "responses": [
-                   "You can learn more about the faculty in a short documentary film called About numbers and people: https://www.youtube.com/watch?v=X-ao_V4fGpE"
+                    "You can learn more about the faculty in a short documentary film called About numbers and people: https://www.youtube.com/watch?v=X-ao_V4fGpE"
                ]
           },
           {
                "tag": "Study Department",
                "patterns": [
-                   "Study Department",
-                   "Consultation hours of the study department",
-                   "Consultation hours of the study department",
-                   "Official hours of the study department",
-                   "Official hours of the study department",
-                   "Study FIS"
+                    "Study Department",
+                    "Consultation hours of the study department",
+                    "Consultation hours of the study department",
+                    "Official hours of the study department",
+                    "Official hours of the study department",
+                    "Study FIS"
                ],
                "responses": [
-                   "The Study Department has official hours on Mondays from 8:30 to 11:30 and from 13:00 to 15:00, and on Wednesdays from 8:30 to 11:30 and from 13:00 to 15:00. Ing. Jana Sedláčková is responsible for bachelor's studies and the InSIS contact center. Jana Hudčeková is responsible for bachelor's studies and has her office in room 410 NB. Her phone number is 224 095 440 and her email address is jana.hudcekova@vse.cz. Iva Hudcová is responsible for master's studies and her room is 409 NB. She can be contacted via phone number 224 095 487 or email address hudcovai@vse.cz. Ing. Tereza Krajíčková, DiS. is responsible for doctoral studies and her office is located in room 412 NB. She can be contacted by phone at 224 095 464 or by email at tereza.krajickova@vse.cz."
+                    "The Study Department has official hours on Mondays from 8:30 to 11:30 and from 13:00 to 15:00, and on Wednesdays from 8:30 to 11:30 and from 13:00 to 15:00. Ing. Jana Sedláčková is responsible for bachelor's studies and the InSIS contact center. Jana Hudčeková is responsible for bachelor's studies and has her office in room 410 NB. Her phone number is 224 095 440 and her email address is jana.hudcekova@vse.cz. Iva Hudcová is responsible for master's studies and her room is 409 NB. She can be contacted via phone number 224 095 487 or email address hudcovai@vse.cz. Ing. Tereza Krajíčková, DiS. is responsible for doctoral studies and her office is located in room 412 NB. She can be contacted by phone at 224 095 464 or by email at tereza.krajickova@vse.cz."
                ]
           },
           {
                "tag": "Admissions",
                "patterns": [
-                   "Admissions",
-                   "Entrance exams",
-                   "Application for studies",
-                   "Dates of admission procedure",
-                   "Until when do I have to submit an application for studies",
-                   "Enrollment in studies",
-                   "Submitting an application",
-                   "Important dates",
-                   "Enrollment in studies",
-                   "Deadline for submitting an application",
-                   "Applications for the academic year 2023/2024",
-                   "Application deadline"
+                    "Admissions",
+                    "Entrance exams",
+                    "Application for studies",
+                    "Dates of admission procedure",
+                    "Until when do I have to submit an application for studies",
+                    "Enrollment in studies",
+                    "Submitting an application",
+                    "Important dates",
+                    "Enrollment in studies",
+                    "Deadline for submitting an application",
+                    "Applications for the academic year 2023/2024",
+                    "Application deadline"
                ],
                "responses": [
-                   "Submission of applications for the academic year 2023/2024, including payment to the account, must be completed no later than April 30, 2023."
+                    "Submission of applications for the academic year 2023/2024, including payment to the account, must be completed no later than April 30, 2023."
                ]
           },
           {
                "tag": "Application Fee",
                "patterns": [
-                   "Application fee",
-                   "How much does it cost to submit an application for studies",
-                   "Application fee for studies",
-                   "Application fee",
-                   "How much does an application cost",
-                   "Admission fee",
-                   "Fee for submitting an application",
-                   "Fee for entrance exams",
-                   "Cost",
-                   "Payment",
-                   "Fee"
+                    "Application fee",
+                    "How much does it cost to submit an application for studies",
+                    "Application fee for studies",
+                    "Application fee",
+                    "How much does an application cost",
+                    "Admission fee",
+                    "Fee for submitting an application",
+                    "Fee for entrance exams",
+                    "Cost",
+                    "Payment",
+                    "Fee"
                ],
                "responses": [
-                   "The fee for activities related to the admission procedure is CZK 880 and can be paid either immediately when submitting the application by credit card, or by bank transfer (the account number and variable symbol will be sent to the applicant's email address provided in the application). Payment must be credited to the VSE account no later than April 30, 2023."
+                    "The fee for activities related to the admission procedure is CZK 880 and can be paid either immediately when submitting the application by credit card, or by bank transfer (the account number and variable symbol will be sent to the applicant's email address provided in the application). Payment must be credited to the VSE account no later than April 30, 2023."
                ]
           },
           {
                "tag": "Innovation week",
                "patterns": [
-                   "When is innovation week?",
-                   "When is the innovation week?",
-                   "Innovation week",
-                   "Innovation"
+                    "When is innovation week?",
+                    "When is the innovation week?",
+                    "Innovation week",
+                    "Innovation"
                ],
                "responses": [
-                   "Innovation week takes place in the 7th semester of study."
+                    "Innovation week takes place in the 7th semester of study."
                ]
           },
           {
                "tag": "Credits",
                "patterns": [
-                   "How many credits are required to complete the program?",
-                   "Credits for bachelor's degree",
-                   "Credits for master's degree",
-                   "Credit system",
-                   "Number of credits required to complete the program"
+                    "How many credits are required to complete the program?",
+                    "Credits for bachelor's degree",
+                    "Credits for master's degree",
+                    "Credit system",
+                    "Number of credits required to complete the program"
                ],
                "responses": [
-                   "To successfully complete studies at VSE, you need to obtain at least 180 credits for bachelor's programs and 120 credits for master's programs."
+                    "To successfully complete studies at VSE, you need to obtain at least 180 credits for bachelor's programs and 120 credits for master's programs."
                ]
           },
           {
                "tag": "Reserved credits",
                "patterns": [
-                   "How many reserved credits do I have?",
-                   "How many credits can I lose?",
-                   "Reserved credits",
-                   "Reserved vouchers",
-                   "How many credits can I lose?"
+                    "How many reserved credits do I have?",
+                    "How many credits can I lose?",
+                    "Reserved credits",
+                    "Reserved vouchers",
+                    "How many credits can I lose?"
                ],
                "responses": [
-                   "The number of reserved credits/vouchers is 36 for bachelor's programs and 24 for master's programs."
+                    "The number of reserved credits/vouchers is 36 for bachelor's programs and 24 for master's programs."
                ]
           },
           {
                "tag": "Library",
                "patterns": [
-                   "When is the VSE library open?",
-                   "Where is the VSE library located?",
-                   "Library opening hours",
-                   "VSE library",
-                   "Library opening hours",
-                   "Library"
+                    "When is the VSE library open?",
+                    "Where is the VSE library located?",
+                    "Library opening hours",
+                    "VSE library",
+                    "Library opening hours",
+                    "Library"
                ],
                "responses": [
-                   "The VSE library offers students, employees, and the professional public both printed and electronic resources, provides consultations, holds publicly accessible seminars focused on working with information, and participates in teaching some subjects. The library is located in the VSE campus in Žižkov (mezzanine of the Old Building, Winston Churchill Square 4, Prague 3). Opening hours: Monday – Thursday from 9:00 am to 7:00 pm and on Friday from 8:00 am to 2:00 pm."
+                    "The VSE library offers students, employees, and the professional public both printed and electronic resources, provides consultations, holds publicly accessible seminars focused on working with information, and participates in teaching some subjects. The library is located in the VSE campus in Žižkov (mezzanine of the Old Building, Winston Churchill Square 4, Prague 3). Opening hours: Monday – Thursday from 9:00 am to 7:00 pm and on Friday from 8:00 am to 2:00 pm."
                ]
           },
           {
                "tag": "Scholarship",
                "patterns": [
-                   "Scholarship at VSE",
-                   "What are the scholarships at VSE?",
-                   "Are there scholarships at VSE?",
-                   "Scholarship",
-                   "Scholarships",
-                   "Amount of scholarship",
-                   "Conditions for obtaining a scholarship",
-                   "How to obtain a scholarship"
+                    "Scholarship at VSE",
+                    "What are the scholarships at VSE?",
+                    "Are there scholarships at VSE?",
+                    "Scholarship",
+                    "Scholarships",
+                    "Amount of scholarship",
+                    "Conditions for obtaining a scholarship",
+                    "How to obtain a scholarship"
                ],
                "responses": [
-                   "It is possible to obtain an accommodation scholarship for students who do not have permanent residence in Prague at VSE. In addition, it is possible to obtain a merit scholarship. The conditions for obtaining it differ for each faculty."
+                    "It is possible to obtain an accommodation scholarship for students who do not have permanent residence in Prague at VSE. In addition, it is possible to obtain a merit scholarship. The conditions for obtaining it differ for each faculty."
                ]
           },
           {
                "tag": "Dormitories",
                "patterns": [
-                   "Does VSE offer accommodation in dormitories?",
-                   "Where are VSE dormitories located?",
-                   "VSE dormitories Prague",
-                   "Dormitories",
-                   "Accommodation",
-                   "Accommodation for students",
+                    "Does VSE offer accommodation in dormitories?",
+                    "Where are VSE dormitories located?",
+                    "VSE dormitories Prague",
+                    "Dormitories",
+                    "Accommodation",
+                    "Accommodation for students",
                     "VSE dormitories",
-                   "Dormitories for freshmen"
+                    "Dormitories for freshmen"
                ],
                "responses": [
-                   "VSE offers accommodation in dormitories, namely Palachova, University Hotel, Eislerova, and Thalerova dormitories, which are located in Prague 3. Furthermore, Roosevelt Dormitory in Holešovice and Blanice and Vltava Dormitories in the southern part of Prague are mainly intended for first-year bachelor's students."
+                    "VSE offers accommodation in dormitories, namely Palachova, University Hotel, Eislerova, and Thalerova dormitories, which are located in Prague 3. Furthermore, Roosevelt Dormitory in Holešovice and Blanice and Vltava Dormitories in the southern part of Prague are mainly intended for first-year bachelor's students."
                ]
           },
           {
@@ -716,7 +712,7 @@
                     "DAB club"
                ],
                "responses": [
-                    "The DAB Alumni Club is a COMMUNITY FOR (FUTURE) DATA SPECIALISTS WHO HAVE MET DURING THEIR STUDIES IN DATA ANALYTICS. The club is organized by students for current and former student colleagues with the support of program leaders and sponsors. Members are students or graduates of the Bachelor's program in Data Analytics or the Master's program in Data and Analytics for Business taught at VŠE. Link to Facebook group: https://www.facebook.com/groups/2367392286732156"
+                    "The DAB Alumni Club is a COMMUNITY FOR (FUTURE) DATA SPECIALISTS WHO HAVE MET DURING THEIR STUDIES IN DATA ANALYTICS. The club is organized by students for current and former student colleagues with the support of program leaders and sponsors. Members are students or graduates of the Bachelor's program in Data Analytics or the Master's program in Data and Analytics for Business taught at VŠE. Link to Facebook group: <a href='https://www.facebook.com/groups/2367392286732156'>https://www.facebook.com/groups/2367392286732156</a>"
                ]
           }
      ]
