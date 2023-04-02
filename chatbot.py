@@ -13,6 +13,7 @@ import nltk
 nltk.download('punkt', quiet = True)
 nltk.download("wordnet", quiet = True)
 nltk.download('stopwords', quiet = True)
+nltk.download('omw-1.4', quiet = True)
 
 import logging
 logging.getLogger('tensorflow').setLevel(logging.ERROR)
@@ -35,9 +36,8 @@ def index():
 
 @app.route('/select_language', methods = ['POST'])
 def select_language():
-
     language = request.form.get('language')
-
+    
     if language == 'czech':
         return redirect(url_for('czech_chatbot'))
     elif language == 'english':
