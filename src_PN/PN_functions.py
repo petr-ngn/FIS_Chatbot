@@ -1,4 +1,5 @@
 import os
+import sys
 os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '10'
 import numpy as np
@@ -27,6 +28,7 @@ from deep_translator import GoogleTranslator
 from keras import backend as K
 from nltk.corpus import stopwords
 from nltk import WordNetLemmatizer
+import matplotlib.pyplot as plt
 
 
 
@@ -383,6 +385,45 @@ def categorical_focal_loss_function(alpha:float, gamma:float):
 
 
 
+def focal_loss_f1_plot(history, lang:str):
+
+    title_name = "Czech" if lang == 'cs' else "English"
+
+    fig = plt.figure(figsize=(9, 7))
+
+    #F1 score
+    ax1 = plt.gca()
+    ax1.plot(history.history['f1'], color='blue', label='Training F1 score')
+    ax1.set_ylabel('F1 score', fontsize=13)
+
+    #Focal loss
+    ax2 = ax1.twinx()
+    ax2.plot(history.history['loss'], color='red', label='Training Focal Loss')
+    ax2.set_ylabel('Focal Loss', fontsize=13)
+
+    ax1.yaxis.set_tick_params(labelsize=12)
+    ax2.yaxis.set_tick_params(labelsize=12)
+
+    plt.title(f"{title_name} NN's Model Focal Loss and F1 score", fontsize=15)
+    ax1.set_xlabel('Epochs', fontsize=13)
+    ax1.xaxis.set_tick_params(labelsize=12)
+
+    plt.grid(linestyle='--')
+
+    lines = ax1.get_lines() + ax2.get_lines()
+
+    plt.legend(lines, [line.get_label() for line in lines],
+               loc = 'upper center', fontsize = 13,
+               bbox_to_anchor = (0.5, -0.09), ncol = 2)
+
+    plt.tight_layout()
+
+    plt.savefig(os.path.join('models', f'{lang}_NN_FocalLoss_F1_plot.jpg'), dpi = 1200)
+
+    plt.show()
+
+
+
 def nn_tuning(X_train:np.array, y_train:np.array, seed:int, name:str):
         
     #Function for building a model and tuning its hyperparameters.
@@ -464,36 +505,34 @@ def nn_tuning(X_train:np.array, y_train:np.array, seed:int, name:str):
     
     #Early stopping after 7 epochs while monitoring the Categorical Focal Loss
     callback = [EarlyStopping(monitor = 'loss', mode = 'min', patience = 7)]
-    
+    sys.stderr = open(os.devnull, 'w')
     #Hyperparameter tuning with 200 epochs and early stopping callback after 7 epochs (if there is no improvement in the Categorical Focal Loss)
     bayes_opt.search(X_train, y_train, verbose = 0,
                  epochs = 200, callbacks = callback)
-    
+    sys.stderr = sys.__stderr__
     #Extracting the model with the best hyperparameter values
     best_hypers = bayes_opt.get_best_hyperparameters(num_trials = 1)[0]
     final_nn = bayes_opt.hypermodel.build(best_hypers)
+    #Saving the best hyperparameters in a json file
+    with open(os.path.join('models', f'{name}_best_hyperparameters.pkl'),
+             'wb') as f:
+        
+        pickle.dump(best_hypers, f)
 
     #Removing the Bayesian Optimization folder from the directory
-    shutil.rmtree(os.path.join(
-                               f'Bayes_NN_{name}'),
+    shutil.rmtree(os.path.join(f'Bayes_NN_{name}'),
                   ignore_errors = True)
     
     #Final model fitting with 200 epochs and early stopping callback after 7 epochs (if there is no improvement in the Categorical Focal Loss)
-    final_nn.fit(X_train, y_train, verbose = 0,
-                 epochs = 200, callbacks = callback)
+    history = final_nn.fit(X_train, y_train, verbose = 0,
+                            epochs = 200, callbacks = callback)
     
+    focal_loss_f1_plot(history, name)
+
+    tf.keras.utils.plot_model(final_nn, show_shapes = True, show_layer_activations = True,
+                          show_layer_names = True, expand_nested = True,
+                          to_file = os.path.join('models', f'{name}_NN_plot.jpg'))
     
-
-    #Printing the final model's hyperparameters' values.
-    spaces = ' '
-
-    print(f"{spaces * 14} Final model hyperparameters' values:", '\n')
-
-    for hyp_name, hyp_value in best_hypers.values.items():
-        print(f'{spaces * 20} {hyp_name}: {hyp_value}')
-
-    print('\n')
-
     return final_nn #Final NN model
 
 
@@ -542,9 +581,9 @@ def print_statement_step(text:str, indent:int = 10):
 
 
 
-def nlp_nn_modelling(lang:str, seed:int, print:bool = False):
+def nlp_nn_modelling(lang:str, seed:int, to_print:bool = True):
 
-    if print:
+    if to_print:
         print_statement_title(f'{lang.upper()} NLP NEURAL NETWORK MODELLING')
 
         print_statement_step('STARTING NLP NEURAL NETWORK MODELLING', 0)
@@ -562,21 +601,21 @@ def nlp_nn_modelling(lang:str, seed:int, print:bool = False):
         
         intents = json.load(f)
 
-    if print:
+    if to_print:
         print_statement_step("2. Updating intents' responses")
     
     update_responses(intents, lang)
 
-    if print:
+    if to_print:
         print_statement_step('3. Text preprocessing and exporting')
     
     x, y, words, classes = text_prep_modelling(intents, lang)
 
-    if print:
+    if to_print:
         print_statement_step('4. Bayesian Optimization and Neural Network modelling')
     nn_model = nn_tuning(x, y, seed, lang)
 
-    if print:
+    if to_print:
         print('\n')
         print_statement_step('5. Converting the NN model to TFLite')
 
