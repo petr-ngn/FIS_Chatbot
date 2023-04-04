@@ -51,11 +51,15 @@ Regarding the last two intents (canteen and public tranport), such intents are i
 In order to either train Neural Network on intents or make chatbot to respond based on user's input question, we need such given text(s) preprocessed in an appropriate way.
 
 First we perform **Cleaning & Tokenization** of given input text:
-- **Tokenization**: Based on input text, we split the text into single words or symbols, called as tokens.
-- **Normalization** Make each token a lowercase token. This applies to capitalized words. We also excplictly defined a constraint that normalization will not be applied to uppercase words. add WHY?
+- **Tokenization**: Based on input text, we split the text into single words or symbols, called as tokens. We use `punkt` algorithm and `word_tokenize` from `NLTK` for tokenization.
+- **Normalization** Make each token a lowercase token in order to preserve text input consistency. This applies to capitalized words. We also excplictly defined a constraint that normalization will not be applied to uppercase words in order to preserve original meaning and context of given word (such as acronyms).
 - **Removal of punctuations**: Removing special characters such as periods, apostrophes, commas, question marks etc. in order to reduce the noise in the text and improve model performance.
-- **Lemmatization**:
-- **Removal of stopwords**:
+- **Lemmatization**: Extracting root/base word from the original word. One may use stemming which does the same - however, lemmatization also considers the context of the word using morphological analysis instead of just removing prefixes and suffixes from the word, thus it gives more meaningful representation of the word. However, it is more time consuming than stemming.
+   - For lemmatization in **Czech** language, we use `Majka` as linguistics tool for morphology analysis. The Python implementation is shown [here](https://github.com/petrpulc/python-majka).
+   - For lemmatization in **English** language, we use `WordNetLemmatizer` from `NLTK` which uses lexical English database `WordNet`.
+- **Removal of stopwords**: Eliminating common words which are frequently used in a language but generally do not carry much meaning in given text.
+   - For **Czech** language, we used `json` file of Czech stopwords from `stop-words` package ([https://pypi.org/project/stop-words/](https://pypi.org/project/stop-words/))
+   - For **English** language, we use stopwords from `NLTK`'s `stopwords`.
 
 <img src="./imgs_readme.md/tokenization.png" alt="alt_text" width="85%">
 
