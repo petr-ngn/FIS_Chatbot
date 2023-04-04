@@ -75,8 +75,8 @@ Next, we proceed with **Bag of Words** as a collection of wors while disregardin
 - For instance, if we have tokens `['bachelor', 'master', 'programs']` and set of preprocessed intents' words$w$ `['bachelor', 'minor', 'master', 'programs', 'courses]`, the numerical vector $v_{i}$ will be then `[1,0,1,1,0]`. Such vector is called **bag of words** as a collection of 0/1 values indicating words' occurrences.
 
 
-<p align="center" width="40%">
-    <img src="./imgs_readme.md/bag_of_words.png"> 
+<p align="center">
+    <img src="./imgs_readme.md/bag_of_words.png"  width="30%"> 
 </p>
 
 
