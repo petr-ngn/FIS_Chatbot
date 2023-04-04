@@ -34,11 +34,15 @@ Regarding the last two intents (canteen and public tranport), such intents are i
 <b>Canteen</b> - from VŠE website, we are web-scrapping a food menu at VŠE's canteen (available [here](https://www.vse.cz/menza/stravovani-zizkov/)) for the actual date using `requests` and `BeautifulSoup`. <i>Note, since the canteen's menu is not available in English, we use `GoogleTranslator API` to translate the menu from Czech into English.</i>
    - Website's menu:
 
-   <img src="./imgs_readme.md/canteen_website.png" alt="alt_text" width="90%">
+<p align="center" width="90%">
+   <img src="./imgs_readme.md/canteen_website.png">
+</p>
 
    - Chatbot's response:
 
-   <img src="./imgs_readme.md/chatbot_canteen_response.png" alt="alt_text" width="90%">
+<p align="center" width="90%">
+   <img src="./imgs_readme.md/chatbot_canteen_response.png">
+</p>
 
 <b>Public tranport</b> - we are also web-scrapping actual bus and tram public transports from Prague Integrated Public Transport ([PID](https://pid.cz/en/departures/)) using `requests` and Golemio API - TBD (waiting for Samuel's and Andrea's inputs).
 
@@ -61,7 +65,9 @@ First we perform **Cleaning & Tokenization** of given input text:
    - For **Czech** language, we use `json` file of Czech stopwords from `stop-words` package ([https://pypi.org/project/stop-words/](https://pypi.org/project/stop-words/))
    - For **English** language, we use stopwords from `NLTK`'s `stopwords`.
 
-<img src="./imgs_readme.md/tokenization.png" alt="alt_text" width="90%">
+<p align="center" width="90%">
+   <img src="./imgs_readme.md/tokenization.png">
+</p>
 
 Next, we proceed with **Bag of Words** as a collection of wors while disregarding the words' order.
 - In order to use such tokens in the NN modelling, we need to encode them into numerical vectors.
@@ -69,7 +75,7 @@ Next, we proceed with **Bag of Words** as a collection of wors while disregardin
 - For instance, if we have tokens `['bachelor', 'master', 'programs']` and set of preprocessed intents' words$w$ `['bachelor', 'minor', 'master', 'programs', 'courses]`, the numerical vector $v_{i}$ will be then `[1,0,1,1,0]`. Such vector is called **bag of words** as a collection of 0/1 values indicating words' occurrences.
 
 
-<p align="center" width="100%">
+<p align="center" width="40%">
     <img src="./imgs_readme.md/bag_of_words.png"> 
 </p>
 
