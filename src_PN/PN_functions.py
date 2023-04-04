@@ -252,6 +252,9 @@ def text_cleaning_tokens(text:str, lang:str) -> list:
 
     #Removing stop words
     tokens = [word for word in tokens if word not in stop_words]
+    
+    #Removing apostrophes followed by letters (such as 's, 're, 've, etc.)
+    tokens = [word for word in tokens if word[0] != "'"]
 
     return tokens #Final tokenized and cleaned text
 

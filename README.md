@@ -48,7 +48,13 @@ Regarding the last two intents (canteen and public tranport), such intents are i
 
 ## **Text Processing**
 
+In order to either train Neural Network or make chatbot to respond based on user's input question, we need such given text(s) preprocessed in an appropriate way.
 
+First we perform **Cleaning & Tokenization** of given input text:
+- **Tokenization**: based on input text, we split the text into single words or symbols, called as tokens.
+- **Normalization** make each token a lowercase token. This applies to capitalized words. We also excplictly defined a constraint that normalization will not be applied to uppercase words. add WHY?
+
+<img src="./imgs_readme.md/tokenization.png" alt="alt_text" width="85%">
 
 We created our own intents of questions which were the most relevant to study at FIS VŠE, which were further preprocessed using NLTK (for tokenization) and Majka (for lemmatization of Czech terms) into bag of words based on which we developed a custom neural network in Keras which was further tuned using Bayesian Optimization.
 
