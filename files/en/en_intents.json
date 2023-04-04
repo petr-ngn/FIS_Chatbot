@@ -1,0 +1,657 @@
+{
+     "intents": [
+          {
+               "tag": "bachelor program",
+               "patterns": [
+                    "What are the bachelor's programs here?",
+                    "bachelor's program",
+                    "bachelor's programs",
+                    "bachelor study program",
+                    "bachelor degree programs",
+                    "bachelor",
+                    "Bc.",
+                    "What are the bachelor degree programs here?",
+                    "What bachelor programs can I study here?"
+               ],
+               "responses": [
+                    "The following bachelor's programs are taught at FIS VŠE: <br>• <b>Applied Informatics</b>, <br>• <b>Data Analytics</b>, <br>• <b>Information Media and Services< /b>, <br>• <b>Mathematical methods in economics</b>, <br>• <b> Multimedia in economic practice</b>.<br><br> You can find more information here: <a href =https://fis.vse.cz/bakalarske-studium/bakalarske-programy/>https://fis.vse.cz/bakalarske-studium/bakalarske-programy/</a>"
+               ]
+          },
+          {
+               "tag": "master's program",
+               "patterns": [
+                    "What are the master's programs here?",
+                    "master's program",
+                    "master's programs",
+                    "master's study program",
+                    "master's degree programs",
+                    "master",
+                    "Ing.",
+                    "What follow-up master's programs are there?",
+                    "subsequent master's program",
+                    "subsequent master's programs",
+                    "follow-up master's study program",
+                    "subsequent master's study programs",
+                    "subsequent master"
+               ],
+               "responses": [
+                    "The following master's programs are taught at FIS VŠE: <br>• <b>Information Management</b>, <br>• <b>Business Intelligence (IST)</b>, <br>• <b>Data and analytics for business</b>, <br>• <b>Econometrics and operational research</b>, <br>• <b>Economic demography</b>, <br>• <b>Statistics</b> , <br>• <b>Business Analysis (IST)</b>, <br>• <b>Cognitive Informatics</b>, <br>• <b>Business Informatics Management (IST)</b>, <br>• <b>UX Research and Design (IST)</b>, <br>• <b>Information Systems Development (IST)</b>, <br>• <b>Knowledge and Web Technologies</ b>, <br>• <b>Information Systems Management</b>, <br>• <b>Economic Data Analysis</b>.<br><br> You can find more information here: <a href=https: //fis.vse.cz/magisterske-studium/magisterske-programy/>https://fis.vse.cz/magisterske-studium/magisterske-programy/</a>"
+               ]
+          },
+          {
+               "tag": "minor specialization",
+               "patterns": [
+                    "What are the minors?",
+                    "side specializition",
+                    "what are the minors",
+                    "sideline",
+                    "sides"
+               ],
+               "responses": [
+                    "The following minor specializations are taught at FIS VŠE: <br>• <b>Analysis of socio-economic data</b>, <br>• <b>Data engineering</b>, <br>• <b>Demography and social analysis</b>, <br>• <b>Econometrics</b>, <br>• <b>Informatics in business</b>, <br>• <b>Intelligent systems</b>, <br >• <b>Communication, interpretation, multimedia</b>, <br>• <b>Quantitative analysis</b>, <br>• <b>Quantitative methods for informatics</b>, <br>• < b>Quantitative methods in management</b>, <br>• <b>Multimedia communication</b>, <br>• <b>Insurance engineering</b>, <br>• <b>Presentation and communication of information </b>, <br>• <b>Business Performance Management</b>, <br>• <b>Security Management</b>.<br><br> You can find more information here: <a href=https ://fis.vse.cz/magisterske-studium/vedlejsi-specializace/>https://fis.vse.cz/magisterske-studium/vedlejsi-specializace/</a>"
+               ]
+          },
+          {
+               "tag": "doctoral program",
+               "patterns": [
+                    "What are the PhD programs here?",
+                    "doctoral program",
+                    "doctoral programs",
+                    "doctoral study program",
+                    "doctoral study programs",
+                    "doctor",
+                    "doctoral student",
+                    "doctoral",
+                    "PhD",
+                    "Ph.D.",
+                    "What are the PhD programs here?",
+                    "doctoral program",
+                    "doctoral programs",
+                    "doctoral study program",
+                    "doctoral study programs"
+               ],
+               "responses": [
+                    "The following doctoral programs are taught at FIS VŠE: <br>• <b>Applied Informatics</b>, <br>• <b>Econometrics and operational research</b>, <br>• <b>Statistics</b> b>. <br><br> You can find more information here: <a href=https://fis.vse.cz/doktorske-studium/obecne-informace/>https://fis.vse.cz/doktorske-studium /general-information/</a>"
+               ]
+          },
+          {
+               "tag": "bachelor course Multimedia in economic practice",
+               "patterns": [
+                    "bachelor course Multimedia in economic practice",
+                    "bachelor courses Multimedia in economic practice",
+                    "bachelor's course Multimedia in economic practice",
+                    "bachelor's courses Multimedia in economic practice",
+                    "Multimedia in economic practice",
+                    "What are the compulsory subjects on the Bachelor's program Multimedia in Economic Practice?"
+               ],
+               "responses": [
+                    "On the bachelor's program <b>Multimedia in economic practice</b>, the following compulsory subjects are taught: <br><br><b>Multimedia compulsory:</b> <br>• 3D graphics, <br>• Communication design , <br>• Digital photography, <br>• Graphics and animation, <br>• Multimedia project seminar, <br>• Multimedia technology, <br>• Computer graphics, <br>• Practice in multimedia, <br>• Presentation skills, <br>• Profession in audiovisual production, <br>• Audiovisual communication project, <br>• Advertising agency, <br>• Multimedia project management (creativity and communication), <br>• Semiotics of multimedia, <br> • Creative processing of language and text, <br>• Introduction to multimedia, <br>• Web design and user interfaces, <br>• Basics of audiovisual communication, <br>• Basics of digital photography, <br>• Basics of computer graphics, < br>• Sound and multimedia.<br><br> <b>Economically compulsory:</b> <br>•Copyright and industrial property, <br>• Questionnaire survey – mini-project, <br>• Economics I, < br>• Management for informatics and statistics, <br>• Marketing 1, <br>• Mathematics for economists, <br>• Personal financial planning (alternatively company finance). <br>• Business and law, <br>• Statistics (alternatively Description, visualization and comparison of economic data for Multimedia), <br>• Accounting and taxes of an individual entrepreneur. <br><br> You can find more information here: <a href=https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-multimedia-v-ekonomicke-praxi/>https://fis .vse.cz/baccalarske-studium/baccalarske-programy/program-multimedia-v-ekonomicke-praxi/</a>"
+               ]
+          },
+          {
+               "tag": "undergraduate course Data Analytics",
+               "patterns": [
+                    "undergraduate course Data Analytics",
+                    "undergraduate courses in Data Analytics",
+                    "undergraduate course in Data Analytics",
+                    "undergraduate Data Analytics courses",
+                    "Data Analytics",
+                    "What are the required subjects in the Bachelor of Data Analytics program?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught on the bachelor's program <b>Data Analytics</b>: <br><br><b>Informatics compulsory:</b> <br>• Data mining in the cloud, <br>• Database, <br>• Data quality, <br>• Data minimum, <br>• External data and information sources, <br>• Tools for data analytics, <br>• Neural networks and deep learning, <br>• Principles of digital communication , <br>• Data Project Management, <br>• Machine Learning 1, <br>• Machine Learning 2, <br>• Text Analytics 1, <br>• Text Analytics 2, <br>• Introduction to Language Programming Python, <br>• Introduction to programming in R, <br>• Basics of Business Intelligence, <br>• Big Data processing <br><br><b>Quantitatively mandatory:</b> <br>• Description, visualization and comparison of economic data, <br>• Econometric models, <br>• Exploratory data analysis, <br>• Mathematical informatics, <br>• Mathematical statistics, <br>• Mathematics for informatics, <br>• Optimization models, < br>• Probability and random processes, <br>• Surveys and questionnaires, Regression models. <br><br><b>Economics compulsory:</b> <br>• Banking and financial institutions, <br>• Economics 1, <br>• Critical and analytical thinking, <br>• Presentation and storytelling; Accounting I., <br>• Basics of information ethics and law, <br>• Basics of marketing for informatics and statistics, <br>• Basics of professional work. <br><br> You can find more information here: <a href=https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-data-analytics/>https://fis.vse.cz/ bachelor's-study/bachelor-programs/program-data-analytics/</a>"
+               ]
+          },
+          {
+               "tag": "bachelor course Applied Informatics",
+               "patterns": [
+                    "bachelor's course Applied Informatics",
+                    "bachelor courses Multimedia in economic practice",
+                    "bachelor's course Applied Informatics",
+                    "bachelor's courses Applied Informatics",
+                    "Applied Informatics",
+                    "What are the compulsory subjects on the Bachelor's program in Applied Informatics?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught on the bachelor's program <b>Applied Informatics</b>: <br><br><b>Compulsory IT subjects:</b> <br>• Analysis and design of information systems, <br>• Bachelor's seminar, <br>• Security of information systems, <br>• Database, <br>• Data minimum, <br>• Information and communication technologies, <br>• IT Governance, <br>• Quantitative management, <br> • Business information systems, <br>• Programming in Java, <br>• Simulation models for informatics, <br>• Software engineering, <br>• UX design, <br>• Basics of professional work; Information and knowledge processing. br><br><b>Compulsory economic subjects:</b> <br>• Economics 1, <br>• Business finance, <br>• Financial theory, policy and institutions, <br>• Management for informatics and statistics , <br>• Mathematics for computer scientists, <br>• Law, <br>• Statistics for computer scientists, <br>• Strategic analysis for computer scientists and statistics, <br>• Accounting I., <br>• Basics of marketing for computer scientists and statistics.<br><br> You can find more information here: <a href=https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-aplikovana-informatika/>https://fis.vse .cz/baccalaureate-study/baccalaureate-programs/program-applied-informatics/</a>"
+               ]
+          },
+          {
+               "tag": "bachelor course Information Media and Services",
+               "patterns": [
+                    "Bachelor subject Information Media and Services",
+                    "bachelor's courses Information media and services",
+                    "Bachelor's course Information Media and Services",
+                    "bachelor's courses Information media and services",
+                    "Information media and services",
+                    "What are the compulsory subjects on the Information Media and Services bachelor's program?"
+               ],
+               "responses": [
+                    "On the bachelor's program <b>Information media and services</b>, the following compulsory subjects are taught: <br><br><b>Informatics compulsory:</b> <br>• Bachelor seminar, <br>• Information security systems, <br>• Database, <br>• Data minimum, <br>• Digital libraries and archives, <br>• Information and society, <br>• Information architecture, <br>• Information and communication technologies, <br >• Integration of information sources, <br>• Mathematical foundations of informatics, <br>• Business and company information, <br>• Organization of knowledge, <br>• Programming in Java, <br>• Psychology of creativity, <br>• Research strategies and systems, <br>• Semiotics of multimedia, <br>• Theory and practice of teamwork, <br>• Basics of professional work, <br>• Processing of information and knowledge.<br><br><b>Economically mandatory: </b> <br>• Economics 1, <br>• Business Finance, <br>• Mathematics for Informatics, <br>• Law, <br>• Statistics for Informatics, <br>• Strategic Analysis for Informatics and Statistics , <br>• Accounting I., <br>• Basics of marketing for informatics and statistics. <br><br> You can find more information here: <a href=https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-informacni-media-a-sluzby/>https://fis. vse.cz/baccalarske-studium/baccalarske-programy/program-informacni-media-a-sluzby/</a>"
+               ]
+          },
+          {
+               "tag": "Bachelor subject Mathematical Methods in Economics",
+               "patterns": [
+                    "Bachelor subject Mathematical Methods in Economics",
+                    "bachelor's subjects Mathematical methods in economics",
+                    "Bachelor's course Mathematical Methods in Economics",
+                    "bachelor's courses Mathematical methods in economics",
+                    "Mathematical Methods in Economics",
+                    "What are the compulsory subjects on the Bachelor's program Mathematical Methods in Economics?"
+               ],
+               "responses": [
+                    "On the bachelor's program <b>Mathematical methods in economics</b>, the following compulsory subjects are taught: <br><br><b>Quantitative compulsory:</b> <br>• Demographic projections, <br>• Mathematics 2 , <br>• Methods of statistical comparison, <br>• Operational research models, <br>• Statistical methods 1, <br>• Stochastic models, <br>• Introduction to programming in R, <br>• Introduction to probability theory and mathematical statistics, <br>• Fundamentals of data analysis, <br>• Fundamentals of demography.<br><br><b>Economics compulsory:</b> <br>• Economics 1, <br>• Financial theory, politics and institutions, <br>• Informatics for statistics, <br>• Management for informatics and statistics, <br>• Mathematics for economists, <br>• Law; Accounting I., <br>• Basics of marketing for informatics and statistics. <br><br> Other compulsory subjects differ depending on the chosen specialization.<br><br> You can find more information here: <a href=https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program -matematicke-metody-v-ekonomii/>https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-matematicke-metody-v-ekonomii/</a>"
+               ]
+          },
+          {
+               "tag": "Bachelor subject Economic Demography",
+               "patterns": [
+                    "Bachelor subject Economic Demography",
+                    "bachelor's subjects Economic Demography",
+                    "Bachelor's course Economic Demography",
+                    "Bachelor's courses Economic Demography",
+                    "Economic Demography",
+                    "Mathematical methods in economics, specialization Economic demography (Mathematical methods in economics)",
+                    "What are the compulsory subjects for the specialization Economic Demography (Mathematical Methods in Economics)?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught for the specialization <b>Economic Demography</b> (part of the bachelor program <b>Mathematical Methods in Economics</b>): <br>• Bachelor's seminar, <br>• Demographic practice for statistics, <br>• Economic Demography I, <br>• Economic and Social Statistics, <br>• Economic Policy for Statistics, <br>• Regional Demography, <br>• Statistical Methods 2, <br>• Social Policy, <br >• Introduction to socio-economic demography, <br>• Sources and databases of demographic data.<br><br> You can find more information here: <a href=https://fis.vse.cz/bakalarske-studium/bakalarske-programy /program-matematicke-metody-v-ekonomii/#2>https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-matematicke-metody-v-ekonomii/#2</a>"
+               ]
+          },
+          {
+               "tag": "Bachelor course Data analysis and modeling",
+               "patterns": [
+                    "bachelor's course Data analysis and modeling",
+                    "Bachelor subjects Data analysis and modeling",
+                    "Bachelor's course Data analysis and modeling",
+                    "Bachelor's courses Data analysis and modeling",
+                    "Data analysis and modeling",
+                    "Mathematical methods in economics, specialization Data analysis and modeling (Mathematical methods in economics)",
+                    "What are the compulsory subjects for the specialization Data analysis and modeling (Mathematical methods in economics)?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught for the specialization <b>Data analysis and modeling</b> (part of the bachelor program <b>Mathematical methods in economics</b>): <br>• Econometrics 1, <br>• Economic and social statistics, <br>• Economic policy for statisticians, <br>• Linear models, <br>• Statistical methods 2, <br>• Statistical computing environment, <br>• Probability theory and mathematical statistics 1, <br>• Introduction to statistics - Bayesian approach, <br>• Calculations in the insurance industry, <br>• Basics of the insurance industry <br><br> You can find more information here: <a href=https://fis.vse.cz/bakalarske-studium/ bachelor's programs/program-matematicke-metody-v-ekonomii/#1>https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-matematicke-metody-v-ekonomii/#21</a >"
+               ]
+          },
+          {
+               "tag": "bachelor's course Econometrics and Operational Research",
+               "patterns": [
+                    "bachelor's course Econometrics and operational research",
+                    "bachelor's courses Econometrics and operational research",
+                    "Bachelor's course Econometrics and Operational Research",
+                    "Bachelor courses in Econometrics and Operational Research",
+                    "Econometrics and Operations Research",
+                    "Mathematical methods in economics, specialization Econometrics and operational research (Mathematical methods in economics)",
+                    "What are the compulsory subjects for the specialization Econometrics and Operations Research (Mathematical Methods in Economics)?"
+               ],
+               "responses": [
+                    "For the <b>Econometrics and Operational Research</b> specialization (part of the <b>Mathematical Methods in Economics</b> bachelor's program), the following compulsory subjects are taught: <br>• Bachelor's professional seminar, <br>• Econometrics 1 , <br>• Econometrics 2, <br>• Linear models, <br>• Programming for mathematical modeling, <br>• Project management, <br>• Simulation models of economic processes, <br>• Theory of games and economic decision-making. <br><br> You can find more information here: <a href=https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-matematicke-metody-v-ekonomii/#3>https:// fis.vse.cz/baccalarske-studium/baccalarske-programy/program-mathematicke-metody-v-ekonomie/#3</a>"
+               ]
+          },
+          {
+               "tag": "Master's course Statistics",
+               "patterns": [
+                    "Master's course Statistics",
+                    "Master's courses Statistics",
+                    "Master's course Statistics",
+                    "Master's courses in Statistics",
+                    "Statistics",
+                    "What are the compulsory subjects in the Master's program in Statistics?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught on the master's program <b>Statistics</b>: <br>• Time series, <br>• Multivariate statistics, <br>• System of national accounts, <br>• Statistical judgments, <br> • Bayesian statistics, <br>• Economics II.,<br>• Regression,<br>• Non-parametric methods and survival analysis, <br>• Theory of sample surveys.<br><br> You can find more information here: <a href =https://fis.vse.cz/magisterske-studium/magisterske-programy/program-statistika/>https://fis.vse.cz/magisterske-studium/magisterske-programy/program-statistika/</a> "
+               ]
+          },
+          {
+               "tag": "Master's course Information Management",
+               "patterns": [
+                    "Master's course Information Management",
+                    "Master's courses Information Management",
+                    "Master's course Information Management",
+                    "Master's courses Information Management",
+                    "Information management",
+                    "What are the compulsory subjects in the master's program Information Management?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught on the Master's program <b>Information Management</b>: <br>• Information Management Audit, <br>• Digital Forensic Analysis, <br>• Project Governance, <br>• Theory of Systems and Information ethics, <br>• Security management of information systems; Organization and information, <br>• Information management, <br>• Diploma seminar, <br>• Social informatics. <br><br> You can find more information here: <a href =https://fis.vse.cz/magisterske-studium/magisterske-programy/program-informacni-management/>https://fis.vse.cz/magisterske-studium/magisterske-programy/program-informacni-management/ </a>"
+               ]
+          },
+          {
+               "tag": "Master's course DAB",
+               "patterns": [
+                    "Master's subject DAB",
+                    "DAB master's courses",
+                    "DAB master's course",
+                    "DAB Master's Courses",
+                    "DAB",
+                    "Data and Analytics for Business Master's Course Data and Analytics for Business",
+                    "Master's courses Data and analytics for business",
+                    "Master's course Data and analytics for business",
+                    "Master's courses Data and analytics for business",
+                    "What are the compulsory subjects on the master's program Data and analytics for business?"
+               ],
+               "responses": [
+                    "On the Master's program <b>Data and analytics for business</b>, the following compulsory subjects are taught: <br>• Business analytics architectures, <br>• Business and business transformation, <br>• Data project, <br>• Information ethics, regulation and law, <br>• Advanced business analytics, <br>• Data management and analytics for business, <br>• Statistical methods for business, <br>• Trends and news in business analytics I, <br> • Trends and news in business analytics II, <br>• Basic analytics and reporting.<br><br> You can find more information here: <a href=https://fis.vse.cz/magisterske-studium/magisterske-programy /program-data-a-analytika-pro-business/>https://fis.vse.cz/magisterske-studium/magisterske-programy/program-data-a-analytika-pro-business/<a/>"
+               ]
+          },
+          {
+               "tag": "Master's course Business Intelligence (IST)",
+               "patterns": [
+                    "Master's course Business Intelligence (IST)",
+                    "Master's courses in Business Intelligence (IST)",
+                    "Master's course Business Intelligence (IST)",
+                    "Master's courses in Business Intelligence (IST)",
+                    "Business Intelligence (IST)",
+                    "What are the required subjects in the Business Intelligence (IST) master's program?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught on the master's program <b>Business Intelligence (IST)</b>: <br>• Architectures of business analytics, <br>• Competitive Intelligence, <br>• IT and the anatomy of a company, <br>• Information modeling of organizations, <br>• Diploma thesis project for Business Intelligence specialization, <br>• Management of business informatics, <br>• Management of IS\\ICT projects, <br>• Self-Service Business Intelligence, <br>• Management data and analytics for business, <br>• Research in the field of applied informatics and its presentation, <br>• Basics of analytics and reporting.<br><br> You can find more information here: <a href=https://fis.vse .cz/magisterske-studium/magisterske-programy/business-intelligence-ist/>https://fis.vse.cz/magisterske-studium/magisterske-programy/business-intelligence-ist/<a/>"
+               ]
+          },
+          {
+               "tag": "master's course Economic Demography",
+               "patterns": [
+                    "Master's course Economic Demography",
+                    "Master's courses Economic Demography",
+                    "Master's course Economic Demography",
+                    "Master's courses in Economic Demography",
+                    "Economic Demography",
+                    "What are the compulsory subjects on the Master's program in Economic Demography?"
+               ],
+               "responses": [
+                    "On the Master's program <b>Economic Demography</b>, the following compulsory subjects are taught: <br>• Actuarial Demography, <br>• Applied Demography, <br>• Economic Demography II, <br>• Time Series, <br >• Regression, <br>• Multivariate statistics, <br>• Social statistics, <br>• Diploma seminar, <br>• Economics II, <br>• General demography.<br><br> You can find more information here: <a href=https://fis.vse.cz/magisterske-studium/magisterske-programy/program-ekonomicka-demografie/>https://fis.vse.cz/magisterske-studium/magisterske-programy/program-ekonomicka -demographics/</a>"
+               ]
+          },
+          {
+               "tag": "master's course Econometrics and operational research",
+               "patterns": [
+                    "master's course Econometrics and operational research",
+                    "master's courses Econometrics and operational research",
+                    "master's course Econometrics and operational research",
+                    "master's courses Econometrics and operational research",
+                    "Econometrics and Operations Research",
+                    "What are the compulsory subjects on the master's program Econometrics and Operations Research?"
+               ],
+               "responses": [
+                    "On the master's program <b>Econometrics and operations research</b>, the following compulsory subjects are taught: <br>• Advanced econometrics 1, <br>• Practical course in econometrics, <br>• Quantitative economics, <br>• Discrete models , <br>• Advanced Econometrics 2, <br>• Group Decision Making, <br>• Economics II, <br>• Multi-Criteria Decision Making, <br>• Practical in Operations Research, <br>• Nonlinear Models, <br>• State and diploma seminar <br><br> You can find more information here: <a href=https://fis.vse.cz/magisterske-studium/magisterske-programy/program-ekonometrie-a-operacni-vyzkum/>https ://fis.vse.cz/magisterske-studium/magisterske-programy/program-ekonometrie-a-operacni-vyzkum/</a>"
+               ]
+          },
+          {
+               "tag": "Master's course Business Analysis (IST)",
+               "patterns": [
+                    "Master's course Business Analysis (IST)",
+                    "Master's courses in Business Analysis (IST)",
+                    "Master's course Business Analysis (IST)",
+                    "Master's courses in Business Analysis (IST)",
+                    "Business Analysis (IST)",
+                    "What are the compulsory subjects in the Master's program in Business Analysis (IST)?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught on the Master's program in Business Analysis (IST): Business Process Engineering; Information Modeling of Organizations; IT and the Anatomy of a Firm; Diploma Thesis Project for the specialization Business Analysis; Business Informatics Management; IS/ICT Project Management; Systems Simulation; Systems for supporting business processes; Research in the field of applied informatics and its presentation"
+               ]
+          },
+          {
+               "tag": "Master's course Business Analysis (IST)",
+               "patterns": [
+                    "Master's course Business Analysis (IST)",
+                    "Master's courses in Business Analysis (IST)",
+                    "Master's course Business Analysis (IST)",
+                    "Master's courses in Business Analysis (IST)",
+                    "Business Analysis (IST)",
+                    "What are the compulsory subjects in the Master's program in Business Analysis (IST)?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught on the master's program <b>Business analysis (IST)</b>: <br>• Business Process Engineering, <br>• Information modeling of organizations, <br>• IT and the anatomy of a company, <br> • Diploma thesis project for Business Analysis specialization, <br>• Management of business informatics, <br>• Management of IS\\ICT projects; Systems simulation, <br>• Systems for supporting business processes, <br>• Research in the field of applied informatics and his presentation.<br><br> You can find more information here: <a href=https://fis.vse.cz/magisterske-studium/magisterske-programy/business-analyza-ist/>https://fis. vse.cz/magisterske-studium/magisterske-programy/business-analyza-ist/<a/>"
+               ]
+          },
+          {
+               "tag": "Master's course Cognitive Informatics",
+               "patterns": [
+                    "Master's course Cognitive Informatics",
+                    "Master's courses Cognitive Informatics",
+                    "Master's course Cognitive Informatics",
+                    "Master's courses in Cognitive Informatics",
+                    "Cognitive Informatics",
+                    "What are the compulsory subjects in the Master's program in Cognitive Informatics?"
+               ],
+               "responses": [
+                    "On the Master's program <b>Cognitive Informatics</b>, the following compulsory subjects are taught: <br>• Theory of spontaneous order and self-organization, <br>• Knowledge and ontological engineering, <br>• Simulation of systems, <br>• Diploma seminar KI, <br>• Research in the field of applied informatics and its presentation; Information modeling of organizations; Cognitive science; Basics of neuroscience. <br><br> You can find more information here: <a href=https://fis.vse.cz /magisterske-studium/magisterske-programy/program-kognitivni-informatika/>https://fis.vse.cz/magisterske-studium/magisterske-programy/program-kognitivni-informatika/</a>"
+               ]
+          },
+          {
+               "tag": "Master's course Business Informatics",
+               "patterns": [
+                    "Master's course Business Informatics",
+                    "Master's courses Business Informatics",
+                    "Master's course Business Informatics",
+                    "Master's courses Business Informatics",
+                    "Business informatics",
+                    "What are the compulsory subjects on the Master's program in Business Informatics?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught on the <b>Business Informatics</b> master's program: <br>• IS\\ICT project management, <br>• Business informatics management, <br>• Improving IS building processes, <br> • Acquisition of knowledge from databases, <br>• Diploma seminar for distance learning, <br>• Methods and tools for processing textual information, <br>• Information management, <br>• Optimization of business processes, <br>• Audit of information systems. <br><br> You can find more information here: <a href=https://fis.vse.cz/magisterske-studium/magisterske-programy/program-podnikova-informatika/>https://fis.vse.cz/ master's-study/master's-programs/business-informatics program/</a>"
+               ]
+          },
+          {
+               "tag": "Master's course Business Informatics Management (IST)",
+               "patterns": [
+                    "Master's course Business Informatics Management (IST)",
+                    "Master's courses Business Informatics Management (IST)",
+                    "Master's course Business Informatics Management (IST)",
+                    "Master's courses Business Informatics Management (IST)",
+                    "Enterprise Informatics Management (IST)",
+                    "What are the compulsory subjects in the Master's program in Business Informatics Management (IST)?"
+               ],
+               "responses": [
+                    "On the Master's program <b>Business Informatics Management (IST)</b>, the following compulsory subjects are taught: <br>• Financial management of business informatics, <br>• Information modeling of organizations, <br>• Innovation of information systems, <br >• Integration in corporate information systems, <br>• IT and the anatomy of the company, <br>• Enterprise architecture as a method of transformation management, <br>• Diploma thesis project for the specialization Management of corporate informatics, <br>• IT management in practice, <br>• Management of corporate informatics, <br>• Management of IS\\ICT projects, <br>• Research in the field of applied informatics and its presentation.<br><br> You can find more information here: <a href=https:/ /fis.vse.cz/magisterske-studium/magisterske-programy/rizeni-podnikove-informatiky-ist/>https://fis.vse.cz/magisterske-studium/magisterske-programy/rizeni-podnikove-informatiky-ist/ </a>"
+               ]
+          },
+          {
+               "tag": "master course UX research and design (IST)",
+               "patterns": [
+                    "master course UX research and design (IST)",
+                    "master's courses UX research and design (IST)",
+                    "master's course UX research and design (IST)",
+                    "master's courses UX research and design (IST)",
+                    "UX Research and Design (IST)",
+                    "What are the compulsory subjects in the Master's program UX Research and Design (IST)?"
+               ],
+               "responses": [
+                    "The following compulsory subjects are taught on the master's program <b>UX research and design (IST)</b>: <br>• Design of services, <br>• Design sprint, <br>• Design of user interfaces, <br>• Human-centered design, <br>• Information modeling of organizations, <br>• IT and the anatomy of a company, <br>• Diploma thesis project for the specialization UX research and design, <br>• Business informatics management, <br>• Project management IS\\ICT, <br>• User research, <br>• Research in the field of applied informatics and its presentation, <br>• Basics of UX. <br><br> You can find more information here: <a href=https:/ /fis.vse.cz/magisterske-studium/magisterske-programy/ux-vyzkum-a-design-ist/>https://fis.vse.cz/magisterske-studium/magisterske-programy/ux-vyzkum-a- design-ist/</a>"
+               ]
+          },
+          {
+               "tag": "Master's course Information Systems Development (IST)",
+               "patterns": [
+                    "Master's course Information Systems Development (IST)",
+                    "Master's courses Development of information systems (IST)",
+                    "Master's course Information Systems Development (IST)",
+                    "Master's courses Information Systems Development (IST)",
+                    "Information Systems Development (IST)",
+                    "What are the compulsory subjects in the Master's program Information Systems Development (IST)?"
+               ],
+               "responses": [
+                    "On the master's program <b>Development of information systems (IST)</b>, the following compulsory subjects are taught: <br>• Agile web application development project, <br>• Design of user interfaces, <br>• Information modeling of organizations, < br>• IT and the anatomy of a company, <br>• Methods and practices of software development and testing, <br>• Diploma thesis project for the specialization Development of information systems, <br>• Management of enterprise informatics, <br>• Management of IS projects\\ ICT, <br>• Software architectures, <br>• Software project, <br>• Research in the field of applied informatics and its presentation.<br><br> You can find more information here: <a href=https://fis. vse.cz/magisterske-studium/magisterske-programy/vyvoj-informatnich-systemu-ist/>https://fis.vse.cz/magisterske-studium/magisterske-programy/vyvoj-informatnich-systemu-ist/</a >"
+               ]
+          },
+          {
+               "tag": "Master's course Knowledge and Web Technologies",
+               "patterns": [
+                    "master's course Knowledge and web technologies",
+                    "master's courses Knowledge and web technologies",
+                    "master's course Knowledge and web technologies",
+                    "Master's courses Knowledge and web technologies",
+                    "Knowledge and Web Technologies",
+                    "What are the compulsory subjects in the Master's program in Knowledge and Web Technologies?"
+               ],
+               "responses": [
+                    "On the Master's program <b>Knowledge and Web Technologies</b>, the following compulsory subjects are taught: <br>• Artificial Intelligence 1, <br>• Artificial Intelligence 2, <br>• Advanced approaches to extracting knowledge from databases, < br>• Automation of text processing; Knowledge mining from the web, <br>• Linked data on the web, <br>• Extracting knowledge from databases, <br>• Diploma seminar.<br><br> You can find more information here: <a href=https://fis.vse.cz/magisterske-studium/magisterske-programy/program-znalostni-a-webove-technologie/>https://fis.vse.cz/magisterske-studium/magisterske-programy/program -knowledge-and-web-technology/</a>"
+               ]
+          },
+          {
+               "tag": "Bus",
+               "patterns": [
+                    "Public transport",
+                    "Bus transport",
+                    "Autobus transport",
+                    "Bus departure",
+                    "Autobus departure",
+                    "bus",
+                    "autobus",
+                    "When do the buses leave?",
+                    "When are the bus transport times?",
+                    "What are the autobus transport times?",
+                    "What time do the buses leave?",
+                    "Náměstí Winstona Churchilla",
+                    "Winston Churchill Square"
+               ],
+               "responses": [
+                    "These bus transports will departure from the stop <b>Náměstí Winstona Churchilla</b> in the folllowing 15 minutes: "
+               ]
+          },
+          {
+               "tag": "Tram",
+               "patterns": [
+                    "Public transport",
+                    "Tram transport",
+                    "Tram departure",
+                    "Tram",
+                    "When do the trams leave?",
+                    "What are the tram transport times?",
+                    "What time do the trams leave?",
+                    "Viktioria Žižkov",
+                    "Husinecká"
+               ],
+               "responses": [
+                    "These tram transports will departure from the stop <b>Viktoria Žižkov</b> in the folllowing 15 minutes: <br>• Tram <b>no. 98</b> (direction: <b>Sídliště Řepy</b>) - departure at <b>4:17</b> (<i>no delay</i>) <br>• Tram <b>no. 98</b> (direction: <b>Spojovací</b>) - departure at <b>4:23</b> (<i>no delay</i>)"
+               ]
+          },
+          {
+               "tag": "Canteen",
+               "patterns": [
+                    "What do they have to eat in the canteen today?",
+                    "What do they have for lunch?",
+                    "canteen",
+                    "canteen",
+                    "lunch",
+                    "eating",
+                    "eating in the canteen"
+               ],
+               "responses": [
+                    "Today in the canteen there is: <br>• Vegetable broth with pasta <br>• Frankfurt roast beef, bread dumplings / steamed rice <br>• Skewers on a tray (pork, chicken, smoked), mashed potatoes, coleslaw salad <br>• Pork belly with colorful peppers and chili flakes, sprinkled with cheese7, According to the daily menu (pasta / risotto / mixture), Fried broccoli balls, boiled potatoes, tartar sauce <br>• Fried chicken strips in spicy breadcrumbs, butter porridge, iceberg lettuce, lemon <br>• Club sandwich for adults, pulled pork, sweet chili mayonnaise, onion marmalade, tomato, gouda, fries, mixed salad <br>• Hot buffet - according to your choice <br>• Baked chicken breast with cheese and corn, fries, salad <br>• Packaged food/Also away+ tin 0.33l <br>• Fresh baguette, Gyros, Tortilla <br><br> You can find the menu for the following days here: <a href=https://www.vse.cz /menza/stravovani-zizkov/>https://www.vse.cz/menza/stravovani-zizkov/</a>"
+               ]
+          },
+          {
+               "tag": "Faculty Leadership",
+               "patterns": [
+                    "Who leads FIS",
+                    "Faculty leadership",
+                    "Who runs the faculty",
+                    "Dean",
+                    "Who is the dean of FIS",
+                    "Who is the dean of the Faculty of Informatics and Statistics",
+                    "Vice-Dean",
+                    "Vice-Dean",
+                    "FIS Leadership"
+               ],
+               "responses": [
+                    "The Faculty of Informatics and Statistics is headed by the <i>dean</i> <b>prof. Ing. Jakub Fischer, Ph.D.</b> the vice-dean for study and teaching activities is <b>Ing. Kristýna Vltavská, Ph.D .</b> <Prof. Ing. Petr Doucek, CSc.</b> <b>Ing. Dušan Chlapek, Ph.D.</b> is the vice-dean for creative activity and foreign relations and at the same time the statutory representative of the dean. b> holds the position of vice dean for development, knowledge transfer and cooperation with practice.The academic director of foreign language study programs is <b>doc. Ing. Petr Mazouch, Ph.D.</b> The manager of communication and marketing is <b>Ing. Zdeněk Vondra, Ph.D.</b> The secretary of the faculty is <b>Ing. Marie Gvoždiaková</b>."
+               ]
+          },
+          {
+               "tag": "Film",
+               "patterns": [
+                    "Film",
+                    "Movie",
+                    "About numbers and people",
+                    "FIS film",
+                    "More information about the faculty",
+                    "More information",
+                    "I want to learn more about FIS",
+                    "Wider information about the faculty",
+                    "FIS documentary",
+                    "Faculty achievements"
+               ],
+               "responses": [
+                    "You can learn more about the faculty in the short documentary movie <b>About numbers and people</b>: <a href=https://www.youtube.com/watch?v=X-ao_V4fGpE>https:// www.youtube.com/watch?v=X-ao_V4fGpE</a>"
+               ]
+          },
+          {
+               "tag": "Study Department",
+               "patterns": [
+                    "Study Department",
+                    "Consultation hours of the study department",
+                    "Consultation hours of the study department",
+                    "Official hours of the study department",
+                    "Official hours of the study department",
+                    "Study FIS"
+               ],
+               "responses": [
+                    "The study department has office hours on Mondays from 8:30 am to 11:30 am and from 1:00 pm to 3:00 pm and on Wednesdays from 8:30 am to 11:30 am and from 1:00 pm to 3:00 pm. <br>• <b>Ing. Jana Sedláčková</b> is responsible for bachelor studies and the InSIS contact center.<br>• <b>Jana Hudčeková</b> is responsible for bachelor studies and has her office in room 410 NB. Her telephone the number is <a href='tel+420224095440'>224 095 440</a> and the e-mail address is <a href='mailto:jana.hudcekova@vse.cz'>jana.hudcekova@vse.cz</a >. <br>• <b>Iva Hudcová</b> is in charge of master's studies and her room is 409 NB. You can contact her at the phone number <a href='tel+420224095487'>224 095 487</ a> or e-mail address <a href='mailto:hudcovai@vse.cz'>hudcovai@vse.cz</a>. <br>• <b>Ing. Tereza Krajíčková, DiS.</b> is responsible for doctoral studies and her office is located in room 412 NB.She can be contacted via the telephone number <a href='+420224095464'>224 095 464</a> or the e-mail address <a href='mailto:tereza. krajickova@vse.cz'>tereza.krajickova@vse.cz</a>"
+               ]
+          },
+          {
+               "tag": "Admissions",
+               "patterns": [
+                    "Admissions",
+                    "Entrance exams",
+                    "Application for studies",
+                    "Dates of admission procedure",
+                    "Until when do I have to submit an application for studies",
+                    "Enrollment in studies",
+                    "Submitting an application",
+                    "Important dates",
+                    "Enrollment in studies",
+                    "Deadline for submitting an application",
+                    "Applications for the academic year 2023/2024",
+                    "Application deadline"
+               ],
+               "responses": [
+                    "Submission of the application for the academic year 2023/2024, including crediting the payment to the account, must take place no later than <b>30/04/2023</b> You can find more information here: <br>• <b>Bachelor's studies:</b> <a href=https://fis.vse.cz/bakalarske-studium/prijimaci-rizeni/>https://fis.vse.cz/bakalarske-studium/prijimaci-rizeni/</a> <br>• <b> Master's degree:</b> <a href=https://fis.vse.cz/magisterske-studium/prijimaci-rizeni/>https://fis.vse.cz/magisterske-studium/prijimaci-rizeni/</ a> <br>• <b>Doctoral studies:</b> <a href=https://fis.vse.cz/doktorske-studium/prijimaci-rizeni/>https://fis.vse.cz/doktorske -study/admissions-management/</a>"
+               ]
+          },
+          {
+               "tag": "Application Fee",
+               "patterns": [
+                    "Application fee",
+                    "How much does it cost to submit an application for studies",
+                    "Application fee for studies",
+                    "Application fee",
+                    "How much does an application cost",
+                    "Admission fee",
+                    "Fee for submitting an application",
+                    "Fee for entrance exams",
+                    "Cost",
+                    "Payment",
+                    "Fee"
+               ],
+               "responses": [
+                    "The fee for actions connected with the admission procedure amounts to <b>CZK 880</b> and can be paid either immediately when entering the application by payment card, or by bank transfer (the applicant will receive the account number and variable symbol to the e-mail address specified in the application ). The payment must be credited to the VŠE account by <b>April 30, 2023</b> at the latest."
+               ]
+          },
+          {
+               "tag": "Innovation Week",
+               "patterns": [
+                    "When is innovation week",
+                    "When is innovation week",
+                    "Innovation Week",
+                    "Innovation"
+               ],
+               "responses": [
+                    "Innovation week always takes place in the 7th semester of classes."
+               ]
+          },
+          {
+               "tag": "Credits",
+               "patterns": [
+                    "How many credits are required to complete the program?",
+                    "Credits for bachelor's degree",
+                    "Credits for master's degree",
+                    "Credit system",
+                    "Number of credits required to complete the program"
+               ],
+               "responses": [
+                    "To successfully complete studies at VSE, you need to obtain at least 180 credits for bachelor's programs and 120 credits for master's programs."
+               ]
+          },
+          {
+               "tag": "Reserved credits",
+               "patterns": [
+                    "How many reserved credits do I have?",
+                    "How many credits can I lose?",
+                    "Reserved credits",
+                    "Reserved vouchers",
+                    "How many credits can I lose?"
+               ],
+               "responses": [
+                    "The number of reserve credits/vouchers for bachelor's programs is <b>36</b>, for master's programs <b>24</b>."
+               ]
+          },
+          {
+               "tag": "Library",
+               "patterns": [
+                    "When is the VSE library open?",
+                    "Where is the VSE library located?",
+                    "Library opening hours",
+                    "VSE library",
+                    "Library opening hours",
+                    "Library"
+               ],
+               "responses": [
+                    "The VŠE library offers students, employees and the professional public printed and electronic resources, provides consultations, organizes publicly accessible seminars focused on working with information and participates in the teaching of some subjects. <br>• The library is located on the VŠE campus in Žižkov - mezzanine Staré buildings, náměstí W. Churchilla 4, Prague 3. <br>• <u>Opening hours</u>: Monday – Thursday from 9:00 a.m. to 7:00 p.m. and on Friday from 8:00 a.m. to 2:00 p.m."
+               ]
+          },
+          {
+               "tag": "Scholarship",
+               "patterns": [
+                    "Scholarship at VSE",
+                    "What are the scholarships at VSE?",
+                    "Are there scholarships at VSE?",
+                    "Scholarship",
+                    "Scholarships",
+                    "Amount of scholarship",
+                    "Conditions for obtaining a scholarship",
+                    "How to obtain a scholarship"
+               ],
+               "responses": [
+                    "At VŠE, it is possible to get an accommodation scholarship for students who do not have a permanent residence in Prague. There is also the possibility to get a merit-based scholarship. The conditions for obtaining it differ from each faculty."
+               ]
+          },
+          {
+               "tag": "Dormitories",
+               "patterns": [
+                    "Does VSE offer accommodation in dormitories?",
+                    "Where are VSE dormitories located?",
+                    "VSE dormitories Prague",
+                    "Dormitories",
+                    "Accommodation",
+                    "Accommodation for students",
+                    "VSE dormitories",
+                    "Dormitories for freshmen"
+               ],
+               "responses": [
+                    "VŠE offers accommodation in dormitories. Specifically <b>Palach's college</b>, <b>University Hotel</b>, <b>Eisler's college</b> and <b>Thaler's college</b>, which located in Prague 3. Also <b>Rooseveltova kolej</b> in Holešovice and <b>Blanice</b> and <b>Vltava</b> colleges in Jižní Město, which are mainly intended for first-year undergraduate students ."
+               ]
+          },
+          {
+               "tag": "Career development",
+               "patterns": [
+                    "Career development opportunities at VŠE",
+                    "Career center",
+                    "Event center",
+                    "Alumni center",
+                    "Career",
+                    "Graduates",
+                    "For graduates",
+                    "Graduate",
+                    "Career after studies",
+                    "Career development",
+                    "Alumni and Corporate relations",
+                    "Partner center",
+                    "Career counseling"
+               ],
+               "responses": [
+                    "<b>Alumni a Corporate Relations</b> tvoří čtyri centra: <br>• <b>Kariérní centrum</b>, <b>Eventové centrum</b>, <b>Absolventské centrum</b> a <b>Partnerské centrum</b>. <br> V rámci činnosti poskytuje kvalitní servis českým i zahraničním studentům, absolventům, zaměstancům i partnerům VŠE především v oblastech kariéry, poradenství, event managementu, vztahu s absolventy a partnery VŠE. <br> Systematicky rozvíjí vztahy s praxí, podobnými pracovišti v České republice i v zahraničí. Jejich služby jsou k dispozici aktérům uvnitř školy i firemním partnerům."
+               ]
+          },
+          {
+               "tag": "DAB Alumni",
+               "patterns": [
+                    "DAB Alumni",
+                    "DAB alumni club",
+                    "Data and business alumni club",
+                    "VŠE alumni club",
+                    "DAB community",
+                    "VŠE Data Club",
+                    "Data Club",
+                    "DAB",
+                    "Data and business",
+                    "DAB club"
+               ],
+               "responses": [
+                    " The DAB Alumni Club is a community for (future) data specialists who met while studying data analytics. The club is organized by students for current and former student colleagues with the support of department heads and program sponsors. Members are students or graduates of the Bachelor's program Data Analytics or Master's of the Data and Analytics for Business program taught at VŠE. Link to Facebook group: <a href='https://www.facebook.com/groups/2367392286732156'>https://www.facebook.com/groups/2367392286732156</ and>"
+               ]
+          }
+     ]
+}
