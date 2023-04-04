@@ -48,17 +48,27 @@ Regarding the last two intents (canteen and public tranport), such intents are i
 
 ## **Text Processing**
 
-In order to either train Neural Network or make chatbot to respond based on user's input question, we need such given text(s) preprocessed in an appropriate way.
+In order to either train Neural Network on intents or make chatbot to respond based on user's input question, we need such given text(s) preprocessed in an appropriate way.
 
 First we perform **Cleaning & Tokenization** of given input text:
-- **Tokenization**: based on input text, we split the text into single words or symbols, called as tokens.
-- **Normalization** make each token a lowercase token. This applies to capitalized words. We also excplictly defined a constraint that normalization will not be applied to uppercase words. add WHY?
+- **Tokenization**: Based on input text, we split the text into single words or symbols, called as tokens.
+- **Normalization** Make each token a lowercase token. This applies to capitalized words. We also excplictly defined a constraint that normalization will not be applied to uppercase words. add WHY?
+- **Removal of punctuations**: Removing special characters such as periods, apostrophes, commas, question marks etc. in order to reduce the noise in the text and improve model performance.
+- **Lemmatization**:
+- **Removal of stopwords**:
 
 <img src="./imgs_readme.md/tokenization.png" alt="alt_text" width="85%">
+
+Next, we proceed with **Bag of Words**:
+- Given all the unique preprocessed intent's tokens
 
 We created our own intents of questions which were the most relevant to study at FIS VŠE, which were further preprocessed using NLTK (for tokenization) and Majka (for lemmatization of Czech terms) into bag of words based on which we developed a custom neural network in Keras which was further tuned using Bayesian Optimization.
 
 Using such developed neural network, we then built a custom chatbot which we deployed as a ML web application using Flask - the interface was built using HTML and Javascript for user-friendly experience with the chatbot.
 
 ## **Neural Network Development**
+TBD
+
+## **ML Chatbot Web Application Deployment**
+TBDD
 
