@@ -31,16 +31,16 @@ We created **41** own intents (for each language) by ourselves which regard for 
 
 Regarding the last two intents (canteen and public tranport), such intents are integrated with other external system sources, from which we are web scrapping our desired information. Thus, our chatbot's responses related to such intents will be dynamic depending on the web scrapped information (since the canteen's menu is updated once a day and the public transport departure times will depend on the part of the day).
 
-<b>Canteen</b> - from VŠE website, we are web scrapping a food menu at VŠE's canteen (available [here](https://www.vse.cz/menza/stravovani-zizkov/)) for the actual date using `requests` and `BeautifulSoup`. <i>Note, since the canteen's menu is not available in English, we use `GoogleTranslator API` to translate the menu from Czech into English.</i>
+<b>Canteen</b> - from VŠE website, we are web-scrapping a food menu at VŠE's canteen (available [here](https://www.vse.cz/menza/stravovani-zizkov/)) for the actual date using `requests` and `BeautifulSoup`. <i>Note, since the canteen's menu is not available in English, we use `GoogleTranslator API` to translate the menu from Czech into English.</i>
    - Website's menu:
 
-   <img src="./imgs_readme.md/canteen_website.png" alt="alt_text" width="85%">
+   <img src="./imgs_readme.md/canteen_website.png" alt="alt_text" width="90%">
 
    - Chatbot's response:
 
-   <img src="./imgs_readme.md/chatbot_canteen_response.png" alt="alt_text" width="85%">
+   <img src="./imgs_readme.md/chatbot_canteen_response.png" alt="alt_text" width="90%">
 
-<b>Public tranport</b> - we are also web scrapping actual bus and tram public transports from Prague Integrated Public Transport ([PID](https://pid.cz/en/departures/)) using `requests` and Golemio API - TBD (waiting for Samuel's and Andrea's inputs).
+<b>Public tranport</b> - we are also web-scrapping actual bus and tram public transports from Prague Integrated Public Transport ([PID](https://pid.cz/en/departures/)) using `requests` and Golemio API - TBD (waiting for Samuel's and Andrea's inputs).
 
    - Public transport's website:
 
@@ -58,13 +58,21 @@ First we perform **Cleaning & Tokenization** of given input text:
    - For lemmatization in **Czech** language, we use `Majka` as linguistics tool for morphology analysis. The Python implementation is shown [here](https://github.com/petrpulc/python-majka).
    - For lemmatization in **English** language, we use `WordNetLemmatizer` from `NLTK` which uses lexical English database `WordNet`.
 - **Removal of stopwords**: Eliminating common words which are frequently used in a language but generally do not carry much meaning in given text.
-   - For **Czech** language, we used `json` file of Czech stopwords from `stop-words` package ([https://pypi.org/project/stop-words/](https://pypi.org/project/stop-words/))
+   - For **Czech** language, we use `json` file of Czech stopwords from `stop-words` package ([https://pypi.org/project/stop-words/](https://pypi.org/project/stop-words/))
    - For **English** language, we use stopwords from `NLTK`'s `stopwords`.
 
-<img src="./imgs_readme.md/tokenization.png" alt="alt_text" width="85%">
+<img src="./imgs_readme.md/tokenization.png" alt="alt_text" width="90%">
 
-Next, we proceed with **Bag of Words**:
-- Given all the unique preprocessed intent's tokens
+Next, we proceed with **Bag of Words** as a collection of wors while disregarding the words' order.
+- In order to use such tokens in the NN modelling, we need to encode them into numerical vectors.
+- Given the set of all the unique preprocessed intents' words $w$ (i.e., set of normalized, lemmatized words with no punctuations or stopwords) of the length $n$, each numerical vector $v_{i}$ will have length $n$ where each index of $v_{i}$ corresponds to the index in $w$ indicating the occurrence of given word.
+- For instance, if we have tokens `['bachelor', 'master', 'programs']` and set of preprocessed intents' words$w$ `['bachelor', 'minor', 'master', 'programs', 'courses]`, the numerical vector $v_{i}$ will be then `[1,0,1,1,0]`. Such vector is called **bag of words** as a collection of 0/1 values indicating words' occurrences.
+
+
+<p align="center" width="100%">
+    <img src="./imgs_readme.md/bag_of_words.png"> 
+</p>
+
 
 We created our own intents of questions which were the most relevant to study at FIS VŠE, which were further preprocessed using NLTK (for tokenization) and Majka (for lemmatization of Czech terms) into bag of words based on which we developed a custom neural network in Keras which was further tuned using Bayesian Optimization.
 
