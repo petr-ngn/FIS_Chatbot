@@ -1,0 +1,638 @@
+{
+     "intents": [
+          {
+               "tag": "bakalářský program",
+               "patterns": [
+                    "Jaké tu jsou bakalářské programy?",
+                    "bakalářský program",
+                    "bakalářské programy",
+                    "bakalářský studijní program",
+                    "bakalářské studijní programy",
+                    "bakalář",
+                    "Bc.",
+                    "Jaké tu jsou bakalářské studijní programy?",
+                    "Jaké bakalářské programy tu mohu studovat?"
+               ],
+               "responses": [
+                    "Na FIS VŠE jsou vyučovány tyto bakalářské programy: <br>• <b>Aplikovaná informatika</b>, <br>• <b>Data Analytics</b>, <br>• <b>Informační média a služby</b>, <br>• <b>Matematické metody v ekonomii</b>, <br>• <b> Multimédia v ekonomické praxi</b>. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/bakalarske-studium/bakalarske-programy/>https://fis.vse.cz/bakalarske-studium/bakalarske-programy/</a>"
+               ]
+          },
+          {
+               "tag": "magisterský program",
+               "patterns": [
+                    "Jaké tu jsou magisterské programy?",
+                    "magisterský program",
+                    "magisterské programy",
+                    "magisterský studijní program",
+                    "magisterské studijní programy",
+                    "magistr",
+                    "Ing.",
+                    "Jaké tu jsou navazující magisterské programy?",
+                    "navazující magisterský program",
+                    "navazující magisterské programy",
+                    "navazující magisterský studijní program",
+                    "navazující magisterské studijní programy",
+                    "navazující magistr"
+               ],
+               "responses": [
+                    "Na FIS VŠE jsou vyučovány tyto magisterské programy: <br>• <b>Informační management</b>, <br>• <b>Business Intelligence (IST)</b>, <br>• <b>Data a analytika pro business</b>, <br>• <b>Ekonometrie a operační výzkum</b>, <br>• <b>Ekonomická demografie</b>, <br>• <b>Statistika</b>, <br>• <b>Business analýza (IST)</b>, <br>• <b>Kognitivní informatika</b>, <br>• <b>Řízení podnikové informatiky (IST)</b>, <br>• <b>UX výzkum a design (IST)</b>, <br>• <b>Vývoj informačních systémů (IST)</b>, <br>• <b>Znalostní a webové technologie</b>, <br>• <b>Information Systems Management</b>, <br>• <b>Economic Data Analysis</b>. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/magisterske-studium/magisterske-programy/>https://fis.vse.cz/magisterske-studium/magisterske-programy/</a>"
+               ]
+          },
+          {
+               "tag": "vedlejší specializace",
+               "patterns": [
+                    "Jaké tu jsou vedlejší specializace?",
+                    "vedlejší specializace",
+                    "jaké jsou vedlejší specializace",
+                    "vedlejška",
+                    "vedlejšky"
+               ],
+               "responses": [
+                    "Na FIS VŠE jsou vyučovány tyto vedlejší specializace: <br>• <b>Analýzy sociálně ekonomických dat</b>, <br>• <b>Datové inženýrství</b>, <br>• <b>Demografie a sociální analýza</b>, <br>• <b>Ekonometrie</b>, <br>• <b>Informatika v podnikání</b>, <br>• <b>Inteligentní systémy</b>, <br>• <b>Komunikace, intepretace, multimédia</b>, <br>• <b>Kvantitativní analýza</b>, <br>• <b>Kvantitativní metody pro informatiky</b>, <br>• <b>Kvantitativní metody v managementu</b>, <br>• <b>Multimediální komunikace</b>, <br>• <b>Pojistné inženýrství</b>, <br>• <b>Prezentace a komunikace informací</b>, <br>• <b>Řízení podnikové výkonnosti</b>, <br>• <b>Security Management</b>. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/magisterske-studium/vedlejsi-specializace/>https://fis.vse.cz/magisterske-studium/vedlejsi-specializace/</a>"
+               ]
+          },
+          {
+               "tag": "doktorský program",
+               "patterns": [
+                    "Jaké tu jsou doktorské programy?",
+                    "doktorský program",
+                    "doktorské programy",
+                    "doktorský studijní program",
+                    "doktorské studijní programy",
+                    "doktor",
+                    "doktorand",
+                    "doktorandský",
+                    "PhD",
+                    "Ph.D.",
+                    "Jaké tu jsou doktorandské programy?",
+                    "doktorandský program",
+                    "doktorandské programy",
+                    "doktorandský studijní program",
+                    "doktorandské studijní programy"
+               ],
+               "responses": [
+                    "Na FIS VŠE jsou vyučovány tyto doktorské programy: <br>• <b>Aplikovaná informatika</b>, <br>• <b>Ekonometrie a operační výzkum</b>, <br>• <b>Statistika</b>. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/doktorske-studium/obecne-informace/>https://fis.vse.cz/doktorske-studium/obecne-informace/</a>"
+               ]
+          },
+          {
+               "tag": "bakalářský předmět Multimédia v ekonomické praxi",
+               "patterns": [
+                    "bakalářský předmět Multimédia v ekonomické praxi",
+                    "bakalářské předměty Multimédia v ekonomické praxi",
+                    "bakalářský kurz Multimédia v ekonomické praxi",
+                    "bakalářské kurzy Multimédia v ekonomické praxi",
+                    "Multimédia v ekonomické praxi",
+                    "Jaké jsou povinné předměty na bakalářském programu Multimédia v ekonomické praxi?"
+               ],
+               "responses": [
+                    "Na bakalářském programu <b>Multimédia v ekonomické praxi</b> jsou vyučovány tyto povinné předměty: <br><br><b>Multimediální povinné:</b> <br>• 3D grafika, <br>• Design komunikací, <br>• Digitální fotografie, <br>• Grafika a animace, <br>• Multimediální projektový seminář, <br>• Multimediální technologie, <br>• Počítačová grafika, <br>• Praxe v multimédiích, <br>• Prezentační dovednosti, <br>• Profese v audiovizuální výrobě, <br>• Projekt audiovizuální komunikace, <br>• Reklamní agentura, <br>• Řízení multimediálních projektů (kreativita a komunikace), <br>• Sémiotika multimédií, <br>• Tvůrčí zpracování jazyka a textu, <br>• Úvod do multimédií, <br>• Web design a uživatelská rozhraní, <br>• Základy audiovizuální komunikace, <br>• Základy digitální fotografie, <br>• Základy počítačové grafiky, <br>• Zvuk a multimédia. <br><br> <b>Ekonomicky povinné:</b> <br>•Autorské právo a průmyslové vlastnictví, <br>• Dotazníkové šetření – miniprojekt, <br>• Ekonomie I, <br>• Management pro informatiky a statistiky, <br>• Marketing 1, <br>• Matematika pro ekonomy, <br>• Osobní finanční plánování (alternativně Finance podniku). <br>• Podnikání a právo, <br>• Statistika (alternativně Deskripce, vizualizace a komparace ekonomických dat pro Multimédia), <br>•  Účetnictví a daně individuálního podnikatele. <br><br> Více informací, nalezneš zde: <a href=https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-multimedia-v-ekonomicke-praxi/>https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-multimedia-v-ekonomicke-praxi/</a>"
+               ]
+          },
+          {
+               "tag": "bakalářský předmět Data Analytics",
+               "patterns": [
+                    "bakalářský předmět Data Analytics",
+                    "bakalářské předměty Data Analytics",
+                    "bakalářský kurz Data Analytics",
+                    "bakalářské kurzy Data Analytics",
+                    "Data Analytics",
+                    "Jaké jsou povinné předměty na bakalářském programu Data Analytics?"
+               ],
+               "responses": [
+                    "Na bakalářském programu <b>Data Analytics</b> jsou vyučovány tyto povinné předměty: <br><br><b>Informaticky povinné:</b> <br>• Data mining v cloudu, <br>• Databáze, <br>• Datová kvalita, <br>• Datové minimum, <br>• Externí data a informační zdroje, <br>• Nástroje pro datovou analytiku, <br>• Neuronové sítě a deep learning, <br>• Principy digitální komunikace, <br>• Řízení datového projektu, <br>• Strojové učení 1, <br>• Strojové učení 2, <br>• Textová analytika 1, <br>• Textová analytika 2, <br>• Úvod do programování v jazyce Python, <br>• Úvod do programování v R, <br>• Základy Business Intelligence, <br>• Zpracování Big Data <br><br><b>Kvantitativně povinné:</b> <br>• Deskripce, vizualizace a komparace ekonomických dat, <br>• Ekonometrické modely, <br>• Exploratorní analýza dat, <br>• Matematická informatika, <br>• Matematická statistika, <br>• Matematika pro informatiky, <br>• Optimalizační modely, <br>• Pravděpodobnost a náhodné procesy, <br>• Průzkumy a dotazníková šetření; Regresní modely. <br><br><b>Ekonomicky povinné:</b> <br>• Bankovnictví a finanční instituce, <br>• Ekonomie 1, <br>• Kritické a analytické myšlení, <br>• Prezentace a storytelling; Účetnictví I., <br>• Základy informační etiky a práve, <br>• Základy marketingu pro informatiky a statistiky, <br>• Základy odborné práce. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-data-analytics/>https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-data-analytics/</a>"
+               ]
+          },
+          {
+               "tag": "bakalářský předmět Aplikovaná informatika",
+               "patterns": [
+                    "bakalářský předmět Aplikovaná informatika",
+                    "bakalářské předměty Multimédia v ekonomické praxi",
+                    "bakalářský kurz Aplikovaná informatika",
+                    "bakalářské kurzy Aplikovaná informatika",
+                    "Aplikovaná informatika",
+                    "Jaké jsou povinné předměty na bakalářském programu Aplikovaná informatika?"
+               ],
+               "responses": [
+                    "Na bakalářském programu <b>Aplikovaná informatika</b> jsou vyučovány tyto povinné předměty: <br><br><b>Povinné informatické předměty:</b> <br>• Analýza a návrh informačních systémů, <br>• Bakalářský seminář, <br>• Bezpečnost informačních systémů, <br>• Databáze, <br>• Datové minimum, <br>• Informační a komunikační technologie, <br>• IT Governance, <br>• Kvantitativní management, <br>• Podnikové informační systémy, <br>• Programování v Javě, <br>• Simulační modely pro informatiky, <br>• Softwarové inženýrství, <br>• UX design, <br>• Základy odborné práce; Zpracování informací a znalostí. <br><br><b>Povinné ekonomické předměty:</b> <br>• Ekomomie 1, <br>• Finance podniku, <br>• Finanční teorie, politika a instituce, <br>• Management pro informatiky a statistiky, <br>• Matematika pro informatiky, <br>• Právo, <br>• Statistika pro informatiky, <br>• Strategická analýza pro informatiky a statistiky, <br>• Účetnictví I., <br>• Základy marketingu pro informatiky a statistiky. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-aplikovana-informatika/>https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-aplikovana-informatika/</a>"
+               ]
+          },
+          {
+               "tag": "bakalářský předmět Informační média a služby",
+               "patterns": [
+                    "bakalářský předmět Informační média a služby",
+                    "bakalářské předměty Informační média a služby",
+                    "bakalářský kurz Informační média a služby",
+                    "bakalářské kurzy Informační média a služby",
+                    "Informační média a služby",
+                    "Jaké jsou povinné předměty na bakalářském programu Informační média a služby?"
+               ],
+               "responses": [
+                    "Na bakalářském programu <b>Informační média a služby</b> jsou vyučovány tyto povinné předměty: <br><br><b>Informaticky povinné:</b> <br>• Bakalářský seminář, <br>• Bezpečnost informačních systémů, <br>• Databáze, <br>• Datové minimum, <br>• Digitální knihovny a archivy, <br>• Informace a společnost, <br>• Informační architektura, <br>• Informační a komunikační technologie, <br>• Integrace informačních zdrojů, <br>• Matematické základy informatiky, <br>• Obchodní a firemní informace, <br>• Organizace znalostí, <br>• Programování v Javě, <br>• Psychologie kreativity, <br>• Rešeršní strategie a systémy, <br>• Sémiotika multimédií, <br>• Teorie a praxe týmové práce, <br>• Základy odborné práce, <br>• Zpracování informací a znalostí. <br><br><b>Ekonomicky povinné:</b> <br>• Ekonomie 1, <br>• Finance podniku, <br>• Matematika pro informatiky, <br>• Právo, <br>• Statistika pro informatiky, <br>• Strategická analýza pro informatiky a statistiky, <br>• Účetnictví I., <br>• Základy marketingu pro informatiky a statistiky. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-informacni-media-a-sluzby/>https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-informacni-media-a-sluzby/</a>"
+               ]
+          },
+          {
+               "tag": "bakalářský předmět Matematické metody v ekonomii",
+               "patterns": [
+                    "bakalářský předmět Matematické metody v ekonomii",
+                    "bakalářské předměty Matematické metody v ekonomii",
+                    "bakalářský kurz Matematické metody v ekonomii",
+                    "bakalářské kurzy Matematické metody v ekonomii",
+                    "Matematické metody v ekonomii",
+                    "Jaké jsou povinné předměty na bakalářském programu Matematické metody v ekonomii?"
+               ],
+               "responses": [
+                    "Na bakalářském programu <b>Matematické metody v ekonomii</b> jsou vyučovány tyto povinné předměty: <br><br><b>Kvantitativní povinné:</b> <br>• Demografické projekce, <br>• Matematika 2, <br>• Metody statistického srovnávání, <br>• Modely operačního výzkumu, <br>• Statistické metody 1, <br>• Stochastické modely, <br>• Úvod do programování v R, <br>• Úvod do teorie pravděpodobnosti a matematické statistiky, <br>• Základy datových analýz, <br>• Základy demografie. <br><br><b>Ekonomicky povinné:</b> <br>• Ekonomie 1, <br>• Finanční teorie, politika a instituce, <br>• Informatika pro statistiky, <br>• Management pro informatiky a statistiky, <br>• Matematika pro ekonomy, <br>• Právo; Účetnictví I., <br>• Základy marketingu pro informatiky a statistiky. <br><br> Další povinné předměty se pak liší dle vybrané specializace. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-matematicke-metody-v-ekonomii/>https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-matematicke-metody-v-ekonomii/</a>"
+               ]
+          },
+          {
+               "tag": "bakalářský předmět Ekonomická demografie",
+               "patterns": [
+                    "bakalářský předmět Ekonomická demografie",
+                    "bakalářské předměty Ekonomická demografie",
+                    "bakalářský kurz Ekonomická demografie",
+                    "bakalářské kurzy Ekonomická demografie",
+                    "Ekonomická demografie",
+                    "Matematické metody v ekonomiispecializace Ekonomická demografie (Matematické metody v ekonomii)",
+                    "Jaké jsou povinné předměty na specializaci Ekonomická demografie (Matematické metody v ekonomii)?"
+               ],
+               "responses": [
+                    "Na specializaci <b>Ekonomická demografie</b> (součást bakalářského programu <b>Matematické metody v ekonomii</b>) jsou vyučovány tyto povinné předměty: <br>• Bakalářský seminář, <br>• Demografická praktika pro statistiky, <br>• Ekonomická demografie I, <br>• Hospodářská a sociální statistika, <br>• Hospodářská politika pro statistiky, <br>• Regionální demografie, <br>• Statistické metody 2, <br>• Sociální politika, <br>• Úvod do sociálně ekonomické demografie, <br>• Zdroje a databáze demografických dat. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-matematicke-metody-v-ekonomii/#2>https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-matematicke-metody-v-ekonomii/#2</a>"
+               ]
+          },
+          {
+               "tag": "bakalářský předmět Datové analýzy a modelování",
+               "patterns": [
+                    "bakalářský předmět Datové analýzy a modelování",
+                    "bakalářské předměty Datové analýzy a modelování",
+                    "bakalářský kurz Datové analýzy a modelování",
+                    "bakalářské kurzy Datové analýzy a modelování",
+                    "Datové analýzy a modelování",
+                    "Matematické metody v ekonomiispecializace Datové analýzy a modelování (Matematické metody v ekonomii)",
+                    "Jaké jsou povinné předměty na specializaci Datové analýzy a modelování (Matematické metody v ekonomii)?"
+               ],
+               "responses": [
+                    "Na specializaci <b>Datové analýzy a modelování</b> (součást bakalářského programu <b>Matematické metody v ekonomii</b>) jsou vyučovány tyto povinné předměty: <br>• Ekonometrie 1, <br>• Hospodářská a sociální statistika, <br>• Hospodářská politika pro statistiky, <br>• Lineární modely, <br>• Statistické metody 2, <br>• Statistické výpočetní prostředí, <br>• Teorie pravděpodobnosti a matematická statistika 1, <br>• Úvod do statistiky - bayesovský přístup, <br>• Výpočty v pojišťovnictví, <br>• Základy pojišťovnictví. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-matematicke-metody-v-ekonomii/#1>https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-matematicke-metody-v-ekonomii/#21</a>"
+               ]
+          },
+          {
+               "tag": "bakalářský předmět Ekonometrie a operační výzkum",
+               "patterns": [
+                    "bakalářský předmět Ekonometrie a operační výzkum",
+                    "bakalářské předměty Ekonometrie a operační výzkum",
+                    "bakalářský kurz Ekonometrie a operační výzkum",
+                    "bakalářské kurzy Ekonometrie a operační výzkum",
+                    "Ekonometrie a operační výzkum",
+                    "Matematické metody v ekonomiispecializace Ekonometrie a operační výzkume (Matematické metody v ekonomii)",
+                    "Jaké jsou povinné předměty na specializaci Ekonometrie a operační výzkum (Matematické metody v ekonomii)?"
+               ],
+               "responses": [
+                    "Na specializaci <b>Ekonometrie a operační výzkum</b> (součást bakalářského programu <b>Matematické metody v ekonomii</b>) jsou vyučovány tyto povinné předměty: <br>• Bakalářský odborný seminář, <br>• Ekonometrie 1, <br>• Ekonometrie 2, <br>• Lineární modely, <br>• Programování pro matematické modelování, <br>• Řízení projektů, <br>• Simulační modely ekonomických procesů, <br>• Teorie her a ekonomické rozhodování. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-matematicke-metody-v-ekonomii/#3>https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-matematicke-metody-v-ekonomii/#3</a>"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Statistika",
+               "patterns": [
+                    "magisterský předmět Statistika",
+                    "magisterské předměty Statistika",
+                    "magisterský kurz Statistika",
+                    "magisterské kurzy Statistika",
+                    "Statistika",
+                    "Jaké jsou povinné předměty na magisterském programu Statistika?"
+               ],
+               "responses": [
+                    "Na magisterském programu <b>Statistika</b> jsou vyučovány tyto povinné předměty: <br>• Časové řady, <br>• Vícerozměrná statistika, <br>• Systém národního účetnictví, <br>• Statistické úsudky, <br>• Bayesovská statistika, <br>• Ekonomie II.,<br>• Regrese,<br>• Neparametrické metody a analýzy přežívání, <br>• Teorie výběrových šetření. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/magisterske-studium/magisterske-programy/program-statistika/>https://fis.vse.cz/magisterske-studium/magisterske-programy/program-statistika/</a>"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Informační management",
+               "patterns": [
+                    "magisterský předmět Informační management",
+                    "magisterské předměty Informační management",
+                    "magisterský kurz Informační management",
+                    "magisterské kurzy Informační management",
+                    "Informační management",
+                    "Jaké jsou povinné předměty na magisterském programu Informační management?"
+               ],
+               "responses": [
+                    "Na magisterském programu <b>Informační management</b> jsou vyučovány tyto povinné předměty: <br>• Audit informačního managementu, <br>• Digitální forenzní analýza, <br>• Project Governance, <br>• Teorie systémů a informační etika, <br>• Řízení bezpečnosti informačních systémů; Organizace a informace, <br>• Informační management, <br>• Diplomový seminář, <br>• Sociální informatika. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/magisterske-studium/magisterske-programy/program-informacni-management/>https://fis.vse.cz/magisterske-studium/magisterske-programy/program-informacni-management/</a>"
+               ]
+          },
+          {
+               "tag": "magisterský předmět DAB",
+               "patterns": [
+                    "magisterský předmět DAB",
+                    "magisterské předměty DAB",
+                    "magisterský kurz DAB",
+                    "magisterské kurzy DAB",
+                    "DAB",
+                    "Data a Analytika pro businessmagisterský předmět Data a analytika pro business",
+                    "magisterské předměty Data a analytika pro business",
+                    "magisterský kurz Data a analytika pro business",
+                    "magisterské kurzy Data a analytika pro business",
+                    "Jaké jsou povinné předměty na magisterském programu Data a analytika pro business?"
+               ],
+               "responses": [
+                    "Na magisterském programu <b>Data a analytika pro business</b> jsou vyučovány tyto povinné předměty: <br>• Architektury business analytiky, <br>• Business a transformace businessu, <br>• Datový projekt, <br>• Informační etika, regulace a právo, <br>• Pokročilá business analytika, <br>• Řízení dat a analytiky pro business, <br>• Statistické metody pro business, <br>• Trendy a novinky v business analytice I, <br>• Trendy a novinky v business analytice II, <br>• Základní analytika a reporting. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/magisterske-studium/magisterske-programy/program-data-a-analytika-pro-business/>https://fis.vse.cz/magisterske-studium/magisterske-programy/program-data-a-analytika-pro-business/<a/>"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Business Intelligence (IST)",
+               "patterns": [
+                    "magisterský předmět Business Intelligence (IST)",
+                    "magisterské předměty Business Intelligence (IST)",
+                    "magisterský kurz Business Intelligence (IST)",
+                    "magisterské kurzy Business Intelligence (IST)",
+                    "Business Intelligence (IST)",
+                    "Jaké jsou povinné předměty na magisterském programu Business Intelligence (IST)?"
+               ],
+               "responses": [
+                    "Na magisterském programu <b>Business Intelligence (IST)</b> jsou vyučovány tyto povinné předměty: <br>• Architektury business analytiky, <br>• Competitive Intelligence, <br>• IT a anatomie firmy, <br>• Informační modelování organizací, <br>• Projekt diplomové práce pro specializaci Business Intelligence, <br>• Řízení podnikové informatiky, <br>• Řízení projektů IS\\ICT, <br>• Self-Service Business Intelligence, <br>• Řízení dat a analytiky pro business, <br>• Výzkum v oblastni aplikované informatiky a jeho prezentace, <br>• Základy analytika a reporting. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/magisterske-studium/magisterske-programy/business-intelligence-ist/>https://fis.vse.cz/magisterske-studium/magisterske-programy/business-intelligence-ist/<a/>"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Ekonomická demografie",
+               "patterns": [
+                    "magisterský předmět Ekonomická demografie",
+                    "magisterské předměty Ekonomická demografie",
+                    "magisterský kurz Ekonomická demografie",
+                    "magisterské kurzy Ekonomická demografie",
+                    "Ekonomická demografie",
+                    "Jaké jsou povinné předměty na magisterském programu Ekonomická demografie?"
+               ],
+               "responses": [
+                    "Na magisterském programu <b>Ekonomická demografie</b> jsou vyučovány tyto povinné předměty: <br>• Aktuárská demografie, <br>• Aplikovaná demografie, <br>• Ekonomická demografie II, <br>• Časové řady, <br>• Regrese, <br>• Vícerozměrná statistika, <br>• Sociální statistika, <br>• Diplomový seminář, <br>• Ekonomie II, <br>• Obecná demografie. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/magisterske-studium/magisterske-programy/program-ekonomicka-demografie/>https://fis.vse.cz/magisterske-studium/magisterske-programy/program-ekonomicka-demografie/</a>"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Ekonometrie a operační výzkum",
+               "patterns": [
+                    "magisterský předmět Ekonometrie a operační výzkum",
+                    "magisterské předměty Ekonometrie a operační výzkum",
+                    "magisterský kurz Ekonometrie a operační výzkum",
+                    "magisterské kurzy Ekonometrie a operační výzkum",
+                    "Ekonometrie a operační výzkum",
+                    "Jaké jsou povinné předměty na magisterském programu Ekonometrie a operační výzkum?"
+               ],
+               "responses": [
+                    "Na magisterském programu <b>Ekonometrie a operační výzkum</b> jsou vyučovány tyto povinné předměty: <br>• Pokročilá ekonometrie 1, <br>• Praktikum z ekonometrie, <br>• Kvantitativní ekonomie, <br>• Diskrétní modely, <br>• Pokročilá ekonometrie 2, <br>• Skupinové rozhodování, <br>• Ekonomie II, <br>• Vícekriteriální rozhodování, <br>• Praktikum z operačního výzkumu, <br>• Nelineární modely, <br>• Státnicový a diplomový seminář. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/magisterske-studium/magisterske-programy/program-ekonometrie-a-operacni-vyzkum/>https://fis.vse.cz/magisterske-studium/magisterske-programy/program-ekonometrie-a-operacni-vyzkum/</a>"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Business analýza (IST)",
+               "patterns": [
+                    "magisterský předmět Business analýza (IST)",
+                    "magisterské předměty Business analýza (IST)",
+                    "magisterský kurz Business analýza (IST)",
+                    "magisterské kurzy Business analýza (IST)",
+                    "Business analýza (IST)",
+                    "Jaké jsou povinné předměty na magisterském programu Business analýza (IST)?"
+               ],
+               "responses": [
+                    "Na magisterském programu <b>Business analýza (IST)</b> jsou vyučovány tyto povinné předměty: <br>• Business Process Engineering, <br>• Informační modelování organizací, <br>• IT a anatomie firmy, <br>• Projekt diplomové práce pro specializaci Business Analýza, <br>• Řízení podnikové informatiky, <br>• Řízení projektů IS\\ICT; Simulace systémů, <br>• Systémy pro podporu business procesů, <br>• Výzkum v oblasti aplikované informatiky a jeho prezentace. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/magisterske-studium/magisterske-programy/business-analyza-ist/>https://fis.vse.cz/magisterske-studium/magisterske-programy/business-analyza-ist/<a/>"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Kognitivní informatika",
+               "patterns": [
+                    "magisterský předmět Kognitivní informatika",
+                    "magisterské předměty Kognitivní informatika",
+                    "magisterský kurz Kognitivní informatika",
+                    "magisterské kurzy Kognitivní informatika",
+                    "Kognitivní informatika",
+                    "Jaké jsou povinné předměty na magisterském programu Kognitivní informatika?"
+               ],
+               "responses": [
+                    "Na magisterském programu <b>Kognitivní informatika</b> jsou vyučovány tyto povinné předměty: <br>• Teorie spontánního řádu a samoorganizace, <br>• Znalosti a ontologické inženýrství, <br>• Simulace systémů, <br>• Diplomový seminář KI, <br>• Výzkum v oblasti aplikované informatiky a jeho prezentace; Informační modelování organizací; Kognitivní věda; Základy neurověd. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/magisterske-studium/magisterske-programy/program-kognitivni-informatika/>https://fis.vse.cz/magisterske-studium/magisterske-programy/program-kognitivni-informatika/</a>"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Podniková informatika",
+               "patterns": [
+                    "magisterský předmět Podniková informatika",
+                    "magisterské předměty Podniková informatika",
+                    "magisterský kurz Podniková informatika",
+                    "magisterské kurzy Podniková informatika",
+                    "Podniková informatika",
+                    "Jaké jsou povinné předměty na magisterském programu Podniková informatika?"
+               ],
+               "responses": [
+                    "Na magisterském programu <b>Podniková informatika</b> jsou vyučovány tyto povinné předměty: <br>• Řízení projektů IS\\ICT, <br>• Řízení podnikové informatiky, <br>• Zlepšování procesů budování IS, <br>• Dobývání znalostí z databází, <br>• Diplomový seminář pro distanční studium, <br>• Metody a nástroje zpracování textových informací, <br>• Informační management, <br>• Optimalizace podnikových procesů, <br>• Audit informačních systémů. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/magisterske-studium/magisterske-programy/program-podnikova-informatika/>https://fis.vse.cz/magisterske-studium/magisterske-programy/program-podnikova-informatika/</a>"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Řízení podnikové informatiky (IST)",
+               "patterns": [
+                    "magisterský předmět Řízení podnikové informatiky (IST)",
+                    "magisterské předměty Řízení podnikové informatiky (IST)",
+                    "magisterský kurz Řízení podnikové informatiky (IST)",
+                    "magisterské kurzy Řízení podnikové informatiky (IST)",
+                    "Řízení podnikové informatiky (IST)",
+                    "Jaké jsou povinné předměty na magisterském programu Řízení podnikové informatiky (IST)?"
+               ],
+               "responses": [
+                    "Na magisterském programu <b>Řízení podnikové informatiky (IST)</b> jsou vyučovány tyto povinné předměty: <br>• Finační řízení podnikové informatiky, <br>• Informační modelování organizací, <br>• Inovace informačních systémů, <br>• Integrace v podnikových informačních systémech, <br>• IT a anatomie firmy, <br>• Podniková architektura jako metoda řízení transformace, <br>• Projekt diplomové práce pro specializaci Řízení podnikové informatiky, <br>• Řízení IT v praxi, <br>• Řízení podnikové informatiky, <br>• Řízení projektů IS\\ICT, <br>• Výzkum v oblasti aplikovaní informatiky a jeho prezentace. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/magisterske-studium/magisterske-programy/rizeni-podnikove-informatiky-ist/>https://fis.vse.cz/magisterske-studium/magisterske-programy/rizeni-podnikove-informatiky-ist/</a>"
+               ]
+          },
+          {
+               "tag": "magisterský předmět UX výzkum a design (IST)",
+               "patterns": [
+                    "magisterský předmět UX výzkum a design (IST)",
+                    "magisterské předměty UX výzkum a design (IST)",
+                    "magisterský kurz UX výzkum a design (IST)",
+                    "magisterské kurzy UX výzkum a design (IST)",
+                    "UX výzkum a design (IST)",
+                    "Jaké jsou povinné předměty na magisterském programu UX výzkum a design (IST)?"
+               ],
+               "responses": [
+                    "Na magisterském programu <b>UX výzkum a design (IST)</b> jsou vyučovány tyto povinné předměty: <br>• Design služeb, <br>• Design sprint, <br>• Design uživatelských rozhraní, <br>• Design zaměřený na člověka, <br>• Informační modelování organizací, <br>• IT a anatomie firmy, <br>• Projekt diplomové práce pro specializaci UX výzkum a design, <br>• Řízení podnikové informatiky, <br>• Řízení projektů IS\\ICT, <br>• Uživatelský výzkum, <br>• Výzkum v oblasti aplikované informatiky a jeho prezentace, <br>• Základy UX. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/magisterske-studium/magisterske-programy/ux-vyzkum-a-design-ist/>https://fis.vse.cz/magisterske-studium/magisterske-programy/ux-vyzkum-a-design-ist/</a>"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Vývoj informačních systémů (IST)",
+               "patterns": [
+                    "magisterský předmět Vývoj informačních systémů (IST)",
+                    "magisterské předměty Vývoj informačních systémů (IST)",
+                    "magisterský kurz Vývoj informačních systémů (IST)",
+                    "magisterské kurzy Vývoj informačních systémů (IST)",
+                    "Vývoj informačních systémů (IST)",
+                    "Jaké jsou povinné předměty na magisterském programu Vývoj informačních systémů (IST)?"
+               ],
+               "responses": [
+                    "Na magisterském programu <b>Vývoj informačních systémů (IST)</b> jsou vyučovány tyto povinné předměty: <br>• Agilní projekt vývoje webové aplikace, <br>• Design uživatelských rozhraní, <br>• Informační modelování organizací, <br>• IT a anatomie firmy, <br>• Metody a praktiky vývoje a testování softwaru, <br>• Projekt diplomové práce pro specializaci Vývoj informačních systémů, <br>• Řízení podnikové informatiky, <br>• Řízení projektů IS\\ICT, <br>• Softwarové architektury, <br>• Softwarový projekt, <br>• Výzkum v oblasti aplikované informatiky a jeho prezentace. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/magisterske-studium/magisterske-programy/vyvoj-informacnich-systemu-ist/>https://fis.vse.cz/magisterske-studium/magisterske-programy/vyvoj-informacnich-systemu-ist/</a>"
+               ]
+          },
+          {
+               "tag": "magisterský předmět Znalostní a webové technologie",
+               "patterns": [
+                    "magisterský předmět Znalostní a webové technologie",
+                    "magisterské předměty Znalostní a webové technologie",
+                    "magisterský kurz Znalostní a webové technologie",
+                    "magisterské kurzy Znalostní a webové technologie",
+                    "Znalostní a webové technologie",
+                    "Jaké jsou povinné předměty na magisterském programu Znalostní a webové technologie?"
+               ],
+               "responses": [
+                    "Na magisterském programu <b>Znalostní a webové technologie</b> jsou vyučovány tyto povinné předměty: <br>• Umělá inteligence 1, <br>• Umělá inteligence 2, <br>• Pokročilé přístupy k dobývání znalostí z databází, <br>• Automatizace zpracování textů; Dolování znalostí z webu, <br>• Propojená data na webu, <br>• Dobývání znalostí z databází, <br>• Diplomový seminář. <br><br> Více informací nalezneš zde: <a href=https://fis.vse.cz/magisterske-studium/magisterske-programy/program-znalostni-a-webove-technologie/>https://fis.vse.cz/magisterske-studium/magisterske-programy/program-znalostni-a-webove-technologie/</a>"
+               ]
+          },
+          {
+               "tag": "Autobus",
+               "patterns": [
+                    "MHD",
+                    "autobusové spoje",
+                    "busové spoje",
+                    "bus",
+                    "autobus",
+                    "Kdy jedou autobusy?",
+                    "Kdy jsou autobusové spoje?",
+                    "V kolik jedou atuobusy?",
+                    "Náměstí Winstona Churchilla"
+               ],
+               "responses": [
+                    "Ze zastávky <b>Náměstí Winstona Churchilla</b> pojedou tyto autobusové spoje v následujících 15 minutách: <br>• Autobus <b>č. 135</b> (směr: <b>Chodov</b>) - odjezd v <b>5:09</b> (<i>bez zpoždění</i>)"
+               ]
+          },
+          {
+               "tag": "Tramvaj",
+               "patterns": [
+                    "MHD",
+                    "tramvajové spoje",
+                    "tramvaj",
+                    "Kdy jedou tramvaje?",
+                    "Kdy jsou tramvajové spoje?",
+                    "V kolik jedou tramvaje?",
+                    "Viktorie Žižkov",
+                    "Husinecká"
+               ],
+               "responses": [
+                    "Ze zastávky <b>Viktoria Žižkov</b> pojedou tyto tramvajové spoje v následujících 15 minutách: <br>• Tramvaj <b>č. 98</b> (směr: <b>Spojovací</b>) - odjezd v <b>5:06</b> (<i>bez zpoždění</i>) <br>• Tramvaj <b>č. 2</b> (směr: <b>Sídliště Petřiny</b>) - odjezd v <b>5:10</b> (<i>bez zpoždění</i>) <br>• Tramvaj <b>č. 26</b> (směr: <b>Nádraží Hostivař</b>) - odjezd v <b>5:11</b> (<i>bez zpoždění</i>) <br>• Tramvaj <b>č. 2</b> (směr: <b>Sídliště Petřiny</b>) - odjezd v <b>5:10</b> (<i>zpoždění: 1 min</i>) <br>• Tramvaj <b>č. 26</b> (směr: <b>Vozovna Vokovice</b>) - odjezd v <b>5:12</b> (<i>bez zpoždění</i>) <br>• Tramvaj <b>č. 9</b> (směr: <b>Sídliště Řepy</b>) - odjezd v <b>5:14</b> (<i>zpoždění: 1 min</i>) <br>• Tramvaj <b>č. 9</b> (směr: <b>Spojovací</b>) - odjezd v <b>5:19</b> (<i>bez zpoždění</i>)"
+               ]
+          },
+          {
+               "tag": "Menza",
+               "patterns": [
+                    "Co mají dneska v menze k jídlu?",
+                    "Co mají v menze na oběd?",
+                    "menza",
+                    "menze",
+                    "oběd",
+                    "stravování",
+                    "stravování v menze"
+               ],
+               "responses": [
+                    "Dneska v menze je: <br>• Zeleninový vývar s těstovinou <br>• Frankfurtská hovězí pečeně, houskové knedlíky / dušená rýže <br>• Ražniči na plechu(vepřové,kuřecí,uzené), mačkané brambory, salát coleslaw <br>• Vepřový džuveč s barevnou paprikou a chilli floky, sypaný sýrem7, Dle denní nabídky (pasta / rizoto / směs), Smažené brokolicové koule, vařené brambory, tatarská omáčka <br>• Smažené kuřecí stripsy v pikantní strouhance, máslová kaše, ledový salát, citrón <br>• Club sendvič pro dospělé,trhané vepřové,sweet chilli majonéza,cibolová marmeláda,rajče,gouda,hranolky,mix salát <br>• Teplý bufet-dle vlastního výběru <br>• Zapečené kuřecí prso sýrem a kukuřicí, hranolky, salátek <br>• Balené jídlo/Také away+ plech 0,33l <br>• Fresh bageta, Gyros, Tortila <br><br> Menu na další dny nalezneš zde: <a href=https://www.vse.cz/menza/stravovani-zizkov/>https://www.vse.cz/menza/stravovani-zizkov/</a>"
+               ]
+          },
+          {
+               "tag": "Vedení fakulty",
+               "patterns": [
+                    "Kdo vede fis",
+                    "vedení fakulty",
+                    "kdo řídí fakultu",
+                    "Děkan",
+                    "Kdo je děkanem fisu",
+                    "Kdo je děkanem fakulty informatiky a statistiky",
+                    "Proděkan",
+                    "Proděkanka",
+                    "Vedení fis"
+               ],
+               "responses": [
+                    "Fakultu Informatiky a Statistiky vede děkan <b>prof. Ing. Jakub Fischer, Ph.D.</b> Proděkankou pro studijní a pedagogickou činnost je <b>Ing. Kristýna Vltavská, Ph.D.</b> <Proděkanem pro tvůrčí činnost a zahraniční vztahy a zároveň statutárním zástupcem děkana je <b>prof. Ing. Petr Doucek, CSc.</b> Dále <b>Ing. Dušan Chlapek, Ph.D.</b> zastává pozici proděkana pro rozvoj, transfer znalostí a spolupráci s praxí. Akademickým ředitelem cizojazyčných studijních programů je <b>doc. Ing. Mgr. Petr Mazouch, Ph.D.</b> Manažerem komunikace a marketingu je <b>Ing. Zdeněk Vondra, Ph.D.</b> Tajemnicí fakulty je <b>Ing. Marie Gvoždiaková</b>."
+               ]
+          },
+          {
+               "tag": "film",
+               "patterns": [
+                    "Film",
+                    "O číslech a lidech",
+                    "Film FIS VŠE",
+                    "více informací o fakultě",
+                    "širší informace",
+                    "chci se dozvědět více o FISu",
+                    "Více informací",
+                    "širší info o fakultě",
+                    "dokumentární film FIS",
+                    "úspěchy fakulty"
+               ],
+               "responses": [
+                    "Další informace o fakultě se můžete dozvědět v krátkém dokumentárním filmu <b>O číslech a lidech</b>: <a href=https://www.youtube.com/watch?v=X-ao_V4fGpE>https://www.youtube.com/watch?v=X-ao_V4fGpE</a>"
+               ]
+          },
+          {
+               "tag": "Studijní oddělení",
+               "patterns": [
+                    "Studijní oddělení",
+                    "Konzultační hodiny studijní oddělení",
+                    "Konzultační hodiny studijního oddělení",
+                    "Úřední hodiny studijní oddělení",
+                    "Úřední hodiny studijního oddělení",
+                    "Studijní fis"
+               ],
+               "responses": [
+                    "Studijní oddělení má úřední hodiny v pondělí od 8:30 do 11:30 a od 13:00 do 15:00 a ve středu od 8:30 do 11:30 a od 13:00 do 15:00. <br>• <b>Ing. Jana Sedláčková</b> je zodpovědná za bakalářské studium a kontaktní centrum InSIS. <br>• <b>Jana Hudčeková</b> je příslušná pro bakalářské studium a má svou kancelář v místnosti 410 NB. Její telefonní číslo je <a href='tel+420224095440'>224 095 440</a> a e-mailová adresa <a href='mailto:jana.hudcekova@vse.cz'>jana.hudcekova@vse.cz</a>. <br>• <b>Iva Hudcová</b> se stará o magisterské studium a její místnost je 409 NB. Pro kontakt s ní lze použít telefonní číslo <a href='tel+420224095487'>224 095 487</a> nebo e-mailovou adresu <a href='mailto:hudcovai@vse.cz'>hudcovai@vse.cz</a>. <br>• <b>Ing. Tereza Krajíčková, DiS.</b> je zodpovědná za doktorské studium a její kancelář se nachází v místnosti 412 NB. Lze ji kontaktovat prostřednictvím telefonního čísla <a href='+420224095464'>224 095 464</a> nebo e-mailové adresy <a href='mailto:tereza.krajickova@vse.cz'>tereza.krajickova@vse.cz</a>"
+               ]
+          },
+          {
+               "tag": "Přijímací řízení",
+               "patterns": [
+                    "Přijímací řízení",
+                    "Přijímačky",
+                    "Přihláška ke studiu",
+                    "Termíny přijímacího řízení",
+                    "Do kdy si musím podat přihlášku ke studiu",
+                    "Přihlášení ke studiu",
+                    "Podání přihlášky",
+                    "Důležité termíny",
+                    "Přihlášení ke studiu",
+                    "Deadline na podání přihlášky",
+                    "Přihlášky na akademický rok 2023/2024",
+                    "Termín podání přihlášky"
+               ],
+               "responses": [
+                    "Podání přihlášky na akademický rok 2023/2024 včetně připsání platby na účet musí proběhnout nejpozději <b>30. 4. 2023</b> Více informací nalezneš zde: <br>• <b>Bakalářské studium:</b> <a href=https://fis.vse.cz/bakalarske-studium/prijimaci-rizeni/>https://fis.vse.cz/bakalarske-studium/prijimaci-rizeni/</a> <br>• <b>Magisterké studium:</b> <a href=https://fis.vse.cz/magisterske-studium/prijimaci-rizeni/>https://fis.vse.cz/magisterske-studium/prijimaci-rizeni/</a> <br>• <b>Doktorské studium:</b> <a href=https://fis.vse.cz/doktorske-studium/prijimaci-rizeni/>https://fis.vse.cz/doktorske-studium/prijimaci-rizeni/</a>"
+               ]
+          },
+          {
+               "tag": "Cena přihlášky",
+               "patterns": [
+                    "Cena přihlášky",
+                    "Kolik stojí podání přihlášky ke studiu",
+                    "Cena přihlášky ke studiu",
+                    "Cena přihlášky",
+                    "Kolik stojí přihláška",
+                    "Cena přijímacího přízení",
+                    "Poplatek za podání přihlášky",
+                    "Poplatek za přijímačky",
+                    "Cena",
+                    "Platba",
+                    "Poplatek"
+               ],
+               "responses": [
+                    "Poplatek za úkony spojené s přijímacím řízením činí <b>880 Kč</b> a lze ho uhradit buď okamžitě při zadávání přihlášky platební kartou, nebo převodem na účet (číslo účtu a variabilní symbol obdrží uchazeč na e-mailovou adresu uvedenou v přihlášce). Platba musí být připsána na účet VŠE nejpozději do <b>30. dubna 2023</b>."
+               ]
+          },
+          {
+               "tag": "Inovační týden",
+               "patterns": [
+                    "Kdy je inovační týden",
+                    "Kdy je inovacni tyden",
+                    "Inovacni tyden",
+                    "Inovace"
+               ],
+               "responses": [
+                    "Inovační týden probíha vždy v 7. semestru výuky."
+               ]
+          },
+          {
+               "tag": "Kredity",
+               "patterns": [
+                    "Kolik kreditů je potřeba pro ukončení",
+                    "Kredity na bakaláře",
+                    "Kredity na magistra",
+                    "Kreditový systém",
+                    "Počet kreditů k dokončení studia"
+               ],
+               "responses": [
+                    "Na úspěšné ukončení studia na VŠE je potřeba získat minimálne <b>180 kreditů</b> pro bakalářske programy a <b>120 kreditů</b> pro magisterské programy."
+               ]
+          },
+          {
+               "tag": "Rezervní kredity",
+               "patterns": [
+                    "Kolik kreditů mám rezervních",
+                    "O kolik kreditů můžu přijít",
+                    "Rezervní kredity",
+                    "Rezervní poukázky",
+                    "Kolik kreditů můžu ztratit"
+               ],
+               "responses": [
+                    "Na bakalářských programech je počet rezervních kreditů/poukázek <b>36</b>, na magisterských oborech <b>24</b>."
+               ]
+          },
+          {
+               "tag": "Knihovna",
+               "patterns": [
+                    "Kdy je na VŠE otevřená knihovna",
+                    "Kde sa nachází knihovna na VŠE",
+                    "Otevírací hodiny knihovny",
+                    "VŠE knihovna",
+                    "Knihovna otevírací hodiny",
+                    "Knihovna"
+               ],
+               "responses": [
+                    "Knihovna VŠE nabízí studentům, zaměstnancům a odborné veřejnosti tištěné i elektronické zdroje, poskytuje konzultace, pořádá veřejně přístupné semináře zaměřené na práci s informacemi a podílí se na výuce některých předmětů. <br>• Knihovna se nachází v areálu VŠE na Žižkově - mezanin Staré budovy, náměstí W. Churchilla 4, Praha 3. <br>• <u>Otevírací hodiny</u>: Pondělí – Čtvrtek od 9:00 do 19:00 a v pátek od 8:00 do 14:00."
+               ]
+          },
+          {
+               "tag": "Stipendium",
+               "patterns": [
+                    "Stipendium na VŠE",
+                    "Jaká jsou stipendia na VŠE",
+                    "Jsou stipendia na VŠE",
+                    "Stipendium",
+                    "Stipendia",
+                    "Výše stipendia",
+                    "Podmínky pro získání stipendia",
+                    "Jak získat stipendium"
+               ],
+               "responses": [
+                    "Na VŠE je možnost získat ubytovací stipendium pro studenty, který nemají trvalý pobyt v Praze. Dále je možnost získat prospěchové stipendium. Podmínky pro jeho získání se liší od každé fakulty."
+               ]
+          },
+          {
+               "tag": "Koleje",
+               "patterns": [
+                    "Nabízí VŠE ubytování na kolejích",
+                    "Kde jsou VŠE koleje",
+                    "Koleje VŠE Praha",
+                    "Koleje",
+                    "Ubytování",
+                    "Ubytování pro studenty",
+                    "Koleje VŠE",
+                    "Koleje pro prváky"
+               ],
+               "responses": [
+                    "VŠE nabízí ubytování na kolejích. Konkrétně <b>Palachova kolej</b>, <b>University Hotel</b>, <b>Eislerova kolej</b> a <b>Thalerova kolej</b>, které se nachází na Praze 3. Dále <b>Rooseveltova kolej</b> v Holešovicích a koleje <b>Blanice</b> a <b>Vltava</b> na Jižním Městě, které jsou určeny hlavně pro studenty prvních ročníků bakalářského studia."
+               ]
+          },
+          {
+               "tag": "Kariérni rozvoj",
+               "patterns": [
+                    "Možnosti karierního rozvoje na VŠE",
+                    "Kariérní centrum",
+                    "Eventové centrum",
+                    "Absolventské centrum",
+                    "Kariéra",
+                    "Absolventi",
+                    "Pro absolventy",
+                    "Absolvent",
+                    "Kariéra po studiu",
+                    "Kariérní rozvoj",
+                    "Alumni a Corporate relations",
+                    "Partnerské centrum",
+                    "Kariérní poradenství"
+               ],
+               "responses": [
+                    "<b>Alumni a Corporate Relations</b> tvoří čtyri centra: <br>• <b>Kariérní centrum</b>, <b>Eventové centrum</b>, <b>Absolventské centrum</b> a <b>Partnerské centrum</b>. <br> V rámci činnosti poskytuje kvalitní servis českým i zahraničním studentům, absolventům, zaměstancům i partnerům VŠE především v oblastech kariéry, poradenství, event managementu, vztahu s absolventy a partnery VŠE. <br> Systematicky rozvíjí vztahy s praxí, podobnými pracovišti v České republice i v zahraničí. Jejich služby jsou k dispozici aktérům uvnitř školy i firemním partnerům."
+               ]
+          },
+          {
+               "tag": "DAB Alumni",
+               "patterns": [
+                    "DAB Alumni",
+                    "DAB alumni klub",
+                    "Data a business alumni klub",
+                    "VŠE alumni klub",
+                    "Komunita DAB",
+                    "Datový klub VŠE",
+                    "Datový klub",
+                    "DAB",
+                    "Data a byznys",
+                    "Klub DAB"
+               ],
+               "responses": [
+                    " DAB Alumni klub je komunita pro (budoucí) datové specialisty, kteří se sešli při studiu datové analytiky. Klub je organizován studenty pro současné i bývalé studentské kolegy za podpory vedoucích oborů a sponzorů programu. Členové jsou studenti nebo absolventi bakalářského programu Datová analytika či magisterského programu Data a analytika pro buisiness vyučovaných na VŠE. Odkaz na facebookovou skupinu: <a href='https://www.facebook.com/groups/2367392286732156'>https://www.facebook.com/groups/2367392286732156</a>"
+               ]
+          }
+     ]
+}
