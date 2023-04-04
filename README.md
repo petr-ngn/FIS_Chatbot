@@ -34,13 +34,13 @@ Regarding the last two intents (canteen and public tranport), such intents are i
 <b>Canteen</b> - from VŠE website, we are web-scrapping a food menu at VŠE's canteen (available [here](https://www.vse.cz/menza/stravovani-zizkov/)) for the actual date using `requests` and `BeautifulSoup`. <i>Note, since the canteen's menu is not available in English, we use `GoogleTranslator API` to translate the menu from Czech into English.</i>
    - Website's menu:
 
-<p align="center" width="90%">
+<p align="center" width="80%">
    <img src="./imgs_readme.md/canteen_website.png">
 </p>
 
    - Chatbot's response:
 
-<p align="center" width="90%">
+<p align="center" width="75%">
    <img src="./imgs_readme.md/chatbot_canteen_response.png">
 </p>
 
