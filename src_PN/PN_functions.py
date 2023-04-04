@@ -32,7 +32,7 @@ import matplotlib.pyplot as plt
 
 
 
-def get_menza(url:str = "https://www.vse.cz/menza/stravovani-zizkov/"):
+def get_menza(url:str = "https://www.vse.cz/menza/stravovani-zizkov/") -> list:
     
     table = BeautifulSoup(requests.get(url).content, "html.parser").find("table", class_ = "menza-table")
 
@@ -56,13 +56,13 @@ def get_menza(url:str = "https://www.vse.cz/menza/stravovani-zizkov/"):
             cleaned_food_item = re.sub(r'^[\s,]+', '', cleaned_food_item)
             foods.append(cleaned_food_item.strip())
 
-    final_chalky = [i for i in foods if i != '' and len(i) > 1]
+    final_chalky = [f'<br>• {i}' for i in foods if i != '' and len(i) > 1]
 
     return final_chalky
 
 
 
-def get_transport(transport:str, lang:str):
+def get_transport(transport:str, lang:str) -> list:
 
     #API Golemio ID for transport type
     if transport == 'bus':
@@ -127,13 +127,13 @@ def get_transport(transport:str, lang:str):
             
             #Mapping the terms to the departure information
             transport_type = transport_print[lang]['bus'] if transport == 'bus' else transport_print[lang]['tram']
-            transport_type_number = f'{transport_type} {transport_print[lang]["number"]} {transport_number}'
-            last_stop = f'{transport_print[lang]["direction"]}: {last_stop}'
-            arrival = f'{transport_print[lang]["departure"]} {hours}:{minutes}'
-            delay = f'{transport_print[lang]["delay"]}: {delay} min' if delay > 0 else transport_print[lang]['no_delay']
+            transport_type_number = f'{transport_type} <b>{transport_print[lang]["number"]} {transport_number}</b>'
+            last_stop = f'{transport_print[lang]["direction"]}: <b>{last_stop}</b>'
+            arrival = f'{transport_print[lang]["departure"]} <b>{hours}:{minutes}</b>'
+            delay = f'<i>{transport_print[lang]["delay"]}: {delay} min</i>' if delay > 0 else f'<i>{transport_print[lang]["no_delay"]}</i>'
 
             #Final transport departure information
-            transport_final = f'{transport_type_number} ({last_stop}) - {arrival} ({delay})'
+            transport_final = f'<br>• {transport_type_number} ({last_stop}) - {arrival} ({delay})'
 
             #Store it to the list of transports
             transports.append(transport_final)
@@ -146,7 +146,7 @@ def get_transport(transport:str, lang:str):
 
 
 
-def cz_en_translate(text:str):
+def cz_en_translate(text:str) -> str:
     
     #Translating text from Czech to English
     translator = GoogleTranslator(source='cs', target='en')
@@ -159,25 +159,25 @@ def cz_en_translate(text:str):
 def update_responses(intents:dict, lang:str, export:bool = True):
 
     if lang == 'cs':
-        bus_intro = 'Ze zastávky Náměstí Winstona Churchilla pojedou tyto autobusové spoje v následujících 15 minutách:'
-        tram_intro = 'Ze zastávky Viktoria Žižkov pojedou tyto tramvajové spoje v následujících 15 minutách:'
-        menza_text = [f"Dneska v menze je: {'; '.join(get_menza())}"]
+        bus_intro = 'Ze zastávky <b>Náměstí Winstona Churchilla</b> pojedou tyto autobusové spoje v následujících 15 minutách:'
+        tram_intro = 'Ze zastávky <b>Viktoria Žižkov</b> pojedou tyto tramvajové spoje v následujících 15 minutách:'
+        menza_text = [f"Dneska v menze je: {' '.join(get_menza())} <br><br> Menu na další dny nalezneš zde: <a href=https://www.vse.cz/menza/stravovani-zizkov/>https://www.vse.cz/menza/stravovani-zizkov/</a>"]
 
     elif lang == 'en':
-        bus_intro = 'These bus transports will departure from the stop Náměstí Winstona Churchilla in the folllowing 15 minutes:'
-        tram_intro = 'These tram transports will departure from the stop Viktoria Žižkov in the folllowing 15 minutes:'
-        menza_text = [cz_en_translate(f"Dneska v menze je: {'; '.join(get_menza())}")]
+        bus_intro = 'These bus transports will departure from the stop <b>Náměstí Winstona Churchilla</b> in the folllowing 15 minutes:'
+        tram_intro = 'These tram transports will departure from the stop <b>Viktoria Žižkov</b> in the folllowing 15 minutes:'
+        menza_text = [cz_en_translate(f"Dneska v menze je: {' '.join(get_menza())} <br><br> Menu na další dny nalezneš zde: <a href=https://www.vse.cz/menza/stravovani-zizkov/>https://www.vse.cz/menza/stravovani-zizkov/</a>")]
 
     break_loop = 0
     
     for intent in intents.get("intents", []):
 
         if intent.get("tag") in [ "Bus",  "Autobus"]:
-            intent["responses"] = [f"{bus_intro} {'; '.join(get_transport('bus', lang))}"]
+            intent["responses"] = [f"{bus_intro} {' '.join(get_transport('bus', lang))}"]
             break_loop += 1
 
         elif intent.get('tag') in [ "Tram",  "Tramvaj"]:
-            intent["responses"] = [f"{tram_intro} {'; '.join(get_transport('tram', lang))}"]
+            intent["responses"] = [f"{tram_intro} {' '.join(get_transport('tram', lang))}"]
 
             break_loop += 1
             
@@ -190,20 +190,19 @@ def update_responses(intents:dict, lang:str, export:bool = True):
             break
  
     if export: 
-        with open(os.path.join('files', f'{lang}_intents.json'),
+        with open(os.path.join('files', lang, f'{lang}_intents.json'),
                 'w', encoding = "utf-8") as f:
             
             json.dump(intents, f, ensure_ascii = False, indent = 5)
 
 
 
-def lemma_function(string:str, lang:str):
+def lemma_function(string:str, lang:str) -> str:
 
     #Lemmatization of Czech terms using Majka
     if lang == 'cs':
         
-        morph = Majka(os.path.join(
-                                   'files', 'majka.w-lt'))
+        morph = Majka(os.path.join('files', lang, 'majka.w-lt'))
 
         morph.flags = 0  # unset all flags
         morph.tags = True  # turn tag processing back on (default)
@@ -226,15 +225,13 @@ def lemma_function(string:str, lang:str):
 
 
 
-def text_cleaning_tokens(text:str, lang:str):
+def text_cleaning_tokens(text:str, lang:str) -> list:
 
     #Reading stop words
     if lang == 'cs':
         
-        with open(os.path.join(
-                               'files', 'stop_words_czech.json'),
-                  'r',
-                  encoding = "utf-8") as f:
+        with open(os.path.join('files', lang, 'stop_words_czech.json'),
+                  'r', encoding = "utf-8") as f:
             
             stop_words = json.load(f)
     
@@ -260,7 +257,7 @@ def text_cleaning_tokens(text:str, lang:str):
 
 
 
-def text_prep_modelling(data:dict, lang:str, export:bool = True):
+def text_prep_modelling(data:dict, lang:str, export:bool = True) -> tuple:
 
     words = []
     classes = []
@@ -318,9 +315,8 @@ def text_prep_modelling(data:dict, lang:str, export:bool = True):
 
         for file, file_name in zip(export_files, export_file_names):
 
-            with open(os.path.join(
-                                'files',
-                                f'{lang}_{file_name}.pkl'),
+            with open(os.path.join('files', lang,
+                                   f'{lang}_{file_name}.pkl'),
                     'wb') as f:
                 
                 pickle.dump(file, f)
@@ -418,9 +414,9 @@ def focal_loss_f1_plot(history, lang:str):
 
     plt.tight_layout()
 
-    plt.savefig(os.path.join('models', f'{lang}_NN_FocalLoss_F1_plot.jpg'), dpi = 1200)
+    plt.savefig(os.path.join('models', lang, f'{lang}_NN_FocalLoss_F1_plot.jpg'), dpi = 1200)
 
-    plt.show()
+    #plt.show()
 
 
 
@@ -505,18 +501,22 @@ def nn_tuning(X_train:np.array, y_train:np.array, seed:int, name:str):
     
     #Early stopping after 7 epochs while monitoring the Categorical Focal Loss
     callback = [EarlyStopping(monitor = 'loss', mode = 'min', patience = 7)]
-    sys.stderr = open(os.devnull, 'w')
+    
+    
+
     #Hyperparameter tuning with 200 epochs and early stopping callback after 7 epochs (if there is no improvement in the Categorical Focal Loss)
+    sys.stderr = open(os.devnull, 'w') #Suppressing the tracebacks of Bayesian Optimization
     bayes_opt.search(X_train, y_train, verbose = 0,
                  epochs = 200, callbacks = callback)
-    sys.stderr = sys.__stderr__
+    sys.stderr = sys.__stderr__ #Restoring the tracebacks
+
     #Extracting the model with the best hyperparameter values
     best_hypers = bayes_opt.get_best_hyperparameters(num_trials = 1)[0]
     final_nn = bayes_opt.hypermodel.build(best_hypers)
+
     #Saving the best hyperparameters in a json file
-    with open(os.path.join('models', f'{name}_best_hyperparameters.pkl'),
+    with open(os.path.join('models', name, f'{name}_best_hyperparameters.pkl'),
              'wb') as f:
-        
         pickle.dump(best_hypers, f)
 
     #Removing the Bayesian Optimization folder from the directory
@@ -527,28 +527,27 @@ def nn_tuning(X_train:np.array, y_train:np.array, seed:int, name:str):
     history = final_nn.fit(X_train, y_train, verbose = 0,
                             epochs = 200, callbacks = callback)
     
+    #Saving the training history of focal loss and F1 score as a plot
     focal_loss_f1_plot(history, name)
 
+    #Saving the final model structure as a plot
     tf.keras.utils.plot_model(final_nn, show_shapes = True, show_layer_activations = True,
                           show_layer_names = True, expand_nested = True,
-                          to_file = os.path.join('models', f'{name}_NN_plot.jpg'))
+                          to_file = os.path.join('models', name, f'{name}_NN_plot.jpg'))
     
     return final_nn #Final NN model
 
 
 
-def h5_to_tflite_converter(nn_model, model_name):
+def h5_to_tflite_converter(nn_model, model_name:str):
 
     #Saving the NN model in h5 format
-
-    nn_model.save(os.path.join(
-                               'models',
+    nn_model.save(os.path.join('models', model_name.split('_')[0],
                                f'{model_name}.h5'))
     
     #Loading the NN model h5 format
-    h5_model = load_model(os.path.join(
-                               'models',
-                               f'{model_name}.h5'),
+    h5_model = load_model(os.path.join('models', model_name.split('_')[0],
+                                       f'{model_name}.h5'),
 
                           custom_objects = {'categorical_focal_loss': categorical_focal_loss_function,
                                             'f1': f1}
@@ -560,9 +559,8 @@ def h5_to_tflite_converter(nn_model, model_name):
 
     #Exporting the TFLite model in tflite format
     
-    open(os.path.join(
-                               'models',
-                               f'{model_name}.tflite'),
+    open(os.path.join('models', model_name.split('_')[0],
+                      f'{model_name}.tflite'),
         "wb").write(tflite_model)
 
     return tflite_model
@@ -581,55 +579,53 @@ def print_statement_step(text:str, indent:int = 10):
 
 
 
-def nlp_nn_modelling(lang:str, seed:int, to_print:bool = True):
+def nlp_nn_modelling(lang:str, seed:int):
 
-    if to_print:
-        print_statement_title(f'{lang.upper()} NLP NEURAL NETWORK MODELLING')
+    print_statement_title(f'{lang.upper()} NLP NEURAL NETWORK MODELLING')
 
-        print_statement_step('STARTING NLP NEURAL NETWORK MODELLING', 0)
-        
-        print('\n')
-
-
-        print_statement_step('1. Loading intents')
+    print_statement_step('STARTING NLP NEURAL NETWORK MODELLING', 0)
+    
+    print('\n')
 
 
-    with open(os.path.join('files',
+    print_statement_step('1. Loading intents')
+
+
+    with open(os.path.join('files', lang,
                             f'{lang}_intents.json'),
-            'r',
-            encoding = "utf-8") as f:
+            'r', encoding = "utf-8") as f:
         
         intents = json.load(f)
 
-    if to_print:
-        print_statement_step("2. Updating intents' responses")
+
+    print_statement_step("2. Updating intents' responses")
     
     update_responses(intents, lang)
 
-    if to_print:
-        print_statement_step('3. Text preprocessing and exporting')
+
+    print_statement_step('3. Text preprocessing and exporting')
     
     x, y, words, classes = text_prep_modelling(intents, lang)
 
-    if to_print:
-        print_statement_step('4. Bayesian Optimization and Neural Network modelling')
+
+    print_statement_step('4. Bayesian Optimization and Neural Network modelling')
     nn_model = nn_tuning(x, y, seed, lang)
 
-    if to_print:
-        print('\n')
-        print_statement_step('5. Converting the NN model to TFLite')
+
+    print('\n')
+    print_statement_step('5. Converting the NN model to TFLite')
 
     nn_model_final = h5_to_tflite_converter(nn_model, f'{lang}_NN')
 
-    if print:
-        print('\n')
-        print_statement_step('NLP NEURAL NETWORK MODELLING FINISHED', 0)
+    print('\n')
+    print_statement_step('NLP NEURAL NETWORK MODELLING FINISHED', 0)
+    print('\n')
 
     return (nn_model_final, words, classes, x, y)
 
 
 
-def pred_class(text:str, model_name:str, threshold:float = 0.2):
+def chatbot_pred_response(text:str, model_name:str, threshold:float = 0.2) -> str:
 
     #Loading the intents, words and classes which are related to given NN model
     if 'cs' in model_name:
@@ -637,20 +633,22 @@ def pred_class(text:str, model_name:str, threshold:float = 0.2):
     elif 'en' in model_name:
         lang = 'en'
 
-    with open(os.path.join('files', f'{lang}_words.pkl'),
+    with open(os.path.join('files', lang, f'{lang}_words.pkl'),
                       'rb') as f:     
         words = pickle.load(f)
 
-    with open(os.path.join('files', f'{lang}_classes.pkl'),
+    with open(os.path.join('files', lang, f'{lang}_classes.pkl'),
                       'rb') as f:
         classes = pickle.load(f)
 
+    #Cleaning and tokenization of the text input
     tokens = text_cleaning_tokens(text, lang)
 
-    with open(os.path.join('files', f'{lang}_intents.json'),
+    with open(os.path.join('files', lang, f'{lang}_intents.json'),
                     'r', encoding = "utf-8") as f:
         intents = json.load(f)
 
+    #Updating intents' responses (specifically canteen and public transport responses)
     update_responses(intents, lang)
 
     #Bag of words input for the NN model
@@ -662,7 +660,7 @@ def pred_class(text:str, model_name:str, threshold:float = 0.2):
                 bag_of_words[i] = 1
 
     #Loading the TFLite NN model
-    interpreter = tf.lite.Interpreter(model_path = os.path.join('models', f'{model_name}.tflite'))
+    interpreter = tf.lite.Interpreter(model_path = os.path.join('models', lang, f'{model_name}.tflite'))
     
     #Allocating the necessary memory for the model's input and output tensors
     interpreter.allocate_tensors()
@@ -703,4 +701,4 @@ def pred_class(text:str, model_name:str, threshold:float = 0.2):
         elif 'en' in model_name:
             result = "I don't have an answer to this question. Try another question."
     
-    return result
+    return result #responose of the chatbot
