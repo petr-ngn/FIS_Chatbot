@@ -149,7 +149,7 @@ def get_transport(transport:str, lang:str) -> list:
 def cz_en_translate(text:str) -> str:
     
     #Translating text from Czech to English
-    translator = GoogleTranslator(source='cs', target='en')
+    translator = GoogleTranslator(source = 'cs', target = 'en')
     translated_text = translator.translate(text)
 
     return translated_text
