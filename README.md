@@ -13,11 +13,11 @@ Within the course __*Trends in business analytics II (4IT409)*__, supervised by 
    1. conduct a business research regarding the current chatbot of Faculty of Informatics and Statistics at Prague University of Economics and Business (**FIS VŠE**), assess its features and propose improvements, and further,
    2. implement our improvements in the deployment either (1) using already existing frameworks or pretrained chatbots/models or (2) developing our own chatbot from scratch.
 
+<b>Particularly, we have developed our custom chatbot from scratch solely in Python (back-end) and HTML (front-end). More precisely, we have developed 2 custom chatbots - one in Czech language and one in English language.</b>
 
 ## **Data source & Integration description**
-Particularly, we have developed our custom chatbot from scratch in solely in Python.
 
-We created **41** own intents by ourselves which regard for instance:
+We created **41** own intents (for each language) by ourselves which regard for instance:
 - Bachelor / master / minor specialization / doctoral study programs at FIS VŠE,
 - Compulsory courses of given study programs,
 - DAB (Data and Analytics for Business) alumni club,
@@ -31,7 +31,7 @@ We created **41** own intents by ourselves which regard for instance:
 
 Regarding the last two intents (canteen and public tranport), such intents are integrated with other external system sources, from which we are web scrapping our desired information. Thus, our chatbot's responses related to such intents will be dynamic depending on the web scrapped information (since the canteen's menu is updated once a day and the public transport departure times will depend on the part of the day).
 
-<b>Canteen</b> - from VŠE website, we are web scrapping a food menu at VŠE's canteen (available [here](https://www.vse.cz/menza/stravovani-zizkov/)) for the actual date using `requests` and `BeautifulSoup`.
+<b>Canteen</b> - from VŠE website, we are web scrapping a food menu at VŠE's canteen (available [here](https://www.vse.cz/menza/stravovani-zizkov/)) for the actual date using `requests` and `BeautifulSoup`. <i>Note, since the canteen's menu is not available in English, we use `GoogleTranslator API` to translate the menu from Czech into English.</i>
    - Website's menu:
 
    <img src="./imgs_readme.md/canteen_website.png" alt="alt_text" width="85%">
@@ -49,6 +49,10 @@ Regarding the last two intents (canteen and public tranport), such intents are i
 ## **Text Processing**
 
 
+
 We created our own intents of questions which were the most relevant to study at FIS VŠE, which were further preprocessed using NLTK (for tokenization) and Majka (for lemmatization of Czech terms) into bag of words based on which we developed a custom neural network in Keras which was further tuned using Bayesian Optimization.
 
 Using such developed neural network, we then built a custom chatbot which we deployed as a ML web application using Flask - the interface was built using HTML and Javascript for user-friendly experience with the chatbot.
+
+## **Neural Network Development**
+
