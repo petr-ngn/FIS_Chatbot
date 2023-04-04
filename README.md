@@ -65,8 +65,8 @@ First we perform **Cleaning & Tokenization** of given input text:
    - For **Czech** language, we use `json` file of Czech stopwords from `stop-words` package ([https://pypi.org/project/stop-words/](https://pypi.org/project/stop-words/))
    - For **English** language, we use stopwords from `NLTK`'s `stopwords`.
 
-<p align="center" width="90%">
-   <img src="./imgs_readme.md/tokenization.png">
+<p align="center">
+   <img src="./imgs_readme.md/tokenization.png" width="90%">
 </p>
 
 Next, we proceed with **Bag of Words** as a collection of wors while disregarding the words' order.
