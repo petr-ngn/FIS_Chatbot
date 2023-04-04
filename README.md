@@ -34,14 +34,14 @@ Regarding the last two intents (canteen and public tranport), such intents are i
 <b>Canteen</b> - from VŠE website, we are web-scrapping a food menu at VŠE's canteen (available [here](https://www.vse.cz/menza/stravovani-zizkov/)) for the actual date using `requests` and `BeautifulSoup`. <i>Note, since the canteen's menu is not available in English, we use `GoogleTranslator API` to translate the menu from Czech into English.</i>
    - Website's menu:
 
-<p align="center" width="70%">
-   <img src="./imgs_readme.md/canteen_website.png">
+<p align="center">
+   <img src="./imgs_readme.md/canteen_website.png" width="90%">
 </p>
 
    - Chatbot's response:
 
-<p align="center" width="60%">
-   <img src="./imgs_readme.md/chatbot_canteen_response.png">
+<p align="center">
+   <img src="./imgs_readme.md/chatbot_canteen_response.png"  width="90%">
 </p>
 
 <b>Public tranport</b> - we are also web-scrapping actual bus and tram public transports from Prague Integrated Public Transport ([PID](https://pid.cz/en/departures/)) using `requests` and Golemio API - TBD (waiting for Samuel's and Andrea's inputs).
