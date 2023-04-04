@@ -72,21 +72,14 @@ First we perform **Cleaning & Tokenization** of given input text:
 Next, we proceed with **Bag of Words** as a collection of wors while disregarding the words' order.
 - In order to use such tokens in the NN modelling, we need to encode them into numerical vectors.
 - Given the set of all the unique preprocessed intents' words $w$ (i.e., set of normalized, lemmatized words with no punctuations or stopwords) of the length $n$, each numerical vector $v_{i}$ will have length $n$ where each index of $v_{i}$ corresponds to the index in $w$ indicating the occurrence of given word.
-- For instance, if we have tokens `['bachelor', 'master', 'programs']` and set of preprocessed intents' words$w$ `['bachelor', 'minor', 'master', 'programs', 'courses]`, the numerical vector $v_{i}$ will be then `[1,0,1,1,0]`. Such vector is called **bag of words** as a collection of 0/1 values indicating words' occurrences.
-
+- For instance, if we have tokens `['bachelor', 'master', 'programs']` and set of unique preprocessed intents' words $w$ `['bachelor', 'minor', 'master', 'programs', 'courses]`, the numerical vector $v_{i}$ will be then `[1,0,1,1,0]`. Such vector is called **bag of words** as a collection of 0/1 values indicating words' occurrences.
 
 <p align="center">
     <img src="./imgs_readme.md/bag_of_words.png"  width="30%"> 
 </p>
 
-
-We created our own intents of questions which were the most relevant to study at FIS VŠE, which were further preprocessed using NLTK (for tokenization) and Majka (for lemmatization of Czech terms) into bag of words based on which we developed a custom neural network in Keras which was further tuned using Bayesian Optimization.
-
-Using such developed neural network, we then built a custom chatbot which we deployed as a ML web application using Flask - the interface was built using HTML and Javascript for user-friendly experience with the chatbot.
+- Thus, if we have $m$ patterns and set of unique preprocessed intents' $w$ of length $n$, we get an array of bags of words having dimension $m \times n$. This array will be input for NN modelling.
 
 ## **Neural Network Development**
-TBD
 
 ## **ML Chatbot Web Application Deployment**
-TBDD
-
