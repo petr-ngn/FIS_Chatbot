@@ -14,6 +14,7 @@ import nltk
 nltk.download('punkt', quiet = True)
 nltk.download("wordnet", quiet = True)
 nltk.download('stopwords', quiet = True)
+nltk.download('omw-1.4', quiet = True)
 
 #Importing custom function for text processing and Neural Network development
 from src_PN.PN_functions import nlp_nn_modelling
