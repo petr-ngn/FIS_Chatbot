@@ -389,7 +389,7 @@
                     "Náměstí Winstona Churchilla"
                ],
                "responses": [
-                    "Ze zastávky <b>Náměstí Winstona Churchilla</b> pojedou tyto autobusové spoje v následujících 15 minutách: <br>• Autobus <b>č. 135</b> (směr: <b>Chodov</b>) - odjezd v <b>5:09</b> (<i>bez zpoždění</i>)"
+                    "Ze zastávky <b>Náměstí Winstona Churchilla</b> pojedou tyto autobusové spoje v následujících 15 minutách: "
                ]
           },
           {
@@ -405,7 +405,7 @@
                     "Husinecká"
                ],
                "responses": [
-                    "Ze zastávky <b>Viktoria Žižkov</b> pojedou tyto tramvajové spoje v následujících 15 minutách: <br>• Tramvaj <b>č. 98</b> (směr: <b>Spojovací</b>) - odjezd v <b>5:06</b> (<i>bez zpoždění</i>) <br>• Tramvaj <b>č. 2</b> (směr: <b>Sídliště Petřiny</b>) - odjezd v <b>5:10</b> (<i>bez zpoždění</i>) <br>• Tramvaj <b>č. 26</b> (směr: <b>Nádraží Hostivař</b>) - odjezd v <b>5:11</b> (<i>bez zpoždění</i>) <br>• Tramvaj <b>č. 2</b> (směr: <b>Sídliště Petřiny</b>) - odjezd v <b>5:10</b> (<i>zpoždění: 1 min</i>) <br>• Tramvaj <b>č. 26</b> (směr: <b>Vozovna Vokovice</b>) - odjezd v <b>5:12</b> (<i>bez zpoždění</i>) <br>• Tramvaj <b>č. 9</b> (směr: <b>Sídliště Řepy</b>) - odjezd v <b>5:14</b> (<i>zpoždění: 1 min</i>) <br>• Tramvaj <b>č. 9</b> (směr: <b>Spojovací</b>) - odjezd v <b>5:19</b> (<i>bez zpoždění</i>)"
+                    "Ze zastávky <b>Viktoria Žižkov</b> pojedou tyto tramvajové spoje v následujících 15 minutách: <br>• Tramvaj <b>č. 98</b> (směr: <b>Sídliště Řepy</b>) - odjezd v <b>1:47</b> (<i>zpoždění: 1 min</i>) <br>• Tramvaj <b>č. 98</b> (směr: <b>Spojovací</b>) - odjezd v <b>1:53</b> (<i>bez zpoždění</i>)"
                ]
           },
           {
@@ -420,7 +420,7 @@
                     "stravování v menze"
                ],
                "responses": [
-                    "Dneska v menze je: <br>• Zeleninový vývar s těstovinou <br>• Frankfurtská hovězí pečeně, houskové knedlíky / dušená rýže <br>• Ražniči na plechu(vepřové,kuřecí,uzené), mačkané brambory, salát coleslaw <br>• Vepřový džuveč s barevnou paprikou a chilli floky, sypaný sýrem7, Dle denní nabídky (pasta / rizoto / směs), Smažené brokolicové koule, vařené brambory, tatarská omáčka <br>• Smažené kuřecí stripsy v pikantní strouhance, máslová kaše, ledový salát, citrón <br>• Club sendvič pro dospělé,trhané vepřové,sweet chilli majonéza,cibolová marmeláda,rajče,gouda,hranolky,mix salát <br>• Teplý bufet-dle vlastního výběru <br>• Zapečené kuřecí prso sýrem a kukuřicí, hranolky, salátek <br>• Balené jídlo/Také away+ plech 0,33l <br>• Fresh bageta, Gyros, Tortila <br><br> Menu na další dny nalezneš zde: <a href=https://www.vse.cz/menza/stravovani-zizkov/>https://www.vse.cz/menza/stravovani-zizkov/</a>"
+                    "Dneska v menze je: <br>• Zeleninový vývar s těstovinou <br>• Zeleninový vývar s těstovinou <br>• Frankfurtská hovězí pečeně, houskové knedlíky / dušená rýže <br>• Ražniči na plechu(vepřové,kuřecí,uzené), mačkané brambory, salát coleslaw <br>• Vepřový džuveč s barevnou paprikou a chilli floky, sypaný sýrem7, Dle denní nabídky (pasta / rizoto / směs), Smažené brokolicové koule, vařené brambory, tatarská omáčka <br>• Frankfurtská hovězí pečeně, houskové knedlíky / dušená rýže <br>• Ražniči na plechu(vepřové,kuřecí,uzené), mačkané brambory, salát coleslaw <br>• Vepřový džuveč s barevnou paprikou a chilli floky, sypaný sýrem7, Dle denní nabídky (pasta / rizoto / směs), Smažené brokolicové koule, vařené brambory, tatarská omáčka <br>• Smažené kuřecí stripsy v pikantní strouhance, máslová kaše, ledový salát, citrón <br>• Club sendvič pro dospělé,trhané vepřové,sweet chilli majonéza,cibolová marmeláda,rajče,gouda,hranolky,mix salát <br>• Smažené kuřecí stripsy v pikantní strouhance, máslová kaše, ledový salát, citrón <br>• Club sendvič pro dospělé,trhané vepřové,sweet chilli majonéza,cibolová marmeláda,rajče,gouda,hranolky,mix salát <br>• Teplý bufet-dle vlastního výběru <br>• Zapečené kuřecí prso sýrem a kukuřicí, hranolky, salátek <br>• Balené jídlo/Také away+ plech 0,33l <br>• Fresh bageta, Gyros, Tortila <br>• Fresh bageta, Gyros, Tortila <br><br> Menu na další dny nalezneš zde: <a href=https://www.vse.cz/menza/stravovani-zizkov/>https://www.vse.cz/menza/stravovani-zizkov/</a>"
                ]
           },
           {
