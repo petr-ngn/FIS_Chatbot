@@ -142,15 +142,15 @@ After Bayesian Optimization, we got these Neural Networks hyperparameters which 
 As can be seen, the NN's architectures seem to be same with an exception of the input layer, thus English text processing produced less unique preprocessed words.
 
 <div style="display: flex;" align="center">
-  <img src="./models/cs/cs_NN_plot.jpg" style="margin-right: 10px;" width="27%">
-  <img src="./models/en/en_NN_plot.jpg" style="margin-right: 10px;" width="27%">
+  <img src="./models/cs/cs_NN_plot.jpg" style="margin-right: 10px;" width="35%">
+  <img src="./models/en/en_NN_plot.jpg" style="margin-right: 10px;" width="35%">
 </div>
 
 We can also see that Czech Neural Network has 11,516 parameters (including weights and biases) whereas English model has less parameters (10,190) which is due to the lower number of input layer units and already mentioned above.
 
 <div style="display: flex;" align="center">
-  <img src="./imgs_readme/cs_NN_summary.png" style="margin-right: 5px;" width="45%">
-  <img src="./imgs_readme/en_NN_summary.png" style="margin-right: 5px;" width="45%">
+  <img src="./imgs_readme/cs_NN_summary.png" style="margin-right: 5px;" width="60%">
+  <img src="./imgs_readme/en_NN_summary.png" style="margin-right: 5px;" width="60%">
 </div>
 
 
@@ -158,8 +158,8 @@ Regarding the final model building, we can observe that with increase number of 
 - We can also see that the English Neural Network more took more epochs to train (almost 70 epochs) whereas Czech Neural Network took only circa 30 epochs to train. 
 
 <div style="display: flex;" align="center">
-  <img src="./models/cs/cs_NN_FocalLoss_F1_plot.jpg" style="margin-right: 10px;" width="40%">
-  <img src="./models/en/en_NN_FocalLoss_F1_plot.jpg" style="margin-right: 10px;" width="40%">
+  <img src="./models/cs/cs_NN_FocalLoss_F1_plot.jpg" style="margin-right: 10px;" width="60%">
+  <img src="./models/en/en_NN_FocalLoss_F1_plot.jpg" style="margin-right: 10px;" width="60%">
 </div>
  
 
