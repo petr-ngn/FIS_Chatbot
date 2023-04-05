@@ -48,9 +48,20 @@ Regarding the last two intents (canteen and public tranport), such intents are i
 
 <b>Public tranport</b> - we are also web-scrapping actual bus and tram public transports from Prague Integrated Public Transport ([PID](https://pid.cz/en/departures/)) using `requests` and Golemio API - TBD add Golemio API link.
 
-   - Public transport's website: add photo
+   - Chatbot's responses:
 
-   - Chatbot's response: add photo
+<p align="center">
+   <img src="./imgs_readme/bus_transports.png" width="90%">
+</p>
+
+<p align="center">
+   <img src="./imgs_readme/tram_transports.png" width="90%">
+</p>
+
+
+
+
+
 
 ## **Text Processing**
 
