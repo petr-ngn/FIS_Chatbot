@@ -7,7 +7,7 @@ This chatbot framework temporarily runs on **Python Anywhere** cloud platform: [
 </p>
 
 ## **Team**:
-   - **Lead Machine Learning & Developer**: [**Petr Nguyen**](https://www.linkedin.com/in/petr-ngn/) - responsibility for text processing, development and deployment of chatbot as ML web application.
+   - **Lead Machine Learning Engineer & Developer**: [**Petr Nguyen**](https://www.linkedin.com/in/petr-ngn/) - responsibility for text processing, development and deployment of chatbot as ML web application.
    - **Data Science Support**: [Lukas Dolezal](https://www.linkedin.com/in/lukas-dolezal75/) - responsibility for partial implementation of API web scrapping.
    - **Business Analysts**: [Peter Kachnic](https://www.linkedin.com/in/peterkachnic/), [Karolina Benkovicova](https://www.linkedin.com/in/karolina-benkovicova-460/), [Andrea Novakova](https://www.linkedin.com/in/andrea-novakova/), [Samuel Nagy](https://www.linkedin.com/in/samuel-nagy-a31b51113/), [Adrian Harvan](https://www.linkedin.com/in/adrian-harvan/) responsibility for research, assessment of current chatbot solutions, project management.
 
