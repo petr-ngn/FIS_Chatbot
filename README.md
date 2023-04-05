@@ -97,7 +97,7 @@ Last but not least, for model building and weights and biases estimation, we use
 
 Instead of using categorical cross entropy as a common loss function for multi-class classification NN development, we use **Balanaced Categorical Focal Loss** which addresses the issue of class imbalance and puts higher weight and focuses on hard-to-classify instances and reduces the influence of easy-to-classify instances - such approach is called **up/down-weighting**. The loss equation is similar to the cross-entropy where we add $\alpha$ and $\gamma$ parameters.
 
-$$Focal Loss=-\sum_{i=2}^{i=n} \alpha \left(1-p_{i}\right)^{\gamma}y_{i}\log\left(p_{i}\right)$$
+$$Focal Loss=-\sum_{i=1}^{i=n} \alpha \left(1-p_{i}\right)^{\gamma}y_{i}\log\left(p_{i}\right)$$
 where:
 - $p$ is the predicted probability,
 - $y$ is the true label,
