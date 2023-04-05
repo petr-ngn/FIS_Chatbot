@@ -187,10 +187,10 @@ In order to deploy the chatbot as a web application, we used Python's `Flask` pa
 
 If we choose Czech chatbot:
 <p align="center">
-   <img src="./imgs_readme/cs_chatbot_response.png" width="80%">
+   <img src="./imgs_readme/cs_chatbot_response.png" width="50%">
 </p>
 
 If we choose English chatbot:
 <p align="center">
-   <img src="./imgs_readme/en_chatbot_response.png" width="80%">
+   <img src="./imgs_readme/en_chatbot_response.png" width="50%">
 </p>
