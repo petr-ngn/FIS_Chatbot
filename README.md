@@ -1,7 +1,8 @@
 # **NLP Chatbot for FIS VŠE (Neural Network with Focal Loss)**
 
-![Example GIF](imgs_readme\chatbot_example.gif)
-
+<p align="center">
+   <img src="./imgs_readme/chatbot_example.gif" width="90%">
+</p>
 
 ## **Team**:
    - **Machine Learning Team** - responsibility for text processing, development and deployment of chatbot as ML web application.
