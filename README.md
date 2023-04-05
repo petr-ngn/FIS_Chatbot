@@ -194,3 +194,5 @@ If we choose English chatbot:
 <p align="center">
    <img src="./imgs_readme/en_chatbot_response.png" width="70%">
 </p>
+
+## Future improvements and recommendations
