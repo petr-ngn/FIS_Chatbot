@@ -179,8 +179,14 @@ Once we have built our Neural Networks, we can then make predictions with them a
    <img src="./imgs_readme/chatbot_workflow.png" width="90%">
 </p>
 
-In order to deploy the chatbot as a web application, we used Python's `Flask` package for back-end and `HTML`, `CSS` and `JavaScript` for front-end. We deploy the chatbot both locally and on cloud platform.
+In order to deploy the chatbot as a web application, we used Python's `Flask` package for back-end and `HTML`, `CSS` and `JavaScript` for front-end. We deploy the chatbot both locally and on cloud platform (namely on [Python Anywhere](http://vse-fis-chatbot--petrngn.pythonanywhere.com/) platform, but only for a limited time due to budget reasons.)
 
+If we choose Czech chatbot:
 <p align="center">
-   <img src="./imgs_readme/html_language_selection.png" width="90%">
+   <img src="./imgs_readme/cs_chatbot_response.png" width="80%">
+</p>
+
+If we choose English chatbot:
+<p align="center">
+   <img src="./imgs_readme/en_chatbot_response.png" width="80%">
 </p>
