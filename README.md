@@ -37,13 +37,13 @@ Regarding the last two intents (canteen and public tranport), such intents are i
    - Website's menu:
 
 <p align="center">
-   <img src="./imgs_readme/canteen_website.png" width="90%">
+   <img src="./imgs_readme/canteen_website.png" width="100%">
 </p>
 
    - Chatbot's response:
 
 <p align="center">
-   <img src="./imgs_readme/chatbot_canteen_response.png"  width="90%">
+   <img src="./imgs_readme/chatbot_canteen_response.png"  width="100%">
 </p>
 
 <b>Public tranport</b> - we are also web-scrapping actual bus and tram public transports from Prague Integrated Public Transport ([PID](https://pid.cz/en/departures/)) using `requests` and Golemio API - TBD add Golemio API link.
@@ -51,11 +51,11 @@ Regarding the last two intents (canteen and public tranport), such intents are i
    - Chatbot's responses:
 
 <p align="center">
-   <img src="./imgs_readme/bus_transports.png" width="90%">
+   <img src="./imgs_readme/bus_transports.png" width="60%">
 </p>
 
 <p align="center">
-   <img src="./imgs_readme/tram_transports.png" width="90%">
+   <img src="./imgs_readme/tram_transports.png" width="60%">
 </p>
 
 
@@ -152,7 +152,7 @@ After Bayesian Optimization, we got these Neural Networks hyperparameters which 
 | Alpha parameter of Focal Loss | 0.03482061632108658 |
 | Gamma parameter of Focal Loss |  0.13682289471772455 |
 
-As can be seen, the NN's architectures seem to be same with an exception of the input layer, thus English text processing produced less unique preprocessed words.
+As can be seen, the NN's architectures (Czech on the left, English on the right) seem to be same with an exception of the input layer, thus English text processing produced less unique preprocessed words.
 
 <div style="display: flex;" align="center">
   <img src="./models/cs/cs_NN_plot.jpg" style="margin-right: 10px;" width="35%">
@@ -161,19 +161,33 @@ As can be seen, the NN's architectures seem to be same with an exception of the 
 
 We can also see that Czech Neural Network has 11,516 parameters (including weights and biases) whereas English model has less parameters (10,190) which is due to the lower number of input layer units and already mentioned above.
 
-<div style="display: flex;" align="center">
-  <img src="./imgs_readme/cs_NN_summary.png" style="margin-right: 5px;" width="60%">
-  <img src="./imgs_readme/en_NN_summary.png" style="margin-right: 5px;" width="60%">
-</div>
+- Czech Neural Network:
+
+<p align="center">
+  <img src="./imgs_readme/cs_NN_summary.png" width="60%">
+</p>
+
+
+- English Neural Network:
+
+<p align="center">
+  <img src="./imgs_readme/en_NN_summary.png" width="60%">
+</p>
 
 
 Regarding the final model building, we can observe that with increase number of epochs, the Focal Loss and F1 score are converging towards its mininum and maximum respectively.
 - We can also see that the English Neural Network more took more epochs to train (almost 70 epochs) whereas Czech Neural Network took only circa 30 epochs to train. 
 
-<div style="display: flex;" align="center">
-  <img src="./models/cs/cs_NN_FocalLoss_F1_plot.jpg" style="margin-right: 10px;" width="60%">
-  <img src="./models/en/en_NN_FocalLoss_F1_plot.jpg" style="margin-right: 10px;" width="60%">
-</div>
+- Czech Neural Network:
+
+<p align="center">
+  <img src="./models/cs/cs_NN_FocalLoss_F1_plot.jpg" width="60%">
+</p>
+
+- English Neural Network:
+<p align="center">
+  <img src="./models/en/en_NN_FocalLoss_F1_plot.jpg" width="60%">
+</p>
  
 
 
