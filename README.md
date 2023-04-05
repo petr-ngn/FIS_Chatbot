@@ -146,6 +146,13 @@ As can be seen, the NN's architectures seem to be same with an exception of the 
   <img src="./models/en/en_NN_plot.jpg" style="margin-right: 10px;" width="27%">
 </div>
 
+<div style="display: flex;" align="center">
+  <img src="./imgs_readme/cs_NN_summary.png" style="margin-right: 10px;">
+  <img src="./imgs_readme/en_NN_summary.png" style="margin-right: 10px;">
+</div>
+
+
+
 Regarding the final model building, we can observe that with increase number of epochs, the Focal Loss and F1 score are converging towards its mininum and maximum respectively.
 - We can also see that the English Neural Network more took more epochs to train (almost 70 epochs) whereas Czech Neural Network took only circa 30 epochs to train. 
 
