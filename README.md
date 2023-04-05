@@ -146,7 +146,11 @@ As can be seen, the NN's architectures seem to be same with an exception of the 
   <img src="./models/en/en_NN_plot.jpg" style="margin-right: 10px;" width="27%">
 </div>
 
-
+Focaccia
+<div style="display: flex;" align="center">
+  <img src="./models/cs/cs_NN_FocalLoss_F1_plot.jpg" style="margin-right: 10px;" width="27%">
+  <img src="./models/en/en_NN_FocalLoss_F1_plot.jpg" style="margin-right: 10px;" width="27%">
+</div>
  
 
 ## **ML Chatbot Web Application Deployment**
