@@ -148,8 +148,8 @@ As can be seen, the NN's architectures seem to be same with an exception of the 
 
 Focaccia
 <div style="display: flex;" align="center">
-  <img src="./models/cs/cs_NN_FocalLoss_F1_plot.jpg" style="margin-right: 10px;" width="50%">
-  <img src="./models/en/en_NN_FocalLoss_F1_plot.jpg" style="margin-right: 10px;" width="50%">
+  <img src="./models/cs/cs_NN_FocalLoss_F1_plot.jpg" style="margin-right: 10px;" width="40%">
+  <img src="./models/en/en_NN_FocalLoss_F1_plot.jpg" style="margin-right: 10px;" width="40%">
 </div>
  
 
