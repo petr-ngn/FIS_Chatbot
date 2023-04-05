@@ -165,3 +165,10 @@ Regarding the final model building, we can observe that with increase number of 
 
 
 ## **ML Chatbot Web Application Deployment**
+
+Once we have built our Neural Networks, we can then make predictions with them and use them as chatbots.
+- We will feed our custom functions
+
+<p align="center">
+   <img src="./imgs_readme/chatbot_workflow.png" width="90%">
+</p>
