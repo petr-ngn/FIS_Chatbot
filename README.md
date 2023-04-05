@@ -142,8 +142,8 @@ After Bayesian Optimization, we got these Neural Networks hyperparameters which 
 As can be seen, the NN's architectures seem to be same with an exception of the input layer, thus English text processing produced less unique preprocessed words.
 
 <div style="display: flex;" align="center">
-  <img src="./models/cs/cs_NN_plot.jpg" style="width=60%; margin-right: 10px;">
-  <img src="./models/en/en_NN_plot.jpg" style="width=60%; margin-right: 10px;">
+  <img src="./models/cs/cs_NN_plot.jpg" style="width=10%; margin-right: 10px;">
+  <img src="./models/en/en_NN_plot.jpg" style="width=10%; margin-right: 10px;">
 </div>
 
 
