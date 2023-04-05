@@ -6,6 +6,21 @@ This chatbot framework temporarily runs on **Python Anywhere** cloud platform: [
    <img src="./imgs_readme/chatbot_example.gif" width="90%">
 </p>
 
+## **What can you talk with the chatbot about?**
+For instance:
+   - What Bachelor's programs you can study at FIS VŠE?
+   - What Master's programs you can study at FIS VŠE?
+   - What Doctoral programs you can study at FIS VŠE?
+   - What minor specializations you can study at FIS VŠE?
+   - What is for lunch today at canteen?
+   - When do the bus transports nearby VŠE departure?
+   - When do the tram transports nearby VŠE departure?
+   - What is DAB Alumni Club?
+   - What courses can I study Master's program Data and Analytics for Business?
+... and many more! see the respective JSON files in order to know what topics you can talk with chatbot about!
+   - [Czech language](./files/cs/cs_intents.json)
+   - [English language](./files/cs/cs_intents.json)
+
 ## **Team**:
    - **Lead Machine Learning Engineer & Developer**: [**Petr Nguyen**](https://www.linkedin.com/in/petr-ngn/) - responsibility for text processing, development and deployment of chatbot as ML web application.
    - **Data Science Support**: [Lukas Dolezal](https://www.linkedin.com/in/lukas-dolezal75/) - responsibility for partial implementation of API web scrapping.
