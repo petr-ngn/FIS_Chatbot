@@ -147,8 +147,8 @@ As can be seen, the NN's architectures seem to be same with an exception of the 
 </div>
 
 <div style="display: flex;" align="center">
-  <img src="./imgs_readme/cs_NN_summary.png" style="margin-right: 5px;" width="40%">
-  <img src="./imgs_readme/en_NN_summary.png" style="margin-right: 5px;"width="40%">
+  <img src="./imgs_readme/cs_NN_summary.png" style="margin-right: 5px;" width="50%">
+  <img src="./imgs_readme/en_NN_summary.png" style="margin-right: 5px;" width="50%">
 </div>
 
 
