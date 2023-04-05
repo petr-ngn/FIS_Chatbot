@@ -147,8 +147,8 @@ As can be seen, the NN's architectures seem to be same with an exception of the 
 </div>
 
 <div style="display: flex;" align="center">
-  <img src="./imgs_readme/cs_NN_summary.png" style="margin-right: 10px;">
-  <img src="./imgs_readme/en_NN_summary.png" style="margin-right: 10px;">
+  <img src="./imgs_readme/cs_NN_summary.png" style="margin-right: 5px;" width="90%">
+  <img src="./imgs_readme/en_NN_summary.png" style="margin-right: 5px;"width="90%">
 </div>
 
 
@@ -157,7 +157,7 @@ Regarding the final model building, we can observe that with increase number of 
 - We can also see that the English Neural Network more took more epochs to train (almost 70 epochs) whereas Czech Neural Network took only circa 30 epochs to train. 
 
 <div style="display: flex;" align="center">
-  <img src="./models/cs/cs_NN_FocalLoss_F1_plot.jpg" style="margin-right: 10px;" width="40%">
+  <img src="./models/cs/cs_NN_FocalLoss_F1_plot.jpg" style="margin-right: 5px;" width="40%">
   <img src="./models/en/en_NN_FocalLoss_F1_plot.jpg" style="margin-right: 10px;" width="40%">
 </div>
  
