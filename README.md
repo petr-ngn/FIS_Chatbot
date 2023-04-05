@@ -16,7 +16,7 @@ For instance:
    - When do the bus transports nearby VŠE departure?
    - When do the tram transports nearby VŠE departure?
    - What is DAB Alumni Club?
-   - What courses can I study Master's program Data and Analytics for Business?
+   - What courses can you study at Master's program Data and Analytics for Business?
 
 ... and many more! see the respective JSON files in order to know what topics you can talk with chatbot about!
    - [Czech language](./files/cs/cs_intents.json)
