@@ -46,7 +46,7 @@ Regarding the last two intents (canteen and public tranport), such intents are i
    <img src="./imgs_readme/chatbot_canteen_response.png"  width="100%">
 </p>
 
-<b>Public tranport</b> - we are also web-scrapping actual bus and tram public transports from Prague Integrated Public Transport ([PID](https://pid.cz/en/departures/)) using `requests` and Golemio API - TBD add Golemio API link.
+<b>Public tranport</b> - we are also web-scrapping actual bus and tram public transports from Prague Integrated Public Transport ([PID](https://pid.cz/en/departures/)) using `requests` and [Golemio API](https://api.golemio.cz/v2/pid/docs/openapi/). We are web-scraping all the actual transports which will departure in the following 15 minutes according to the schedules.
 
    - Chatbot's responses:
 
@@ -57,10 +57,6 @@ Regarding the last two intents (canteen and public tranport), such intents are i
 <p align="center">
    <img src="./imgs_readme/tram_transports.png" width="60%">
 </p>
-
-
-
-
 
 
 ## **Text Processing**
