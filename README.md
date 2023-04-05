@@ -146,6 +146,8 @@ As can be seen, the NN's architectures seem to be same with an exception of the 
   <img src="./models/en/en_NN_plot.jpg" style="margin-right: 10px;" width="27%">
 </div>
 
+We can also see that Czech Neural Network has 11,516 parameters (including weights and biases) whereas English model has less parameters (10,190) which is due to the lower number of input layer units and already mentioned above.
+
 <div style="display: flex;" align="center">
   <img src="./imgs_readme/cs_NN_summary.png" style="margin-right: 5px;" width="45%">
   <img src="./imgs_readme/en_NN_summary.png" style="margin-right: 5px;" width="45%">
