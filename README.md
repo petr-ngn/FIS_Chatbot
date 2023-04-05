@@ -167,7 +167,13 @@ Regarding the final model building, we can observe that with increase number of 
 ## **ML Chatbot Web Application Deployment**
 
 Once we have built our Neural Networks, we can then make predictions with them and use them as chatbots.
-- We will feed our custom functions
+- We will feed our custom functions with user's input text (for instance <i>Wjat are tje bachelor's programs here?</i>)
+- The input will be further preprocessed, i.e., tokenized, normalized, lemmatized with removal of stopwords and punctuations.
+- Such token will ben vectorized into bag of words indicating occurrences of words.
+- Such bag of word array will be then fed into the Neural Network which will ouput a vector of predicted probabilities (which sum up to 100%).
+- The predicted intent's tag will be the one with the highest predicted probability. In order to ensure a confidence of predicted intent's tag. The threshold was set expertly to 0.2, thus the probability shall be higher than 0.2.
+- Based on the predicted intent's tag, using custom functions we index the inten's response which will be output as a chatbot's response.
+- If one of the probabilities exceeds the threshold, the chatbot will output a default response <i>"I don't have an answer to this question. Try another question."</i>.
 
 <p align="center">
    <img src="./imgs_readme/chatbot_workflow.png" width="90%">
