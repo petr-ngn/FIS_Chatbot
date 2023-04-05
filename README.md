@@ -7,7 +7,8 @@ This chatbot framework temporarily runs on **Python Anywhere** cloud platform: [
 </p>
 
 ## **What can you talk with the chatbot about?**
-For instance:
+It can provide information about study programs, courses, departments, and dormitories at FIS VŠE. It can also give details on the credit system, the current food menu at the canteen, and nearby public transportation options, including both bus and tram. 
+Here are some examples of questions that the chatbot can provide information on:
    - What Bachelor's programs you can study at FIS VŠE?
    - What Master's programs you can study at FIS VŠE?
    - What Doctoral programs you can study at FIS VŠE?
