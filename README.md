@@ -1,23 +1,21 @@
 # **NLP Chatbot for FIS VŠE (Neural Network with Focal Loss)**
 
+This chatbot framework temporarily runs on **Python Anywhere** cloud platform: [http://vse-fis-chatbot--petrngn.pythonanywhere.com/](http://vse-fis-chatbot--petrngn.pythonanywhere.com/)
+
 <p align="center">
    <img src="./imgs_readme/chatbot_example.gif" width="90%">
 </p>
 
 ## **Team**:
-   - **Machine Learning Team** - responsibility for text processing, development and deployment of chatbot as ML web application.
-      - **Team Lead & Developer**: [**Petr Nguyen**](https://www.linkedin.com/in/petr-ngn/)
-      - **Support**: [Lukas Dolezal](https://www.linkedin.com/in/lukas-dolezal75/)
-   - **Business Analysts**: - responsibility for research, assessment of current chatbot solutions, project management.
-      - **Members**: [Peter Kachnic](https://www.linkedin.com/in/peterkachnic/), [Karolina Benkovicova](https://www.linkedin.com/in/karolina-benkovicova-460/), [Andrea Novakova](https://www.linkedin.com/in/andrea-novakova/), [Samuel Nagy](https://www.linkedin.com/in/samuel-nagy-a31b51113/), [Adrian Harvan](https://www.linkedin.com/in/adrian-harvan/)
+   - **Lead Machine Learning & Developer**: [**Petr Nguyen**](https://www.linkedin.com/in/petr-ngn/) - responsibility for text processing, development and deployment of chatbot as ML web application.
+   - **Data Science Support**: [Lukas Dolezal](https://www.linkedin.com/in/lukas-dolezal75/) - responsibility for partial implementation of API web scrapping.
+   - **Business Analysts**: [Peter Kachnic](https://www.linkedin.com/in/peterkachnic/), [Karolina Benkovicova](https://www.linkedin.com/in/karolina-benkovicova-460/), [Andrea Novakova](https://www.linkedin.com/in/andrea-novakova/), [Samuel Nagy](https://www.linkedin.com/in/samuel-nagy-a31b51113/), [Adrian Harvan](https://www.linkedin.com/in/adrian-harvan/) responsibility for research, assessment of current chatbot solutions, project management.
 
 
 ## **Project Assignment Proposal**
 Within the course __*Trends in business analytics II (4IT409)*__, supervised by [Filip Vencovsky, Ph.D.](https://www.linkedin.com/in/filipvencovsky/), we had to:
    1. conduct a business research regarding the current chatbot of Faculty of Informatics and Statistics at Prague University of Economics and Business (**FIS VŠE**), assess its features and propose improvements, and further,
-   2. implement our improvements in the deployment either (1) using already existing frameworks or pretrained chatbots/models or (2) developing our own chatbot from scratch.
-
-<b>Particularly, we have developed our custom chatbot from scratch solely in Python (back-end) and HTML (front-end). More precisely, we have developed 2 custom chatbots - one in Czech language and one in English language.</b>
+   2. implement our improvements in the deployment either (1) using already existing frameworks or pretrained chatbots/models or <u><b>(2) developing our own chatbot from scratch.</b></u>
 
 ## **Data source & Integration description**
 
@@ -48,11 +46,11 @@ Regarding the last two intents (canteen and public tranport), such intents are i
    <img src="./imgs_readme/chatbot_canteen_response.png"  width="90%">
 </p>
 
-<b>Public tranport</b> - we are also web-scrapping actual bus and tram public transports from Prague Integrated Public Transport ([PID](https://pid.cz/en/departures/)) using `requests` and Golemio API - TBD (waiting for Samuel's and Andrea's inputs).
+<b>Public tranport</b> - we are also web-scrapping actual bus and tram public transports from Prague Integrated Public Transport ([PID](https://pid.cz/en/departures/)) using `requests` and Golemio API - TBD add Golemio API link.
 
-   - Public transport's website:
+   - Public transport's website: add photo
 
-   - Chatbot's response:
+   - Chatbot's response: add photo
 
 ## **Text Processing**
 
@@ -196,3 +194,8 @@ If we choose English chatbot:
 </p>
 
 ## Future improvements and recommendations
+- Use n-grams or sequences while taking into account words' order.
+- Add feature which would allow to save a conversation with chatbot.
+- Add feature for feedback option (in order to know whether the chatbot has answered correctly).
+- Integration of chatbot with InSIS (VŠE's study system).
+- Add more intents and patterns.
