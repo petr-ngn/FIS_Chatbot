@@ -2,9 +2,11 @@
 
 This chatbot framework temporarily runs on **Python Anywhere** cloud platform: [http://vse-fis-chatbot--petrngn.pythonanywhere.com/](http://vse-fis-chatbot--petrngn.pythonanywhere.com/)
 
+
 <p align="center">
    <img src="./imgs_readme/chatbot_example.gif" width="90%">
 </p>
+
 
 ## **What can you talk with the chatbot about?**
 It can provide information about study programs, courses, departments, and dormitories at FIS VŠE. It can also give details on the credit system, the current food menu at the canteen, and nearby public transportation options, including both bus and tram. 
