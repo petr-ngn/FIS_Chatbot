@@ -56,9 +56,9 @@ def get_menza(url:str = "https://www.vse.cz/menza/stravovani-zizkov/") -> list:
             cleaned_food_item = re.sub(r'^[\s,]+', '', cleaned_food_item)
             foods.append(cleaned_food_item.strip())
 
-    final_chalky = [f'<br>• {i}' for i in foods if i != '' and len(i) > 1]
+    final_foods = [f'<br>• {i}' for i in foods if i != '' and len(i) > 1]
 
-    return final_chalky
+    return final_foods
 
 
 
