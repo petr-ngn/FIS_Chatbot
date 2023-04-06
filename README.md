@@ -1,6 +1,6 @@
 # **NLP Chatbot for FIS VŠE (Neural Network with Focal Loss)**
 
-This chatbot framework temporarily runs on **Python Anywhere** cloud platform: [http://vse-fis-chatbot--petrngn.pythonanywhere.com/](http://vse-fis-chatbot--petrngn.pythonanywhere.com/)
+This custom chatbot framework temporarily runs on **Python Anywhere** cloud platform: [http://vse-fis-chatbot--petrngn.pythonanywhere.com/](http://vse-fis-chatbot--petrngn.pythonanywhere.com/)
 
 
 <p align="center">
