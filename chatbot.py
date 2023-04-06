@@ -1,6 +1,5 @@
 import os
 import logging
-import numpy as np
 import tensorflow as tf
 
 #Suppressing warnings and irrelevant messages
@@ -22,8 +21,6 @@ from src_PN.PN_ml_chatbot import MLChatbotApp
 
 #Setting a seed for preserving reproducability
 seed = 1998
-np.random.seed(seed)
-tf.random.set_seed(seed)
 
 #Running the ML chatbot web appp
 if __name__ == '__main__':
