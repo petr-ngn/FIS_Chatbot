@@ -101,7 +101,7 @@ First we perform **Cleaning & Tokenization** of given input text:
 Next, we proceed with **Bag of Words** as a collection of wors while disregarding the words' order.
 - In order to use such tokens in the NN modelling, we need to encode them into numerical vectors.
 - Given the set of all the unique preprocessed intents' words $w$ (i.e., set of normalized, lemmatized words with no punctuations or stopwords) of the length $n$, each numerical vector $v_{i}$ will have length $n$ where each index of $v_{i}$ corresponds to the index in $w$ indicating the occurrence of given word.
-- For instance, if we have tokens `['bachelor', 'master', 'programs']` and set of unique preprocessed intents' words $w$ `['bachelor', 'minor', 'master', 'programs', 'courses]`, the numerical vector $v_{i}$ will be then `[1,0,1,1,0]`. Such vector is called **bag of words** as a collection of 0/1 values indicating words' occurrences.
+- For instance, if we have tokens `['bachelor', 'master', 'programs']` and set of unique preprocessed intents' words $w$ `['bachelor', 'minor', 'master', 'programs', 'courses']`, the numerical vector $v_{i}$ will be then `[1,0,1,1,0]`. Such vector is called **bag of words** as a collection of 0/1 values indicating words' occurrences.
 
 <p align="center">
     <img src="./imgs_readme/bag_of_words.png"  width="30%"> 
