@@ -75,7 +75,7 @@ def get_transport(transport:str, lang:str) -> list:
 
     #API token
     headers = {
-        'x-access-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRvbGwwM0B2c2UuY3oiLCJpZCI6MTgzNSwibmFtZSI6bnVsbCwic3VybmFtZSI6bnVsbCwiaWF0IjoxNjc5MDU2MjExLCJleHAiOjExNjc5MDU2MjExLCJpc3MiOiJnb2xlbWlvIiwianRpIjoiNGRmMDczYjctMTRlMC00ZGI3LWIzMzQtNWE0ZjY4MzQxMTg4In0.hrjgSyTafjalmZMsuhIfyOt_nqoDSX3ZJJQjcMD1UiE'
+        'x-access-token': os.getenv('GOLEMIO_TOKEN')
             }
 
     #API parameters
